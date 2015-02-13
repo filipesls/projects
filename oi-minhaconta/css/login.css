@@ -1,0 +1,132 @@
+#contatoCentral {
+	display: none;
+}
+.center{
+	text-align: center;
+}
+.left{
+	clear:left;
+}
+.float-left{
+	float: left;
+}
+.w70{
+	width: 75px;
+}
+.w110{
+	width: 110px;
+}
+.w240{
+	width: 240px;
+}
+div.login-form{width:710px;padding: 35px 0 35px 39px;float: left;}
+
+div.login-form li{
+	font:15px Arial;
+	color: #494949;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 7px;
+	background: #fff;
+	padding: 10px 0 10px 10px;
+	border: 1px solid #bababa;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 1px 1px 0px rgba(000,000,000,0.2);
+	-webkit-box-shadow: 1px 1px 0px rgba(000,000,000,0.2);
+	box-shadow: 1px 1px 0px rgba(000,000,000,0.2);
+	cursor: pointer;
+	position: relative;
+}
+div.login-form li.selected{
+	background: #d5652c;
+	border-color: #d5652c;
+	color: #fff;
+}
+.ico-fechadura{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 7px;
+	vertical-align: text-top;
+	background-image: url("/images/checkout/icon-fechadura.png");
+	background-repeat: no-repeat;
+	float: left;
+}
+.ico-lapis{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 7px;
+	vertical-align: text-top;
+	background-image: url("/images/checkout/icon-lapis.png");
+	background-repeat: no-repeat;
+	float: left;
+}
+.ico-fechadura-cinza{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 7px;
+	vertical-align: text-top;
+	background-image: url("/images/checkout/icon-fechadura-cinza.png");
+	background-repeat: no-repeat;
+	float: left;
+}
+.ico-lapis-branco{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 7px;
+	vertical-align: text-top;
+	background-image: url("/images/checkout/icon-lapis-branco.png");
+	background-repeat: no-repeat;
+	float: left;
+}
+.login-oi-novo{
+	margin-top:30px;
+}
+.esqueci-senha-novo{
+	clear:left;
+	float: right;
+	margin-right: 5px;
+}
+.esqueci-minha-senha a{
+	font-size: 10px;
+	color: #5c5c5c;
+}
+div.box-main {
+	width: 630px;
+	color: #494949;
+	font-size: 12px;
+	padding: 14px 39px;
+	margin-top: 5px;
+	float: left;
+	border: 1px solid #dededf;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f0f0f0));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f0f0f0 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#f0f0f0 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#f0f0f0 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#f0f0f0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 );
+}
+.esqueci-minha-senha{
+	margin-right: 30px;
+	float: right;
+	clear: left;
+}
+.formulario-de-cadastro{
+	margin-top: 20px;
+}
+.tituloAutenticacao{
+	font-size: 16px;
+	font-weight: bold;
+	color: #4f4f4f;
+	margin-top: 25px;
+}

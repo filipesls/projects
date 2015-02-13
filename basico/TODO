@@ -1,0 +1,26 @@
+# TODO
+
+
+-->solucoesInterna.js
+
+core
+    backbone-views-as-singleton-by-default
+        http://stackoverflow.com/questions/12219244/how-do-i-set-backbone-views-as-singleton-by-default
+    mockdata
+        https://gist.github.com/yamsellem/5195251
+
+visual
++ visual preloader
+
+integration
++ MODEL INTEGRATION
+    http://stackoverflow.com/questions/10643474/binding-a-backbone-model-to-a-marionette-itemview-blocking-fetch
++
+
+
+# DONE
+- get/assign each template from html file
+- test IE
+- CLEAN templates
+    src/templates/meus-servicos/*
+    src/templates/solucoes-pra-voce/*

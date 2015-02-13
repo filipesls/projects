@@ -1,0 +1,107 @@
+{
+  "id": "2o7346592837yuirhda9o8iujh2n3o8iwd",
+  "cpf": "09833291767",
+  "login": "leandro",
+  "name": "LEANDRO VIANA ALMEIDA",
+  "terminals": [{
+    "terminal": "27872040",
+    "associatedPoids": ["0.0.0.1 /billinfo 453027312 7", "0.0.0.1 /billinfo 453033360 7", "0.0.0.1 /billinfo 453076355 7"]
+  }],
+  "billsInfos": [{
+    "poid": "0.0.0.1 /billinfo 453027312 7",
+    "payType": "3",
+    "status": "10100",
+    "total": 6.9,
+    "payInfo": {
+      "poid": "0.0.0.1 /payinfo/ig_cc 453026288 1"
+    },
+    "plans": [{
+      "poid": "0.0.0.1 /plan 452775129 0",
+      "description": "Oi Cartoon Network",
+      "type": "0",
+      "family": 3,
+      "services": [{
+        "poid": "0.0.0.1 /service/oi/cartoon 453029872 10",
+        "status": 10100,
+        "tdu": "http://static.oiweb.co/hanoi/tdu/residencial/tdu_oi_cartoon.html",
+        "provisioningDataList": []
+      }, {
+        "poid": "0.0.0.1 /service/oi/cartoon 453029872 10",
+        "status": 10100,
+        "provisioningDataList": []
+      }]
+    }]
+  }, {
+    "poid": "0.0.0.1 /billinfo 453033360 7",
+    "payType": "4",
+    "status": "10102",
+    "total": 5.9,
+    "payInfo": {
+      "poid": "0.0.0.1 /payinfo/ig_dd 453032336 2"
+    },
+    "plans": [{
+      "poid": "0.0.0.1 /plan 452775321 0",
+      "description": "Brturbo Antivírus Essencial",
+      "type": "0",
+      "family": 4,
+      "services": [{
+        "poid": "0.0.0.1 /service/oi/antivirusresidencial 453029968 10",
+        "status": 10102,
+        "tdu": "http://static.oiweb.co/hanoi/tdu/legado/tdu_brt_antivirus.html",
+        "provisioningDataList": [{
+          "name": "ServiceOiAntivirusresidencialGroupT",
+          "data": {
+            "igfldnsref": "",
+            "endt": "0",
+            "igfldconfirmationno": "",
+            "parameters": "",
+            "igfldinstallationdate": "0",
+            "igfldorderid": "",
+            "url": "",
+            "emailaddr": ""
+          }
+        }]
+      }, {
+        "poid": "0.0.0.1 /service/oi/antivirusresidencial 453029968 10",
+        "status": 10102,
+        "provisioningDataList": []
+      }]
+    }]
+  }, {
+    "poid": "0.0.0.1 /billinfo 453076355 7",
+    "payType": "5",
+    "status": "10103",
+    "total": 11.9,
+    "payInfo": {
+      "poid": "0.0.0.1 /payinfo/ig_cobilling 453075331 1"
+    },
+    "plans": [{
+      "poid": "0.0.0.1 /plan 5727799 4",
+      "description": "Oi Proteção da Família",
+      "type": "0",
+      "family": 5,
+      "services": [{
+        "poid": "0.0.0.1 /service/oi/protecaodafamilia 453078915 10",
+        "status": 10103,
+        "tdu": "http://static.oiweb.co/hanoi/tdu/legado/tdu_oi_protecao_familia.html",
+        "provisioningDataList": [{
+          "name": "ServiceOiProtecaodafamiliaGroupT",
+          "data": {
+            "igfldnsref": "",
+            "endt": "0",
+            "igfldconfirmationno": "",
+            "parameters": "",
+            "igfldinstallationdate": "0",
+            "igfldorderid": "",
+            "url": "",
+            "emailaddr": ""
+          }
+        }]
+      }, {
+        "poid": "0.0.0.1 /service/oi/protecaodafamilia 453078915 10",
+        "status": 10100,
+        "provisioningDataList": []
+      }]
+    }]
+  }]
+}

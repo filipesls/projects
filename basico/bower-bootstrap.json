@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bootstrap": "latest"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/!(variables).less",
+        "less/mixins/*"
+      ]
+    }
+  }
+}

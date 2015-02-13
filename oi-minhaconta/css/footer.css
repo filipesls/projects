@@ -1,0 +1,139 @@
+footer {
+	padding:40px 0 0;
+	background: #ededed url(/images/bg-footer-bottom.png) repeat-x;
+}
+
+footer h4 {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+footer #nav-footer .grid_4,footer .grid_5 {
+	min-height: 355px;
+	background:url(/images/bg-footer-dashline.png) top right no-repeat;
+}
+
+footer #nav-footer.checkout .grid_4/*, footer .grid_5*/ {
+	min-height: auto;
+	background: none;
+	margin-bottom: 15px;
+}
+
+footer #nav-footer h5 {
+	margin: 0 0 20px;
+	font-size: 14px;
+	color: #707070
+}
+
+footer #nav-footer li {
+	padding: 0 10px 10px 0;
+	color: #54579A;
+	font: normal 11px Verdana;
+	text-shadow: 0 1px 1px #fff;
+	text-decoration:none
+}
+
+footer #nav-footer li a {
+	display: inline-block;
+	padding: 0 0 0 8px;
+	color: #54579A;
+	text-shadow: 0 1px 1px #fff;
+	text-decoration: none;
+	background: url(/images/arrow-roxo.gif) left 3px no-repeat;
+}
+
+footer #nav-footer li a:hover {
+	text-decoration:underline
+}
+
+footer #nav-footer .sitesoi {
+	margin-bottom: 5px
+}
+
+footer #nav-footer .sitesoi li {
+	display: inline;
+	padding: 0 0 3px!important;
+	margin: 0!important
+}
+
+footer #nav-footer .sitesoi li a {
+	width: auto!important;
+	display: inline-block!important;
+	margin-top: 0px;
+	background: none!important;
+}
+
+footer #nav-footer .sitesoi .logooiacontece a {
+	margin-top: 15px
+}
+
+footer #nav-footer .sitesoi .logomundooi a {
+	margin-top: 15px
+}
+
+footer #nav-footer .sitesoi .logooiacontece a {
+	margin-top: 15px
+}
+
+footer #nav-footer .sitesoi .logooirdio a {
+	margin-top: 12px
+}
+
+footer #nav-footer .sitesoi .logooifuturo a {
+	margin-top: 0
+}
+
+footer #nav-footer .socialnetoi {
+	height: 83px;
+	padding-left: 13px;
+	margin-left: 12px;
+	margin-top: 15px;
+	background: url(/images/footer-logo-social.gif) no-repeat left top;
+}
+
+footer #nav-footer .socialnetoi li {
+	display:inline
+}
+
+footer #nav-footer .socialnetoi li a {
+	width: 22px;
+	height: 37px;
+	float:left;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: none!important;
+}
+
+footer #nav-footer .socialnetoi .logooifacebook a {
+	width: 22px;
+	margin-left: -12px;
+}
+
+footer #nav-footer .socialnetoi .logooitwitter a,.sitemap nav .socialnetoi .logooiyoutube a {
+	width:22px;
+	margin-left:3px;
+}
+
+footer #copyright {
+	min-height: 132px;
+	padding: 18px 0 0;
+	background: url(/images/bg-footer-copy.png) top left repeat-x;
+}
+
+footer .pcopyright {
+	float: left;
+	margin-top: 15px
+	text-align: center;
+	font: 11px Arial,normal;
+	color: #565657;
+}
+
+footer .pcopyright img {
+	display: block;
+	margin: 0 auto 10px
+}
+
+footer .pcopyright a {
+	color: #565657;
+	text-decoration: none
+}

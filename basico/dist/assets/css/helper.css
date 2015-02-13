@@ -1,0 +1,209 @@
+/* file: helper */
+
+
+/* DEVHELPER */
+body.dev {
+  background: #dedede;
+  display: block;
+  width: 730px;
+  margin: 10px auto 0 auto;
+}
+/*
+[class^="col"] { background-color: rgba(115, 80, 100, 0.2); }
+[class^="col"]:hover { background-color: rgba(115, 80, 100, 0.5); }
+*/
+.iframe-emulator {
+  background: #fff; border: 1px solid #ddd;
+}
+.easy {
+  -webkit-transition: all 1s ease-out;
+          transition: all 1s ease-out;
+}
+.dev-remove { position: absolute; right: 10px; top: 15px;}
+
+/* /DEVHELPER */
+
+
+.margined { margin: 10px 0 10px 0; }
+.padded { padding: 10px; }
+.super-bottom-pad { padding-bottom: 50px; }
+
+.no-margin { margin: 0 !important; }
+.no-padding { padding: 0 !important; }
+.no-padding-left{ padding-left: 0; }
+.no-padding-right{ padding-right: 0; }
+.ie-warning { background-color: #000; padding: 12px 0 1px 0;}
+
+.warning { text-transform: uppercase; text-align: center; background: #000; font-size: 12px; letter-spacing: 0.1em; color: #aaa; }
+.warning a:link,
+.warning a:visited { color: #fff; text-decoration: none; }
+.warning a:hover { color: #000; background: #fff; text-decoration: none; }
+
+
+.vertically-centered {min-height: 6.5em;display: table-cell;vertical-align: middle;}
+
+.fleft{ float: left; }
+
+.right-text {
+  text-align: right !important;
+}
+
+.centered-abs {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    height:100%;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.transparent {
+    filter: alpha(opacity=50); /* internet explorer */
+    -khtml-opacity: 0.5;      /* khtml, old safari */
+    -moz-opacity: 0.5;       /* mozilla, netscape */
+    opacity: 0.5;           /* fx, safari, opera */
+}
+.invisible {
+    filter: alpha(opacity=0); /* internet explorer */
+    -khtml-opacity: 0;      /* khtml, old safari */
+    -moz-opacity: 0;       /* mozilla, netscape */
+    opacity: 0;           /* fx, safari, opera */
+}
+
+.polaroid {
+    background:#000;
+    border:solid #fff;
+    border-width:6px 6px 20px 6px;
+    box-shadow:1px 1px 5px #333;
+    -webkit-box-shadow:1px 1px 5px #333;
+    -moz-box-shadow:1px 1px 5px #333;
+    height:200px;
+    width:200px;
+}
+
+.white, .white a {
+  color: #fff;
+}
+.box {
+  background: #FFF;
+}
+.cornered {
+  border-radius: 5px;
+}
+
+.shadowed {
+  box-shadow:         0px 3px 3px 1px #ddd;
+}
+
+.divider {
+  margin-top:10px;
+}
+
+.topspaced {
+  margin-top:10px;
+}
+
+.bottomspaced {
+  margin-bottom:10px;
+}
+
+.centeringContainer {
+  margin: 0 auto;
+  /*width: 360px;*/
+}
+.centered {
+  float: left;
+  height: 100px;
+  margin: 0 10px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-dad {
+   display: table;
+   width: 100%;
+}
+.center-child {
+   display: table-cell;
+}
+
+.full-height {
+  overflow: auto;
+  background: #ccc;
+  min-height: 100%;
+  height: auto;
+}
+
+.begins-at-bottom {
+    position:absolute;
+    bottom:0;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+}

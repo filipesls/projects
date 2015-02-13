@@ -1,0 +1,65 @@
+<script id="devhelper-view" type="text/template">
+    <div id="devhelper">
+        <div id="navbar-holder"></div>
+        <div id="iframe-holder"></div>
+    </div>
+</script>
+
+<script id="navbar-view" type="text/template">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">Integração Minha Oi</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="#!/meus-servicos">Meus Serviços</a></li>
+                    <li><a href="#!/meus-avisos">Meus Avisos</a></li>
+                    <li><a href="#!/carrinho">Carrinho</a></li>
+                    <li><a href="#!/minhas-faturas">Minhas Faturas</a></li>
+                    <li><a href="#!/loja">Loja</a></li>
+                    <li><a href="#!/ajuda">Ajuda</a></li>
+                    <li><a href="#!/modals">Modais</a></li>
+                    <li><a href="#!/503">503</a></li>
+                </ul>
+                <button type="button" class="btn btn-xs btn-danger dev-remove"><span class="white glyphicon glyphicon-remove"></span></button>
+            </div>
+        </div>
+    </nav>
+</script>
+
+<script id="header-holder-view" type="text/template">
+    <div id="header-holder"></div>
+</script>
+
+<script id="infoheader-view" type="text/template">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="breadcrumb">
+                    <li>Internet</li>
+                    <li>Mais Serviços pra Internet</li>
+                    <li><%= title %></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="ffarial fs20 fcpreto fbold titulo"><%= title %></h4>
+                <ul class="notificacoes no-padding">
+                    <li><img src="assets/img/ico-carta.png" border="0"></li>
+                    <li><img src="assets/img/ico-carrinho.png" border="0"> <span class="ffarial fs12 fcroxo">(0)</span></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</script>

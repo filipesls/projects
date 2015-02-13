@@ -1,0 +1,591 @@
+<link rel="stylesheet" href="css/loja/style_loja.css">
+<link rel="stylesheet" href="css/loja/checkout.css">
+
+	<!--[if gte IE 9]>
+	<style type="text/css">
+		.gradient {
+		 filter: none;
+		}
+	</style>
+	<![endif]-->
+
+<div class="outerContainer">
+	<div class="outerContainerTop">
+		<div class="outerContainerBottom">
+			<section id="checkout" class="container_24 out-checkout">
+				<div class="in-checkout modelo-02">
+					<div class="steps">
+						<ol>
+							<li class="step-one"><i class="active">1</i> Identificação<br/><small>Escolha sua opção de autenticação</small></li>
+							<li class="step-two"><i>2</i> Pagamento<br/><small>Escolha a forma de pagamento</small></li>
+							<li class="step-three"><i>3</i> Conclusão<br/><small>Confira os links para instalação</small></li>
+						</ol>
+					</div>
+					<div class="sign-form">
+						<p style="color: white;">Para continuar, identifique-se.</p>
+						<ul>
+							<li id="loginVelox" class="abas-login">
+								<i class="icon-sign"></i>Já possuo conta na<br/><strong>Oi Serviços Digitais</strong>
+								<img class="arrow" src="/images/checkout/shape-arrow-bottom.png">
+							</li>
+							<li id="loginOi" class="abas-login last" style="display:none;">
+								<i class="icon-sign"></i>Já possuo conta na<br/><strong>Oi Serviços Digitais</strong>
+								<img class="arrow" src="/images/checkout/shape-arrow-bottom.png">
+							</li>
+							<li id="souNovoAqui" class="abas-login selected">
+								<i class="icon-asign"></i>Sou novo aqui<br/><strong>Criar uma nova conta</strong>
+								<img class="arrow" src="/images/checkout/shape-arrow-bottom.png">
+							</li>
+						</ul> 
+						<div class="main-form">
+							<form action="" class="vertical-form cmxform" type="GET" id="formCadastroNovoUsuario">
+								<input type="hidden" name="tipoEndereco" />
+								<section class="formulario-de-cadastro">
+									<!-- CADASTRO -->
+									<section class="cadastro pf">
+										<div class="row grid_16 alpha omega">
+											<div class="grid_3 alpha"><h3>Cadastro</h3></div>
+											<div class="grid_3 prefix_10 omega"><small class="asterisco">*dados obrigatórios</small></div>
+										</div>
+										<div class="row grid_16 alpha omega">
+											<div class="grid_4">
+												<label class="radio inline">
+													<input type="radio" name="tipoPessoa" id="optionsFichaPF" value="1"> Pessoa Física
+												</label>
+											</div>
+											<div class="grid_4">
+												<label class="radio inline">
+													<input type="radio" name="tipoPessoa" id="optionsFichaPJ" value="2"> Pessoa Jurídica
+												</label>
+											</div>
+											<div class="grid_16 line-caret alpha">
+												<span class="caret up pf" style="display:none;"></span>
+												<span class="caret up pj" style="display:none;"></span>
+											</div>
+										</div>
+										<div class="row grid_16 alpha omega">
+											<div class="alert">
+												<i class="icon-warming"></i><span class="error-msg">Para prosseguir, complemente seu cadastro.</span>
+											</div>
+										</div>
+										<section id="formPessoaFisica" class="clearie8">
+											<div class="row grid_16 alpha omega pessoa">
+												<div class="grid_4 alpha control-group">
+													<label>CPF*</label>
+													<input id="cpf" name="cpf" type="text" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_6 control-group">
+													<label>Nome*</label>
+													<input id="nome" name="nome" type="text" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_6 omega control-group">
+													<label>Sobrenome*</label>
+													<input id="sobrenome" name="sobrenome" type="text" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+											</div>
+											<div class="row grid_16 alpha omega">
+												<div class="grid_3 alpha control-group">
+													<label>Data de Nascimento*</label>
+													<input type="text" id="dataNascimento" name="dataNascimento" class="required dataNascimento">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_1">
+													&nbsp;
+												</div>
+												<div class="grid_4">
+													<label>Sexo*</label>
+													<div class="grid_6 alpha omega control-group">
+														<div class="grid_3 alpha ">
+															<label class="radio inline">
+																<input type="radio" name="sexo" id="sexoMasculinoPF" value="2"> Masculino
+															</label>
+														</div>
+														<div class="grid_3 omega">
+															<label class="radio inline">
+																<input type="radio" name="sexo" id="sexoFemininoPF" value="1"> Feminino
+															</label>
+														</div>
+														&nbsp;
+														<label class="help-inline" id="sexo-error-pf">Please correct the error</label>
+													</div>
+												</div>
+											</div>
+											<div class="row grid_16 alpha omega">
+												<div class="grid_4 alpha control-group">
+													<label>Telefone*</label>
+													<div class="grid_1 alpha"><input class="small required" type="text" id="dddPF" name="ddd"></div>
+													<div class="grid_3 omega"><input type="text" id="telefonePF" name="telefone" class="required"></div>
+													<div class="clear"></div>
+													<label id="telefonePF-error" class="help-inline">Please correct the error</label>
+													<label id="dddPF-error" class="help-inline">Please correct the error</label>
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_3 omega">
+													<label>&nbsp;</label>
+													<select name="tipoTelefonePF" class="required height27 borderGray" tabindex="17">
+														<option value="1" selected="selected">Residencial</option>
+														<option value="3">Comercial</option>
+														<option value="2">Celular</option>
+													</select>
+												</div>
+												<div class="grid_1">&nbsp;</div>
+												<div class="grid_8 small-radio">
+													<label class="nomargin">Email*</label>
+													<div class="grid_8 escolha-email">
+														<label class="radio nomargin"><input type="radio" name="selecionarEmail" id="usarEmailPessoal" value="usarEmailPessoal"><small>Quero informar meu email pessoal</small></label>
+														<label class="radio nomargin"><input type="radio" name="selecionarEmail" id="criarEmailOi" value="criarEmailOi"><small>Quero criar um email <b>Oi</b></small></label>
+														<label class="error" id="email-error" style="display: none;float: left;"></label>
+													</div>
+													<div class="grid_6 alpha omega email-pessoal usar control-group" style="display:none;">
+														<input type="text" id="emailPessoalPF" name="emailPessoal" class="emailPessoal">
+														<label class="checkbox">
+															<input type="checkbox" class="fleft" name="emailComoLogin" id="emailPessoalComoLoginPF"> <small class="x-small width400">Utilizar e-mail como login para acessar a <b>Oi</b></small>
+														</label>
+													</div>
+													<div class="grid_5 alpha omega email-pessoal criar control-group" style="display:none;">
+														<input type="text" id="emailOiPF" name="emailOi" class="emailOi"><small class="x-small">@oi.com.br</small>
+														<label class="checkbox">
+															<input type="checkbox" class="fleft" name="emailComoLogin" id="emailOiComoLoginPF"> <small class="x-small width400">Utilizar e-mail como login para acessar a <b>Oi</b></small>
+														</label>
+														<label class="help-inline">Please correct the error</label>
+													</div>
+													<div class="grid_2 omega cancel bt-altera-email" style="display:none;">
+														<a class="chk_toggle_email cancel" href=""><i class="icon-cancel"></i> cancelar</a>
+													</div>
+													<div class="clear"></div>
+													<label class="help-inline" id="email-error-pf"></label>
+												</div>
+											</div>
+										</section>
+										<section id="formPessoaJuridica" class="clearie8" style="display:none;">
+											<div class="row grid_16 alpha omega">
+												<div class="grid_4 alpha control-group">
+													<label>CNPJ*</label>
+													<input id="cnpj" name="cnpj" type="text" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_12 omega control-group">
+													<label>Razão Social*</label>
+													<input id="razaoSocial" name="razaoSocial" type="text" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+											</div>
+											<div class="row grid_16 alpha omega">
+												<div class="grid_5 alpha control-group">
+													<label>Inscrição Estadual</label>
+													<input id="inscricaoEstadual" name="inscricaoEstadual" type="text" >
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_5 control-group">
+													<label>Inscrição Municipal</label>
+													<input id="inscricaoMunicipal" name="inscricaoMunicipal" type="text" >
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_6 omega control-group">
+													<label>Nome Fantasia*</label>
+													<input id="nomeFantasia" name="nomeFantasia" type="text" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+											</div>
+											<div class="row grid_16 alpha omega">
+												<div class="grid_8 alpha control-group">
+													<label>Nome do responsável*</label>
+													<input id="nomeResponsavel" name="nomeResponsavel" type="text" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_8 omega control-group">
+													<label>Sobrenome do responsável*</label>
+													<input id="sobrenomeResponsavel" name="sobrenomeResponsavel" type="text" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+											</div>
+											<div class="row grid_16 alpha omega">
+												<div class="grid_3 alpha control-group">
+													<label>Data de Nascimento*</label>
+													<input type="text" id="dataNascimento" name="dataNascimento" class="required dataNascimento">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_1">
+													&nbsp;
+												</div>
+												<div class="grid_4">
+													<label>Sexo*</label>
+													<div class="grid_4 alpha omega control-group">
+														<div class="grid_2 alpha ">
+															<label class="radio inline">
+																<input type="radio" name="sexo" id="sexoMasculinoPJ" value="2"> Masculino
+															</label>
+														</div>
+														<div class="grid_2 omega">
+															<label class="radio inline">
+																<input type="radio" name="sexo" id="sexoFemininoPJ" value="1"> Feminino
+															</label>
+														</div>
+														&nbsp;
+														<label class="help-inline" id="sexo-error-pj">Please correct the error</label>
+													</div>
+												</div>
+											</div>
+											<div class="row grid_16 alpha omega">
+												<div class="grid_4 alpha control-group">
+													<label>Telefone*</label>
+													<div class="grid_1 alpha"><input class="small required" type="text" id="dddPJ" name="ddd"></div>
+													<div class="grid_3 omega"><input type="text" id="telefonePJ" name="telefone" class="required"></div>
+													<label id="telefonePJ-error" class="help-inline">Please correct the error</label>
+													<label id="dddPJ-error" class="help-inline">Please correct the error</label>
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_3 omega">
+													<label>&nbsp;</label>
+													<select name="tipoTelefonePJ" class="required height27 borderGray" tabindex="17">
+														<option value="1" selected="selected">Residencial</option>
+														<option value="3">Comercial</option>
+														<option value="2">Celular</option>
+													</select>
+												</div>
+												<div class="grid_1">&nbsp;</div>
+												<div class="grid_6 omega small-radio">
+													<label class="nomargin">Email*</label>
+													<div class="grid_5 escolha-email">
+														<label class="radio nomargin"><input type="radio" name="selecionarEmailPJ" id="usarEmailPessoalPJ" value="usarEmailPessoal"><small>Quero informar meu email pessoal</small></label>
+														<label class="radio nomargin"><input type="radio" name="selecionarEmailPJ" id="criarEmailOiPJ" value="criarEmailOi"><small>Quero criar um email <b>Oi</b></small></label>
+														<label class="error" id="email-error" style="display: none;float: left;"></label>
+													</div>
+													<div class="grid_4 alpha omega email-pessoal usar control-group" style="display:none;">
+														<input type="text" id="emailPessoalPJ" name="emailPessoal" class="emailPessoal required">
+														<label class="checkbox">
+															<input type="checkbox" class="fleft" name="emailComoLogin" id="emailPessoalComoLoginPJ"> <small class="x-small width400">Utilizar e-mail como login para acessar a <b>Oi</b></small>
+														</label>
+													</div>
+													<div class="grid_4 alpha omega email-pessoal criar control-group" style="display:none;">
+														<input type="text" id="emailOiPJ" name="emailOi" class="emailOi required"><small class="x-small">@oi.com.br</small>
+														<label class="checkbox">
+															<input type="checkbox" class="fleft" name="emailComoLogin" id="emailOiComoLoginPJ"> <small class="x-small width400">Utilizar e-mail como login para acessar a <b>Oi</b></small>
+														</label>
+														<label class="help-inline">Please correct the error</label>
+													</div>
+													<div class="grid_2 omega cancel bt-altera-email" style="display:none;">
+														<a class="chk_toggle_email cancel" href=""><i class="icon-cancel"></i> cancelar</a>
+														
+													</div>
+													<div class="clear"></div>
+													<label class="help-inline" id="email-error-pj" style="display: none;">Please correcffft the error</label>
+
+												</div>
+											</div>
+										</section>
+									</section>
+									<!-- CADASTRO -->
+									<section class="criacao-de-usuario">
+										<div class="row grid_16 alpha omega">
+											<label class="legend">Criação de usuário e senha</label>
+											<div class="grid_6 alpha control-group">
+												<label>Usuário*</label>
+												<input type="text" id="login" name="login" class="required">
+												<label class="help-inline">Please correct the error</label>
+												<span onclick="exibirSugestoesLogin()" style="display: none">Sugerir login</span>
+												<div id="sugestaoLogin">
+												</div>
+											</div>
+											<div class="grid_5 control-group">
+												<label>Senha*</label>
+												<input type="password" id="senha" name="senha">
+												<label class="help-inline">Please correct the error</label>
+											</div>
+											<div class="grid_5 omega control-group">
+												<label>Confirmar Senha*</label>
+												<input type="password" id="confirmacaoSenha" name="confirmacaoSenha">
+												<label class="help-inline">Please correct the error</label>
+											</div>
+										</div>
+										<div class="row grid_16 alpha omega">
+											<div class="grid_8 alpha control-group">
+												<label>Criar pergunta secreta*</label>
+												<input type="text" id="pergunta" name="pergunta" class="required">
+												<label class="help-inline">Please correct the error</label>
+											</div>
+											<div class="grid_8 omega control-group">
+												<label>Criar resposta secreta*</label>
+												<input type="text" id="resposta" name="resposta" class="required">
+												<label class="help-inline">Please correct the error</label>
+											</div>
+										</div>
+									</section>
+									<section class="endereco">
+										<div class="row grid_16 alpha omega">
+											<label class="legend">Endereço</label>
+											<div class="grid_2 alpha control-group">
+												<label>CEP*</label>
+												<input type="text" id="cep" name="endereco.cep" class="required">
+												<label class="help-inline">Please correct the error</label>
+											</div>
+											<div class="grid_2">
+												<label>&nbsp;</label>
+												<small class="cep"><a class="forgetCep" href="#">não sei o CEP</a></small>
+											</div>
+											<div class="grid_10 control-group">
+												<label>Endereço*</label>
+												<input type="text" id="endereco" name="endereco.endereco" class="required">
+												<label class="help-inline">Please correct the error</label>
+											</div>
+											<div class="grid_2 omega control-group">
+												<label>Número*</label>
+												<input type="text" id="numero" name="endereco.numero" class="required" onkeypress="validacaoAlfanumerica()">
+												<label class="help-inline">Please correct the error</label>
+											</div>
+										</div>
+										<div class="row grid_16 alpha omega">
+											<div class="grid_4 alpha control-group">
+												<label>Complemento</label>
+												<input type="text" id="complemento" name="endereco.complemento">
+												<label class="help-inline">Please correct the error</label>
+											</div>
+											<div class="grid_4 control-group">
+												<label>Bairro*</label>
+												<input type="text" id="bairro" name="endereco.bairro" class="required">
+												<label class="help-inline">Please correct the error</label>
+											</div>
+											<div class="grid_4 omega control-group">
+												<label>Cidade*</label>
+												<input type="text" id="cidade" name="endereco.cidade" class="required">
+												<input type="hidden" id="idCidade" name="endereco.idCidade" >
+												<label class="help-inline">Please correct the error</label>
+											</div>
+											<div class="grid_4 control-group">
+												<label>Estado*</label>
+												<input type="text" id="estado" name="endereco.estado" class="required">
+												<label class="help-inline">Please correct the error</label>
+											</div>
+										</div>
+									</section>
+									<section class="complemento-cadastro" style="display:none;">
+										<div class="row grid_16 alpha omega">
+											<h3>Dados do Serviço</h3>
+										</div>
+										<section class="cSegurancaMovel complementar1" style="display:none;"  id="complementarMobileSecurity">
+											<div class="row grid_16 alpha">
+												<label class="legend">Oi Segurança Móvel</label>
+												<div class="grid_4 alpha control-group">
+													<label>CPF do Proprietário*</label>
+													<input id="cpfProprietario" name="complementoCadastroDTO.cSegurancaMovel.cpfProprietario" type="text" class="required cpf">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_8 control-group">
+													<label>Nome do Proprietário*</label>
+													<input id="nomeProprietario" name="complementoCadastroDTO.cSegurancaMovel.nomeProprietario" type="text" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>    
+												<div class="grid_4 omega control-group">
+													<label>Número do Celular*</label>
+													<div class="grid_1 alpha"><input class="small required" type="text" id="dddCelular" name="complementoCadastroDTO.cSegurancaMovel.dddCelular"></div>
+													<div class="grid_3 omega"><input type="text" id="numeroCelular" name="complementoCadastroDTO.cSegurancaMovel.numeroCelular" class="required"></div>
+													<!--
+													<input class="small required" type="text" id="dddMobileSecurity" name="dddMobileSecurity">
+													<input type="text" id="numeroCelular" name="complementoCadastroDTO.cSegurancaMovel.numeroCelular" class="required">
+													-->
+													<label class="help-inline">Please correct the error</label>
+												</div>
+											</div>
+											<div class="row grid_16 alpha omega">
+												<div class="grid_4 alpha control-group">
+													<label>Operadora*</label>
+													<select name="complementoCadastroDTO.cSegurancaMovel.operadora" id="operadora">
+														<option value="">Selecione</option>
+														<option value="Oi">Oi</option>
+														<option value="Vivo">Vivo</option>
+														<option value="Claro">Claro</option>
+														<option value="Tim">Tim</option>
+													</select>
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_4 control-group">
+													<label>Tipo de linha*</label>
+													<select name="complementoCadastroDTO.cSegurancaMovel.planoCelular" id="planoCelular">
+														<option value="">Selecione</option>
+														<option value="1">Pós-Pago</option>
+														<option value="2">Pré-Pago</option>
+													</select>
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_4 control-group">
+													<label>Plataforma*</label>
+													<select name="complementoCadastroDTO.cSegurancaMovel.plataforma" id="plataforma">
+														<option value="">Selecione</option>
+														<option value="android">Android</option>
+														<option value="blackberryv6.0">BlackBerry v6.0</option>
+														<option value="blackberryv5.0">BlackBerry v5.0</option>
+														<option value="blackberryv4.7">BlackBerry v4.7</option>
+														<option value="blackberryv4.5">BlackBerry v4.5</option>
+														<option value="j2me">J2ME</option>
+														<option value="microsoftwindowsmobile6.5standard">Microsoft Windows Mobile 6.5 Standard</option>
+														<option value="microsoftwindowsmobile6.5professional">Microsoft Windows Mobile 6.5 Professional</option>
+														<option value="microsoftwindowsmobile6.0professional">Microsoft Windows Mobile 6.0 Professional</option>
+														<option value="symbianv9.4">Symbian v9.4</option>
+														<option value="symbianv9.3">Symbian v9.3</option>
+														<option value="symbianv9.2">Symbian v9.2</option>
+														<option value="symbianv9.1">Symbian v9.1</option>
+													</select>
+													<label class="help-inline">Please correct the error</label>
+												</div>
+											</div>
+										</section>
+										<section class="cBandaLarga complementar3" style="display:none;" id="complementarBandaLarga">
+											<div class="row grid_16 alpha">
+												<label class="legend">Oi Banda Larga</label>
+												<div class="grid_4 alpha control-group">
+													<label>Telefone*</label>
+													<div class="grid_1 alpha"><input class="small required" type="text" id="dddTerminalADSL" name="complementoCadastroDTO.cBandaLarga.dddTerminalADSL"></div>
+													<div class="grid_3 omega"><input type="text" id="teminalADSLInstalado" name="complementoCadastroDTO.cBandaLarga.teminalADSLInstalado" class="required"></div>
+													<label class="help-inline">Please correct the error</label>
+												</div>
+											</div>
+										</section>
+										<section class="cBackup complementar2" style="display:none;" id="complementarBackup">
+											<div class="row grid_16 alpha">
+												<label class="legend">Oi Backup</label>
+												<div class="grid_4">
+													<label>Possui Banda Larga?*</label>
+													<div class="grid_4 alpha omega control-group">
+														<div class="grid_2 alpha">
+															<label class="radio inline">
+																<input type="radio" name="complementoCadastroDTO.cBackup.hasBandaLarga" id="hasBandaLargaYes" value="true"> Sim
+															</label>
+														</div>
+														<div class="grid_2 omega">
+															<label class="radio inline">
+																<input type="radio" name="complementoCadastroDTO.cBackup.hasBandaLarga" id="hasBandaLargaNo" value="false"> Não
+															</label>
+														</div>
+														<label class="help-inline" id="hasBandaLarga-error">Please correct the error</label>
+													</div>
+												</div>
+											</div>
+										</section>
+									</section>
+									<section class="bt-action">
+										<div class="row grid_16 alpha omega">
+											<div class="grid_12 alpha omega">&nbsp;</div>
+											<div class="grid_4 omega">
+												<button id="btnContinuar" type="submit" name="" value="" class="css3button gradient">Continuar</button>
+											</div>
+										</div>
+									</section>
+								</section>
+							</form>
+							<section class="vertical-form">
+								<label class="error" id="autenticacao-error" style="display: none;">Usuário e/ou senha inválidos</label>
+								<label class="error" id="autenticacao" style="display: none;">Usuário e/ou senha inválidos</label>
+
+								<form action="" class="vertical-form" id="formLoginOi" >
+									<section class="login oi" style="display:none;">
+										<div class="row grid_16 alpha omega">
+											<h3>Preencha os campos abaixo:</h3>
+										</div>
+										<section class="formLoginOi">
+											<div class="row grid_16 alpha omega pessoa">
+												<div class="grid_4 alpha control-group">
+													<label>Email ou usuário*</label>
+													<input id="loginoi_email" name="usuario.login" type="text" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_4 control-group">
+													<label>Senha*</label>
+													<input id="loginoi_senha" name="usuario.senha" type="password" class="required">
+													<label class="help-inline">Please correct the error</label>
+												</div>
+												<div class="grid_4 omega esqueci-senha bt-altera-email">
+													<a class="cancel forgetpass" href="/minhaconta/recuperar-dados"><i class="icon-forgotpass"></i> esqueci meus dados</a>
+												</div>
+											</div>
+										</section>
+										<section class="bt-action login" style="display:none;">
+											<div class="row grid_16 alpha omega">
+												<div class="grid_4 alpha omega">
+													<button type="submit" name="" value="" class="css3button gradient">Entrar</button>
+												</div>
+											</div>
+										</section>
+									</section>
+								</form>
+
+								<section class="login velox" style="display:none;">
+									<div class="row grid_16 alpha omega">
+										<h3>Escolha uma das opções abaixo:</h3>
+									</div>
+									<section id="formLoginVelox">
+										<div class="grid_16 alpha omega control-group label1">
+											<div class="grid_6 alpha radio">
+												<label class="radio inline small">
+													<input type="radio" name="opcaoLoginVelox" id="formVelox1" value="1"> Já me cadastrei na <strong>Oi Serviços Digitais</strong>
+												</label>
+											</div>
+											<div class="grid_6 omega">
+												<label class="radio inline small">
+													<input type="radio" name="opcaoLoginVelox" id="formVelox2" value="2"> É minha primeira vez aqui
+												</label>
+											</div>
+											<label class="help-inline">Please correct the error</label>
+										</div>
+										<form action="" class="vertical-form login-velox-oi" id="formLoginOiVelox" >
+											<section>
+												<div class="row grid_16 alpha omega pessoa">
+													<div class="grid_4 alpha control-group">
+														<label>E-Mail ou Usuário*</label>
+														<input id="loginoivelox_usuario" name="login" type="text" class="required">
+														<label class="help-inline">Please correct the error</label>
+													</div>
+													<div class="grid_4 control-group">
+														<label>Senha*</label>
+														<input id="loginoivelox_senha" name="senha" type="password" class="required">
+														<label class="help-inline">Please correct the error</label>
+													</div>
+													<div class="grid_4 omega esqueci-senha bt-altera-email">
+														<a class="cancel forgetpass" href="/minhaconta/recuperar-dados"><i class="icon-forgotpass"></i> esqueci meus dados</a>
+													</div>
+												</div>
+											</section>
+											<section class="bt-action login" style="display:none;">
+												<div class="row grid_16 alpha omega">
+													<div class="grid_4 alpha omega">
+														<button type="submit" name="" value="" class="css3button gradient">Entrar</button>
+													</div>
+												</div>
+											</section>
+										</form>
+										<form action="" class="vertical-form first-time-velox" id="formLoginVelox2" style="display:none;">
+											<section>
+												<h4>É sua primeira vez aqui? Preencha os campos abaixo:</h4>
+												<div class="row grid_16 alpha omega pessoa">
+													<div class="grid_4 control-group">
+														<label>DDD + Telefone*</label>
+														<input id="loginvelox_telefone" name="telefone" type="text" class="required">
+														<label class="help-inline">Please correct the error</label>
+													</div>
+													<div class="grid_4 alpha control-group">
+														<label>CPF/CNPJ*</label>
+														<input id="loginvelox_cpf" name="cpf" type="text" class="required">
+														<label class="help-inline">Please correct the error</label>
+													</div>
+												</div>
+											</section>
+											<section class="bt-action login" style="display:none;">
+												<div class="row grid_16 alpha omega">
+													<div class="grid_4 alpha omega">
+														<button type="submit" name="" value="" class="css3button gradient">Entrar</button>
+													</div>
+												</div>
+											</section>
+										</form>
+									</section>
+								</section>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,355 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'npm-sudo-fix' ]
+2 info using npm@2.0.0
+3 info using node@v0.10.32
+4 verbose node symlink /usr/local/bin/node
+5 verbose cache add [ 'npm-sudo-fix', null ]
+6 verbose cache add spec="npm-sudo-fix" args=["npm-sudo-fix",null]
+7 verbose parsed spec { raw: 'npm-sudo-fix',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: 'npm-sudo-fix',
+7 verbose parsed spec   rawSpec: '',
+7 verbose parsed spec   spec: '*',
+7 verbose parsed spec   type: 'range' }
+8 verbose parsed spec { raw: 'npm-sudo-fix',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: 'npm-sudo-fix',
+8 verbose parsed spec   rawSpec: '',
+8 verbose parsed spec   spec: '*',
+8 verbose parsed spec   type: 'range' }
+9 verbose addNamed [ 'npm-sudo-fix', '*' ]
+10 verbose addNamed [ null, '*' ]
+11 silly lockFile 531b49e0-npm-sudo-fix npm-sudo-fix@*
+12 verbose lock npm-sudo-fix@* /Users/filipesilva/.npm/531b49e0-npm-sudo-fix.lock
+13 silly addNameRange { name: 'npm-sudo-fix', range: '*', hasData: false }
+14 verbose mapToRegistry name npm-sudo-fix
+15 verbose mapToRegistry uri https://registry.npmjs.org/npm-sudo-fix
+16 silly addNameRange number 2 { name: 'npm-sudo-fix', range: '*', hasData: true }
+17 silly addNameRange versions [ 'npm-sudo-fix', [ '0.1.0', '0.1.1' ] ]
+18 verbose addNamed [ 'npm-sudo-fix', '0.1.1' ]
+19 verbose addNamed [ '0.1.1', '0.1.1' ]
+20 silly lockFile 5e55d2dd-npm-sudo-fix-0-1-1 npm-sudo-fix@0.1.1
+21 verbose lock npm-sudo-fix@0.1.1 /Users/filipesilva/.npm/5e55d2dd-npm-sudo-fix-0-1-1.lock
+22 silly lockFile 541eadf1--sudo-fix-npm-sudo-fix-0-1-1-tgz https://registry.npmjs.org/npm-sudo-fix/-/npm-sudo-fix-0.1.1.tgz
+23 verbose lock https://registry.npmjs.org/npm-sudo-fix/-/npm-sudo-fix-0.1.1.tgz /Users/filipesilva/.npm/541eadf1--sudo-fix-npm-sudo-fix-0-1-1-tgz.lock
+24 verbose addRemoteTarball [ 'https://registry.npmjs.org/npm-sudo-fix/-/npm-sudo-fix-0.1.1.tgz',
+24 verbose addRemoteTarball   'c9a375fbaa69128d4b84d4470e6754f95bbdcafe' ]
+25 info retry fetch attempt 1 at 12:10:50
+26 silly fetchAndShaCheck shasum c9a375fbaa69128d4b84d4470e6754f95bbdcafe
+27 silly lockFile 541eadf1--sudo-fix-npm-sudo-fix-0-1-1-tgz https://registry.npmjs.org/npm-sudo-fix/-/npm-sudo-fix-0.1.1.tgz
+28 silly lockFile 541eadf1--sudo-fix-npm-sudo-fix-0-1-1-tgz https://registry.npmjs.org/npm-sudo-fix/-/npm-sudo-fix-0.1.1.tgz
+29 silly lockFile 5e55d2dd-npm-sudo-fix-0-1-1 npm-sudo-fix@0.1.1
+30 silly lockFile 5e55d2dd-npm-sudo-fix-0-1-1 npm-sudo-fix@0.1.1
+31 silly lockFile 531b49e0-npm-sudo-fix npm-sudo-fix@*
+32 silly lockFile 531b49e0-npm-sudo-fix npm-sudo-fix@*
+33 silly resolved [ { name: 'npm-sudo-fix',
+33 silly resolved     version: '0.1.1',
+33 silly resolved     description: 'A simple module for fixing permissions so that you can run npm without sudo.',
+33 silly resolved     main: 'index.js',
+33 silly resolved     bin: { 'npm-sudo-fix': 'index.js' },
+33 silly resolved     repository:
+33 silly resolved      { type: 'git',
+33 silly resolved        url: 'https://github.com/danielchatfield/npm-sudo-fix.git' },
+33 silly resolved     author: { name: 'http://danielchatfield.com' },
+33 silly resolved     license: 'Artistic-2.0',
+33 silly resolved     bugs: { url: 'https://github.com/danielchatfield/npm-sudo-fix/issues' },
+33 silly resolved     dependencies: { spawny: '0.0.1' },
+33 silly resolved     _id: 'npm-sudo-fix@0.1.1',
+33 silly resolved     dist:
+33 silly resolved      { shasum: 'c9a375fbaa69128d4b84d4470e6754f95bbdcafe',
+33 silly resolved        tarball: 'http://registry.npmjs.org/npm-sudo-fix/-/npm-sudo-fix-0.1.1.tgz' },
+33 silly resolved     _from: 'npm-sudo-fix@*',
+33 silly resolved     _npmVersion: '1.3.11',
+33 silly resolved     _npmUser: { name: 'danielchatfield', email: 'chatfielddaniel@gmail.com' },
+33 silly resolved     maintainers: [ [Object] ],
+33 silly resolved     directories: {},
+33 silly resolved     _shasum: 'c9a375fbaa69128d4b84d4470e6754f95bbdcafe',
+33 silly resolved     _resolved: 'https://registry.npmjs.org/npm-sudo-fix/-/npm-sudo-fix-0.1.1.tgz' } ]
+34 info install npm-sudo-fix@0.1.1 into /usr/local/lib
+35 info installOne npm-sudo-fix@0.1.1
+36 verbose lib/node_modules/npm-sudo-fix unbuild
+37 verbose gentlyRm vacuuming /usr/local/lib/node_modules/npm-sudo-fix
+38 verbose tar unpack /Users/filipesilva/.npm/npm-sudo-fix/0.1.1/package.tgz
+39 silly lockFile c01d3885-al-lib-node-modules-npm-sudo-fix tar:///usr/local/lib/node_modules/npm-sudo-fix
+40 verbose lock tar:///usr/local/lib/node_modules/npm-sudo-fix /Users/filipesilva/.npm/c01d3885-al-lib-node-modules-npm-sudo-fix.lock
+41 silly lockFile 764b80f5-m-npm-sudo-fix-0-1-1-package-tgz tar:///Users/filipesilva/.npm/npm-sudo-fix/0.1.1/package.tgz
+42 verbose lock tar:///Users/filipesilva/.npm/npm-sudo-fix/0.1.1/package.tgz /Users/filipesilva/.npm/764b80f5-m-npm-sudo-fix-0-1-1-package-tgz.lock
+43 verbose gentlyRm vacuuming /usr/local/lib/node_modules/npm-sudo-fix
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry .npmignore
+47 silly gunzTarPerm extractEntry index.js
+48 silly gunzTarPerm extractEntry readme.md
+49 silly lockFile c01d3885-al-lib-node-modules-npm-sudo-fix tar:///usr/local/lib/node_modules/npm-sudo-fix
+50 silly lockFile c01d3885-al-lib-node-modules-npm-sudo-fix tar:///usr/local/lib/node_modules/npm-sudo-fix
+51 silly lockFile 764b80f5-m-npm-sudo-fix-0-1-1-package-tgz tar:///Users/filipesilva/.npm/npm-sudo-fix/0.1.1/package.tgz
+52 silly lockFile 764b80f5-m-npm-sudo-fix-0-1-1-package-tgz tar:///Users/filipesilva/.npm/npm-sudo-fix/0.1.1/package.tgz
+53 info preinstall npm-sudo-fix@0.1.1
+54 verbose readDependencies using package.json deps
+55 verbose readDependencies using package.json deps
+56 verbose cache add [ 'spawny@0.0.1', null ]
+57 verbose cache add spec="spawny@0.0.1" args=["spawny@0.0.1",null]
+58 verbose parsed spec { raw: 'spawny@0.0.1',
+58 verbose parsed spec   scope: null,
+58 verbose parsed spec   name: 'spawny',
+58 verbose parsed spec   rawSpec: '0.0.1',
+58 verbose parsed spec   spec: '0.0.1',
+58 verbose parsed spec   type: 'version' }
+59 verbose parsed spec { raw: 'spawny@0.0.1',
+59 verbose parsed spec   scope: null,
+59 verbose parsed spec   name: 'spawny',
+59 verbose parsed spec   rawSpec: '0.0.1',
+59 verbose parsed spec   spec: '0.0.1',
+59 verbose parsed spec   type: 'version' }
+60 verbose addNamed [ 'spawny', '0.0.1' ]
+61 verbose addNamed [ '0.0.1', '0.0.1' ]
+62 silly lockFile 28f47eb2-spawny-0-0-1 spawny@0.0.1
+63 verbose lock spawny@0.0.1 /Users/filipesilva/.npm/28f47eb2-spawny-0-0-1.lock
+64 verbose mapToRegistry name spawny
+65 verbose mapToRegistry uri https://registry.npmjs.org/spawny
+66 silly lockFile 4e1f9cb0-pmjs-org-spawny-spawny-0-0-1-tgz https://registry.npmjs.org/spawny/-/spawny-0.0.1.tgz
+67 verbose lock https://registry.npmjs.org/spawny/-/spawny-0.0.1.tgz /Users/filipesilva/.npm/4e1f9cb0-pmjs-org-spawny-spawny-0-0-1-tgz.lock
+68 verbose addRemoteTarball [ 'https://registry.npmjs.org/spawny/-/spawny-0.0.1.tgz',
+68 verbose addRemoteTarball   '0d57f23baa14644a890bb93707b5d6e05882bf52' ]
+69 info retry fetch attempt 1 at 12:10:52
+70 silly fetchAndShaCheck shasum 0d57f23baa14644a890bb93707b5d6e05882bf52
+71 silly lockFile 4e1f9cb0-pmjs-org-spawny-spawny-0-0-1-tgz https://registry.npmjs.org/spawny/-/spawny-0.0.1.tgz
+72 silly lockFile 4e1f9cb0-pmjs-org-spawny-spawny-0-0-1-tgz https://registry.npmjs.org/spawny/-/spawny-0.0.1.tgz
+73 silly lockFile 28f47eb2-spawny-0-0-1 spawny@0.0.1
+74 silly lockFile 28f47eb2-spawny-0-0-1 spawny@0.0.1
+75 silly resolved [ { name: 'spawny',
+75 silly resolved     version: '0.0.1',
+75 silly resolved     main: 'lib/spawny.js',
+75 silly resolved     description: 'A small wrapper around child_process.spawn with some helpful features.',
+75 silly resolved     homepage: 'https://github.com/danielchatfield/node-spawny',
+75 silly resolved     bugs: { url: 'https://github.com/danielchatfield/spawny/issues' },
+75 silly resolved     author:
+75 silly resolved      { name: 'Daniel Chatfield',
+75 silly resolved        email: 'chatfielddaniel@gmail.com',
+75 silly resolved        url: 'https://github.com/danielchatfield/' },
+75 silly resolved     repository:
+75 silly resolved      { type: 'git',
+75 silly resolved        url: 'https://github.com/danielchatfield/spawny' },
+75 silly resolved     licenses: [ [Object] ],
+75 silly resolved     dependencies: { cmdify: '~0.0.4' },
+75 silly resolved     devDependencies:
+75 silly resolved      { 'grunt-contrib-jshint': '~0.6.0',
+75 silly resolved        'grunt-contrib-nodeunit': '~0.2.0',
+75 silly resolved        'grunt-contrib-watch': '~0.5.0' },
+75 silly resolved     readme: '# spawny [![Build Status](https://secure.travis-ci.org/danielchatfield/node-spawny.png?branch=master)](http://travis-ci.org/danielchatfield/node-spawny)\n\nA small wrapper around child_process.spawn with some helpful features.\n\n## Getting Started\nInstall the module with: `npm install spawny`\n\n```javascript\nvar spawny = require(\'spawny\');\nspawny(\'npm version patch\', true, cb);\n```\n\n## Usage\n\n### spawny(command, useCmdify, callback)\n\n#### Arguments\n\n * __command__ - The command that you would type into the terminal\n * __useCmdify__ - whether `cmdify` should be called on the command (required for some scripts to work on windows). Defaults to false.\n * callback - the callback to be called when the process terminates\n\n## Features\n\n * Pipes stdio into child process\n * Simplifies API (at cost of flexibility)\n\n\n## License\nCopyright (c) 2013 Daniel Chatfield. Licensed under the MIT license.\n',
+75 silly resolved     readmeFilename: 'README.md',
+75 silly resolved     _id: 'spawny@0.0.1',
+75 silly resolved     dist:
+75 silly resolved      { shasum: '0d57f23baa14644a890bb93707b5d6e05882bf52',
+75 silly resolved        tarball: 'http://registry.npmjs.org/spawny/-/spawny-0.0.1.tgz' },
+75 silly resolved     _from: 'spawny@0.0.1',
+75 silly resolved     _npmVersion: '1.3.5',
+75 silly resolved     _npmUser: { name: 'danielchatfield', email: 'chatfielddaniel@gmail.com' },
+75 silly resolved     maintainers: [ [Object] ],
+75 silly resolved     directories: {},
+75 silly resolved     _shasum: '0d57f23baa14644a890bb93707b5d6e05882bf52',
+75 silly resolved     _resolved: 'https://registry.npmjs.org/spawny/-/spawny-0.0.1.tgz' } ]
+76 info install spawny@0.0.1 into /usr/local/lib/node_modules/npm-sudo-fix
+77 info installOne spawny@0.0.1
+78 verbose lib/node_modules/npm-sudo-fix/node_modules/spawny unbuild
+79 verbose gentlyRm vacuuming /usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny
+80 verbose tar unpack /Users/filipesilva/.npm/spawny/0.0.1/package.tgz
+81 silly lockFile df78c8cc-npm-sudo-fix-node-modules-spawny tar:///usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny
+82 verbose lock tar:///usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny /Users/filipesilva/.npm/df78c8cc-npm-sudo-fix-node-modules-spawny.lock
+83 silly lockFile f62cb048-lva-npm-spawny-0-0-1-package-tgz tar:///Users/filipesilva/.npm/spawny/0.0.1/package.tgz
+84 verbose lock tar:///Users/filipesilva/.npm/spawny/0.0.1/package.tgz /Users/filipesilva/.npm/f62cb048-lva-npm-spawny-0-0-1-package-tgz.lock
+85 verbose gentlyRm vacuuming /usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny
+86 silly gunzTarPerm modes [ '755', '644' ]
+87 silly gunzTarPerm extractEntry package.json
+88 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+89 silly gunzTarPerm extractEntry .npmignore
+90 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+91 silly gunzTarPerm extractEntry README.md
+92 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+93 silly gunzTarPerm extractEntry LICENSE
+94 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+95 silly gunzTarPerm extractEntry Gruntfile.js
+96 silly gunzTarPerm modified mode [ 'Gruntfile.js', 438, 420 ]
+97 silly gunzTarPerm extractEntry .jshintrc
+98 silly gunzTarPerm modified mode [ '.jshintrc', 438, 420 ]
+99 silly gunzTarPerm extractEntry .travis.yml
+100 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+101 silly gunzTarPerm extractEntry lib/spawny.js
+102 silly gunzTarPerm modified mode [ 'lib/spawny.js', 438, 420 ]
+103 silly gunzTarPerm extractEntry test/spawny_test.js
+104 silly gunzTarPerm modified mode [ 'test/spawny_test.js', 438, 420 ]
+105 silly lockFile df78c8cc-npm-sudo-fix-node-modules-spawny tar:///usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny
+106 silly lockFile df78c8cc-npm-sudo-fix-node-modules-spawny tar:///usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny
+107 silly lockFile f62cb048-lva-npm-spawny-0-0-1-package-tgz tar:///Users/filipesilva/.npm/spawny/0.0.1/package.tgz
+108 silly lockFile f62cb048-lva-npm-spawny-0-0-1-package-tgz tar:///Users/filipesilva/.npm/spawny/0.0.1/package.tgz
+109 info preinstall spawny@0.0.1
+110 verbose readDependencies using package.json deps
+111 verbose readDependencies using package.json deps
+112 verbose cache add [ 'cmdify@~0.0.4', null ]
+113 verbose cache add spec="cmdify@~0.0.4" args=["cmdify@~0.0.4",null]
+114 verbose parsed spec { raw: 'cmdify@~0.0.4',
+114 verbose parsed spec   scope: null,
+114 verbose parsed spec   name: 'cmdify',
+114 verbose parsed spec   rawSpec: '~0.0.4',
+114 verbose parsed spec   spec: '>=0.0.4 <0.1.0',
+114 verbose parsed spec   type: 'range' }
+115 verbose parsed spec { raw: 'cmdify@~0.0.4',
+115 verbose parsed spec   scope: null,
+115 verbose parsed spec   name: 'cmdify',
+115 verbose parsed spec   rawSpec: '~0.0.4',
+115 verbose parsed spec   spec: '>=0.0.4 <0.1.0',
+115 verbose parsed spec   type: 'range' }
+116 verbose addNamed [ 'cmdify', '>=0.0.4 <0.1.0' ]
+117 verbose addNamed [ null, '>=0.0.4 <0.1.0' ]
+118 silly lockFile 6085c4ed-cmdify-0-0-4-0-1-0 cmdify@>=0.0.4 <0.1.0
+119 verbose lock cmdify@>=0.0.4 <0.1.0 /Users/filipesilva/.npm/6085c4ed-cmdify-0-0-4-0-1-0.lock
+120 silly addNameRange { name: 'cmdify', range: '>=0.0.4 <0.1.0', hasData: false }
+121 verbose mapToRegistry name cmdify
+122 verbose mapToRegistry uri https://registry.npmjs.org/cmdify
+123 silly addNameRange number 2 { name: 'cmdify', range: '>=0.0.4 <0.1.0', hasData: true }
+124 silly addNameRange versions [ 'cmdify', [ '0.0.1', '0.0.4' ] ]
+125 verbose addNamed [ 'cmdify', '0.0.4' ]
+126 verbose addNamed [ '0.0.4', '0.0.4' ]
+127 silly lockFile e009886d-cmdify-0-0-4 cmdify@0.0.4
+128 verbose lock cmdify@0.0.4 /Users/filipesilva/.npm/e009886d-cmdify-0-0-4.lock
+129 silly lockFile 69fb6198-pmjs-org-cmdify-cmdify-0-0-4-tgz https://registry.npmjs.org/cmdify/-/cmdify-0.0.4.tgz
+130 verbose lock https://registry.npmjs.org/cmdify/-/cmdify-0.0.4.tgz /Users/filipesilva/.npm/69fb6198-pmjs-org-cmdify-cmdify-0-0-4-tgz.lock
+131 verbose addRemoteTarball [ 'https://registry.npmjs.org/cmdify/-/cmdify-0.0.4.tgz',
+131 verbose addRemoteTarball   '268d2a60afe026a8c33d3fbbacf0f7038c6113d2' ]
+132 info retry fetch attempt 1 at 12:10:54
+133 silly fetchAndShaCheck shasum 268d2a60afe026a8c33d3fbbacf0f7038c6113d2
+134 silly lockFile 69fb6198-pmjs-org-cmdify-cmdify-0-0-4-tgz https://registry.npmjs.org/cmdify/-/cmdify-0.0.4.tgz
+135 silly lockFile 69fb6198-pmjs-org-cmdify-cmdify-0-0-4-tgz https://registry.npmjs.org/cmdify/-/cmdify-0.0.4.tgz
+136 silly lockFile e009886d-cmdify-0-0-4 cmdify@0.0.4
+137 silly lockFile e009886d-cmdify-0-0-4 cmdify@0.0.4
+138 silly lockFile 6085c4ed-cmdify-0-0-4-0-1-0 cmdify@>=0.0.4 <0.1.0
+139 silly lockFile 6085c4ed-cmdify-0-0-4-0-1-0 cmdify@>=0.0.4 <0.1.0
+140 silly resolved [ { name: 'cmdify',
+140 silly resolved     version: '0.0.4',
+140 silly resolved     description: 'A small utility to help make spawning cross platform.',
+140 silly resolved     homepage: 'https://github.com/danielchatfield/node-cmdify',
+140 silly resolved     bugs: { url: 'https://github.com/danielchatfield/cmdify/issues' },
+140 silly resolved     main: 'lib/cmdify.js',
+140 silly resolved     author:
+140 silly resolved      { name: 'Daniel Chatfield',
+140 silly resolved        email: 'chatfielddaniel@gmail.com',
+140 silly resolved        url: 'https://github.com/danielchatfield/' },
+140 silly resolved     repository:
+140 silly resolved      { type: 'git',
+140 silly resolved        url: 'https://github.com/danielchatfield/cmdify' },
+140 silly resolved     licenses: [ [Object] ],
+140 silly resolved     devDependencies:
+140 silly resolved      { 'grunt-contrib-jshint': '~0.6.0',
+140 silly resolved        'grunt-contrib-watch': '~0.5.0' },
+140 silly resolved     readme: '# cmdify [![Build Status](https://secure.travis-ci.org/danielchatfield/node-cmdify.png?branch=master)](http://travis-ci.org/danielchatfield/node-cmdify)\n\nA small utility to help make spawning cross platform.\n\n## Getting Started\nInstall the module with: `npm install cmdify`\n\n```javascript\nvar cmdify = require(\'cmdify\');\n\ncmdify(\'npm version patch\') // on windows returns \'npm.cmd version patch\'\n```\n\n## License\nCopyright (c) 2013 Daniel Chatfield. Licensed under the MIT license.\n',
+140 silly resolved     readmeFilename: 'README.md',
+140 silly resolved     _id: 'cmdify@0.0.4',
+140 silly resolved     dist:
+140 silly resolved      { shasum: '268d2a60afe026a8c33d3fbbacf0f7038c6113d2',
+140 silly resolved        tarball: 'http://registry.npmjs.org/cmdify/-/cmdify-0.0.4.tgz' },
+140 silly resolved     _from: 'cmdify@>=0.0.4 <0.1.0',
+140 silly resolved     _npmVersion: '1.3.5',
+140 silly resolved     _npmUser: { name: 'danielchatfield', email: 'chatfielddaniel@gmail.com' },
+140 silly resolved     maintainers: [ [Object] ],
+140 silly resolved     directories: {},
+140 silly resolved     _shasum: '268d2a60afe026a8c33d3fbbacf0f7038c6113d2',
+140 silly resolved     _resolved: 'https://registry.npmjs.org/cmdify/-/cmdify-0.0.4.tgz' } ]
+141 info install cmdify@0.0.4 into /usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny
+142 info installOne cmdify@0.0.4
+143 verbose lib/node_modules/npm-sudo-fix/node_modules/spawny/node_modules/cmdify unbuild
+144 verbose gentlyRm vacuuming /usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny/node_modules/cmdify
+145 verbose tar unpack /Users/filipesilva/.npm/cmdify/0.0.4/package.tgz
+146 silly lockFile 5c40d3a2-dules-spawny-node-modules-cmdify tar:///usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny/node_modules/cmdify
+147 verbose lock tar:///usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny/node_modules/cmdify /Users/filipesilva/.npm/5c40d3a2-dules-spawny-node-modules-cmdify.lock
+148 silly lockFile 1c79940b-lva-npm-cmdify-0-0-4-package-tgz tar:///Users/filipesilva/.npm/cmdify/0.0.4/package.tgz
+149 verbose lock tar:///Users/filipesilva/.npm/cmdify/0.0.4/package.tgz /Users/filipesilva/.npm/1c79940b-lva-npm-cmdify-0-0-4-package-tgz.lock
+150 verbose gentlyRm vacuuming /usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny/node_modules/cmdify
+151 silly gunzTarPerm modes [ '755', '644' ]
+152 silly gunzTarPerm extractEntry package.json
+153 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+154 silly gunzTarPerm extractEntry .npmignore
+155 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+156 silly gunzTarPerm extractEntry README.md
+157 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+158 silly gunzTarPerm extractEntry Gruntfile.js
+159 silly gunzTarPerm modified mode [ 'Gruntfile.js', 438, 420 ]
+160 silly gunzTarPerm extractEntry .gitattributes
+161 silly gunzTarPerm modified mode [ '.gitattributes', 438, 420 ]
+162 silly gunzTarPerm extractEntry .jshintrc
+163 silly gunzTarPerm modified mode [ '.jshintrc', 438, 420 ]
+164 silly gunzTarPerm extractEntry .travis.yml
+165 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+166 silly gunzTarPerm extractEntry lib/cmdify.js
+167 silly gunzTarPerm modified mode [ 'lib/cmdify.js', 438, 420 ]
+168 silly lockFile 5c40d3a2-dules-spawny-node-modules-cmdify tar:///usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny/node_modules/cmdify
+169 silly lockFile 5c40d3a2-dules-spawny-node-modules-cmdify tar:///usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny/node_modules/cmdify
+170 silly lockFile 1c79940b-lva-npm-cmdify-0-0-4-package-tgz tar:///Users/filipesilva/.npm/cmdify/0.0.4/package.tgz
+171 silly lockFile 1c79940b-lva-npm-cmdify-0-0-4-package-tgz tar:///Users/filipesilva/.npm/cmdify/0.0.4/package.tgz
+172 info preinstall cmdify@0.0.4
+173 verbose readDependencies using package.json deps
+174 verbose readDependencies using package.json deps
+175 silly resolved []
+176 verbose about to build /usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny/node_modules/cmdify
+177 info build /usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny/node_modules/cmdify
+178 verbose linkStuff [ true,
+178 verbose linkStuff   '/usr/local/lib/node_modules',
+178 verbose linkStuff   false,
+178 verbose linkStuff   '/usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny/node_modules' ]
+179 info linkStuff cmdify@0.0.4
+180 verbose linkBins cmdify@0.0.4
+181 verbose linkMans cmdify@0.0.4
+182 verbose rebuildBundles cmdify@0.0.4
+183 info install cmdify@0.0.4
+184 info postinstall cmdify@0.0.4
+185 verbose about to build /usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny
+186 info build /usr/local/lib/node_modules/npm-sudo-fix/node_modules/spawny
+187 verbose linkStuff [ true,
+187 verbose linkStuff   '/usr/local/lib/node_modules',
+187 verbose linkStuff   false,
+187 verbose linkStuff   '/usr/local/lib/node_modules/npm-sudo-fix/node_modules' ]
+188 info linkStuff spawny@0.0.1
+189 verbose linkBins spawny@0.0.1
+190 verbose linkMans spawny@0.0.1
+191 verbose rebuildBundles spawny@0.0.1
+192 verbose rebuildBundles [ 'cmdify' ]
+193 info install spawny@0.0.1
+194 info postinstall spawny@0.0.1
+195 verbose about to build /usr/local/lib/node_modules/npm-sudo-fix
+196 info build /usr/local/lib/node_modules/npm-sudo-fix
+197 verbose linkStuff [ true,
+197 verbose linkStuff   '/usr/local/lib/node_modules',
+197 verbose linkStuff   true,
+197 verbose linkStuff   '/usr/local/lib/node_modules' ]
+198 info linkStuff npm-sudo-fix@0.1.1
+199 verbose linkBins npm-sudo-fix@0.1.1
+200 verbose link bins [ { 'npm-sudo-fix': 'index.js' }, '/usr/local/bin', true ]
+201 verbose linkMans npm-sudo-fix@0.1.1
+202 verbose rebuildBundles npm-sudo-fix@0.1.1
+203 verbose rebuildBundles [ 'spawny' ]
+204 verbose gentlyRm verifying that /usr/local/lib/node_modules/npm-sudo-fix is managed by npm
+205 silly cacheAndTest /usr/local/lib/node_modules/npm-sudo-fix is inside /usr/local/lib/node_modules
+206 silly gentlyRm /usr/local/lib/node_modules/npm-sudo-fix is managed by npm
+207 silly gentlyRm /usr/local/bin/npm-sudo-fix is not under /usr/local/lib/node_modules/npm-sudo-fix
+208 silly gentlyRm checking to see if /usr/local/bin/npm-sudo-fix is a link
+209 info install npm-sudo-fix@0.1.1
+210 info postinstall npm-sudo-fix@0.1.1
+211 verbose stack Error: The package npmconf does not satisfy its siblings' peerDependencies requirements!
+211 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:98:32
+211 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:202:5
+211 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+211 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+211 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+211 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+211 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+211 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+211 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+211 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+212 verbose cwd /Users/filipesilva/www/imoi-frontend
+213 error Darwin 13.4.0
+214 error argv "node" "/usr/local/bin/npm" "install" "-g" "npm-sudo-fix"
+215 error node v0.10.32
+216 error npm  v2.0.0
+217 error code EPEERINVALID
+218 error peerinvalid The package npmconf does not satisfy its siblings' peerDependencies requirements!
+218 error peerinvalid Peer npm-registry-client@3.2.2 wants npmconf@^2.1.0
+219 verbose exit [ 1, true ]

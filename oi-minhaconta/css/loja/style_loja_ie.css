@@ -1,0 +1,64 @@
+#wraper .boxProdutos .combo {
+	margin-right: 10px;
+}
+
+/* checkout */
+section#checkout div.sign-form li {
+	padding-left: 15px;
+}
+
+.step .banco select {
+	width: 190px;
+}
+
+.tabContainerMinhaConta nav#tabDados li.informacoes a {width: 225px;}
+
+.grid_17_ie{
+	width: 670px;
+}
+
+.submit.cancel {
+	background: #7d7fc8;
+	background: -ms-linear-gradient(top, #7d7fc8, #585b9f);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7fc8',endColorstr='#585b9f');
+	color: #fff;
+	border: 1px solid #dcdcdc;
+	padding: 9px 31px;
+	font-size: 12px;
+}
+
+.submit.small,
+.submit.small.cancel {
+	font-size: 12px;
+	padding: 5px 19px;
+	background: #7d7fc8;
+	background: -ms-linear-gradient(top, #7d7fc8, #585b9f);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7fc8',endColorstr='#585b9f');
+	color: #fff;
+}
+.frm-grp .frm-row input[type="text"], #dadosSenha .frm-grp .frm-row input[type="password"], .frm-grp .frm-row select {
+line-height: 23px;
+}
+.tabContainerMinhaConta ul.dropdown li a:hover,
+.tabContainerMinhaConta ul.dropdown li.selected a {
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #7d7da9;
+	border-bottom: none;
+	background: transparent;
+	background: -ms-linear-gradient(top, #9698cf, #575791);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9698cf',endColorstr='#575791');
+}
+.tabContainerMinhaConta ul.sub-dropdown li a:hover,
+.tabContainerMinhaConta ul.sub-dropdown li.selected a {
+	background: #ffffff; 
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 4px 6px;
+	color: #404041;
+	text-align: left;
+	text-decoration: none;
+	border: none;
+}
+

@@ -1,0 +1,25 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.sublime-*"
+			],
+			"folder_exclude_patterns":
+			[
+				"dist",
+				".tmp",
+				"tmp",
+				"bower_components",
+				"node_modules"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"afn_use_project_root": true
+	}
+}

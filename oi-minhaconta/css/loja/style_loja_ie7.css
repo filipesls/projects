@@ -1,0 +1,74 @@
+#header span#contadorCarrinho {
+	padding: 0;
+	width: 8px;
+	height: 2px
+}
+
+#header .tools_acesse a.menuTitle{
+	background: url(/images/sprite.png) 0 0 no-repeat;
+}
+
+#wraper .boxProdutos .combo .equalize {
+	height: 200px !important
+}
+
+#highlight-interna .banner .banner-modelo {
+	position: relative;
+	top: -150px;
+	width: 242px;
+}
+
+.submit-n1,
+.submit-n2,
+.submit-n3,
+.submit-planos {
+	border: none
+}
+
+/* CHECKOUT */
+section#checkout div.steps li,
+section#checkout div.sign-form li {
+	float: left
+}
+
+section.cadastro.pf .radio {
+	width: auto;
+	padding-right: 25px !important;
+	zoom: 1
+}
+
+.produtoHead {
+	padding-top: 15px;
+	height: 34px
+}
+
+.produtoCarrinhoVazio {
+	padding-top: 70px;
+	height: 100px;
+}
+
+.produtoItens .tipo .precoProduto {
+	position: relative;
+	top: 0;
+	line-height: 56px !important;
+}
+
+.produtoItens .aceite {
+	width: 880px;
+}
+
+.finalizarCompra {
+	margin-top: 45px
+}
+
+.finalizarCompra a.submit-finalizarCompra {
+	display: inline-block;
+	padding: 14px 32px;
+}
+
+section#checkout DIV.main-form SMALL {}
+
+/* MINHA CONTA */
+nav#tabMinhaConta {
+	left: 155px
+}

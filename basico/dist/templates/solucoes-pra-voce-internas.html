@@ -1,0 +1,86 @@
+<script id="solucoes-pra-voce-internas" type="text/template">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="breadcrumb">
+                <li>Internet</li>
+                <li>Mais Serviços pra Internet</li>
+                <li>Loja de Serviços</li>
+                <li>Página Interna</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-interna">
+        <div id="carrinho" class="row">
+
+        </div>
+
+        <div class="row">
+            <%= destaqueInternas %>
+        </div>
+    </div>
+
+    <div class="row">
+        <%= principaisVantagens %>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box-conheca-tambem">
+                <h4 class="ffarial fs20 fcpreto">Conheça também</h4>
+                <ul class="banners no-padding">
+                    <li><a href=""><img src="assets/img/banner-suporte-remoto.png" border="0"></a></li>
+                    <li><a href="#"><img src="assets/img/banner-seguranca-multidispositivo2.png" border="0"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="item-destaque-internas" type="text/template">
+    <div id="" class="col-xs-5">
+        <img src="<%= imagens.descricao %>" alt="">
+    </div>
+    <div id="" class="col-xs-7 descricao-servico">
+        <h2 class="ffarial fs26 fcpreto fbold"><%= title%></h2>
+        <p class="ffarial fs12 fccinza2"><%= description %></p>
+        <p class="ffarial fs14 fccinza2 info">por apenas</p>
+        <div class="box-valores">
+            <span class="ffarial fs20 fccinza3 fbold">R$</span>
+            <span class="ffarial fs60 fccinza3 fbold"><%= ammount.split(',')[0] %></span>
+            <span class="ffarial fs18 fccinza3 fbold">,<%= ammount.split(',')[1] %>/mês</span>
+        </div>
+        <div class="box-botao-compre-agora"><button type="button" class="btn btn-compre-agora bg-btn-roxo ffarial fs12 fcbranco fbold" data-toggle="button">Compre agora</button></div>
+    </div>
+</script>
+
+<script id="banner-conheca-tambem" type="text/template">
+    <div id="" class="col-xs-12">
+        <h4 class="ffarial fs20 fcpreto">Conheça também</h4>
+        <ul class="banners no-padding">
+            <% _.each(itens, function(item){ %>
+                <li><a href="<%= banner1Url %>"><img src="<%= banner1Img %>" border="0"></a></li>
+                <li><img src="assets/img/ico-ok.png" border="0" /> </span> <p class="ffarial fs14 fccinza2"><%= item %></p></li>
+            <% }); %>
+            <li><a href="<%= banner1Url %>"><img src="<%= banner1Img %>" border="0"></a></li>
+            <li><a href="<%= banner2Url %>"><img src="<%= banner2Img %>" border="0"></a></li>
+        </ul>
+    </div>
+</script>
+
+<script id="principais-vantagens" type="text/template">
+    <div class="col-xs-7">
+        <h3 class="ffarial fs24 fcpreto fbold">Principais Vantagens</h3>
+        <ul class="principais-vantagens">
+            <% _.each(itens, function(item){ %>
+                <li><img src="<%= icoTick %>" border="0" /> </span> <p class="ffarial fs14 fccinza2"><%= item %></p></li>
+            <% }); %>
+        </ul>
+    </div>
+    <div class="col-xs-5">
+        <div class="img-destaque">
+            <img src="<%= imagens.vantagens %>" alt="Principais Vantagens" border="0">
+        </div>
+    </div>
+</script>

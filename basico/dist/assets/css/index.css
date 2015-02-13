@@ -1,0 +1,111 @@
+/* Font Family */
+/* Font Style */
+/* Font Color */
+/* Font Size */
+.ffarial {
+  font-family: Arial;
+}
+
+.fbold {
+  font-weight: bold;
+}
+
+.fsubl {
+  text-decoration: underline;
+}
+
+.fcbranco {
+  color: #fff;
+}
+
+.fcpreto {
+  color: #000;
+}
+
+.fccinza1 {
+  color: #999;
+}
+
+.fccinza2 {
+  color: #58595b;
+}
+
+.fccinza3 {
+  color: #313131;
+}
+
+.fcroxo {
+  color: #54579a;
+}
+
+.fcvermelho {
+  color: #d74300;
+}
+
+.fs11 {
+  font-size: 11px;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs22 {
+  font-size: 22px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fs28 {
+  font-size: 28px;
+}
+
+.fs40 {
+  font-size: 40px;
+}
+
+.fs45 {
+  font-size: 45px;
+}
+
+.fs60 {
+  font-size: 60px;
+}
+
+a {
+  outline: none;
+  word-wrap: break-word;
+}
+
+::-webkit-selection {
+  background: #f06923;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #f06923;
+  color: #fff;
+}
+
+::selection {
+  background: #f06923;
+  color: #fff;
+}

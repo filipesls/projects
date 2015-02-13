@@ -1,0 +1,18 @@
+.passwd {
+	width: 150px;
+	heigth: 80px !important;
+	color: white !important;
+	text-align: center;
+}
+
+.passwd-weak {
+	background-color: red;
+}
+
+.passwd-normal {
+	background-color: blue;
+}
+
+.passwd-strong {
+	background-color: green;
+}

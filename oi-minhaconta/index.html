@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="pt-br" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="expires" content="0" />
+    <meta name="robots" content="all" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, , user-scalable=no" />
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="//static.oi.com.br/oi-minhaconta/bootstrap/css/bootstrap.min.css" />
+        <script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/js/html5shiv.min.js"></script>
+        <script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--[if IE]>
+        <link rel="stylesheet" href="//static.oi.com.br/oi-minhaconta/css/ie.css">
+    <![endif]-->
+
+    <title>Cadastro Novo</title>
+    
+    <!--link rel="stylesheet" href="//static.oi.com.br/oi-minhaconta/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//static.oi.com.br/oi-minhaconta/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" href="//static.oi.com.br/oi-minhaconta/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="//static.oi.com.br/oi-minhaconta/css/helpers.min.css">
+    <link rel="stylesheet" href="//static.oi.com.br/oi-minhaconta/css/main.css"-->
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/helpers.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/js/jquery/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body class="apple chrome">
+
+    <!--[if lt IE 9]>
+        <div class="ie-warning">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="warning">
+                            <a href="//browsehappy.com/?locale=pt-br" target="_blank">
+                                <p>Seu navegador est&aacute; desatualizado. Para visualizar esse site corretamente, faça UPDATE NO SEU BROWSER.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <![endif]-->
+
+    <div id="wrapper">
+        <div class="preloader">
+            <div class="status">Obtendo dados do servidor...</div>
+        </div>
+        <div class="container" style="background-color: #fafafa; margin: 0 auto; width: 750px;">
+
+        <section class="cadastroNovo">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h1>Cadastro</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="topspaced bottomspaced">
+                                <ul class="nav nav-pills">
+                                    <li class="oi-regular li_btn_pf active">
+                                        <!--input type="radio" name="tipoPessoa" id="optionsFichaPF" value="1"-->
+                                        <a id="optionsFichaPF" name="tipoPessoa" href="#" onclick="return false;"><span class="glyphicon glyphicon-user"></span>&nbsp;Pessoa Física</a>
+                                    </li>
+                                    <li class="oi-regular li_btn_pj">
+                                        <!--input type="radio" name="tipoPessoa" id="optionsFichaPJ" value="2"-->
+                                        <a id="optionsFichaPJ" name="tipoPessoa" href="#" onclick="return false;"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Pessoa Jurídica</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" type="GET" id="formCadastroNovoUsuario">
+
+                        <!-- #compra-pf -->
+                        <div id="compra-pf">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <!--form action="" type="GET" id="formCadastroNovoUsuarioPF"-->
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="nome" id="nome" value="" placeholder="Nome" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="sobrenome" id="sobrenome" value="" placeholder="Sobrenome" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+                                                <div class="form-group gender-buttons">
+                                                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                        <label class="btn btn-md btn-default btn-green "><input type="radio" name="sexo" id="sexoMasculinoPF" value="2" /> Masculino</label>
+                                                        <label class="btn btn-md btn-default btn-green "><input type="radio" name="sexo" id="sexoFemininoPF" value="1" /> Feminino</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                                <div class="form-group" id="birth-picker">
+                                                    <input type="text" class="form-control input-lg floatlabel" name="dataNascimento" id="dataNascimento" placeholder="Data de Nascimento" data-label="DD/MM/AAAA" value="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="cpf" id="cpf" value="" placeholder="CPF" />
+                                            </div>
+                                        </div>
+
+                                        <!-- phone -->
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-group group-select">
+                                                <div class="selectContainer">
+                                                    <select class="form-control btn-oi-branco" name="tipoTelefonePF" id="tipoTelefonePF">
+                                                        <option value="">Tipo de Telefone</option>
+                                                        <option value="1">Residencial</option>
+                                                        <option value="2">Celular</option>
+                                                        <option value="3">Comercial</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="ddd" id="dddPF" value="" placeholder="DDD" maxlength="2" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="telefone" id="telefonePF" value="" placeholder="Número de telefone" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <h4>Endereço</h4>
+                                            </div>
+                                        </div>
+
+                                        <!-- endereço -->
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.cep" id="cep" value="" placeholder="CEP" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 form-group">
+                                                <small class="cep"><a class="forgetCep" href="">não sei o CEP</a></small>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.endereco" id="endereco" value="" placeholder="Endereço" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.numero" id="numero" value="" placeholder="Número" />
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.complemento" id="complemento" value="" placeholder="Complemento" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.bairro" id="bairro" value="" placeholder="Bairro" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.cidade" id="cidade" value="" placeholder="Cidade" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group group-select">
+                                                <select class="form-control btn-oi-branco" name="endereco.estado" id="estado">
+                                                    <option value="">Estado</option>
+                                                    <option value="ac">Acre</option>
+                                                    <option value="al">Alagoas</option>
+                                                    <option value="ap">Amapá</option>
+                                                    <option value="am">Amazonas</option>
+                                                    <option value="ba">Bahia</option>
+                                                    <option value="ce">Ceará</option>
+                                                    <option value="df">Distrito Federal</option>
+                                                    <option value="es">Espírito Santo</option>
+                                                    <option value="go">Goiás</option>
+                                                    <option value="ma">Maranhão</option>
+                                                    <option value="mt">Mato Grosso</option>
+                                                    <option value="ms">Mato Grosso do Sul</option>
+                                                    <option value="mg">Minas Gerais</option>
+                                                    <option value="pa">Pará</option>
+                                                    <option value="pb">Paraíba</option>
+                                                    <option value="pr">Paraná</option>
+                                                    <option value="pe">Pernambuco</option>
+                                                    <option value="pi">Piauí</option>
+                                                    <option value="rj">Rio de Janeiro</option>
+                                                    <option value="rn">Rio Grande do Norte</option>
+                                                    <option value="rs">Rio Grande do Sul</option>
+                                                    <option value="ro">Rondônia</option>
+                                                    <option value="rr">Roraima</option>
+                                                    <option value="sc">Santa Catarina</option>
+                                                    <option value="sp">São Paulo</option>
+                                                    <option value="se">Sergipe</option>
+                                                    <option value="to">Tocantins</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- /endereço -->
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <h4>Dados de Acesso</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <span class="form-control escolha-email">
+                                                    <label class="radio-inline"><input type="radio" name="selecionarEmail" value="usarEmailPessoal" checked><small>Quero informar meu email pessoal</small></label>
+                                                    <label class="radio-inline"><input type="radio" name="selecionarEmail" value="criarEmailOi"><small>Quero criar um email <b>Oi</b></small></label>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <div class="form-group group-email-pessoal">
+                                                    <input type="email" class="form-control floatlabel input-lg" name="emailPessoal" id="emailPessoalPF" value="" placeholder="e-mail" checked="checked" />
+                                                </div>
+                                                <div class="form-group group-email-oi" style="display: none;">
+                                                    <input type="text" class="form-control floatlabel input-lg" name="emailOi" id="emailOiPF" value="" placeholder="e-mail" maxlength="30" />
+                                                    <span class="atoi">@oi.com.br</span>
+                                                </div>
+                                                <input type="hidden" name="login" id="login" value="" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 inputGroupContainer">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-info-sign tooltipSenha" data-toggle="tooltip" data-placement="top" title="- Deve ser mais de 8 caracteres<br>- Deve conter pelo menos um caractere em letra maiúscula<br>- Deve conter pelo menos um caractere em letra minúscula<br>- Deve conter pelo menos um dígito<br>- Não pode conter caracteres especiais"></i></span>
+                                                        <input type="password" class="form-control floatlabel input-lg" name="senha" id="senha" value="" placeholder="Senha" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group containerPFConfirmarSenha" style="display: none;">
+                                                    <input type="password" class="form-control floatlabel input-lg" name="confirmacaoSenha" id="confirmacaoSenha" value="" placeholder="Confirmar senha" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="pergunta" id="pergunta" value="" placeholder="Crie uma pergunta secreta" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="resposta" id="resposta" value="" placeholder="Crie uma resposta secreta" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row topspaced">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
+                                                <button type="submit" class="btn btn-oi-laranja btn-lg pull-right">Avançar</button>
+                                            </div>
+                                        </div>
+
+                                    <!--/form-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #compra-pf -->
+
+                        <!-- #compra-pj -->
+                        <div id="compra-pj" style="display:none;">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <!-- form action="" type="GET" id="formCadastroNovoUsuarioPJ" -->
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <!-- cnpj -->
+                                                <input type="text" class="form-control floatlabel input-lg" name="cnpj" id="cnpj" value="" placeholder="CNPJ" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <!-- razão social -->
+                                                <input type="text" class="form-control floatlabel input-lg" name="razaoSocial" id="razaoSocial" value="" placeholder="Razão Social" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <!-- inscrição social -->
+                                                <input type="text" class="form-control floatlabel input-lg" name="inscricaoEstadual" id="inscricaoEstadual" value="" placeholder="Inscrição Social" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <!-- inscrição municipal -->
+                                                <input type="text" class="form-control floatlabel input-lg" name="inscricaoMunicipal" id="inscricaoMunicipal" value="" placeholder="Inscrição Municipal" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <!-- nome fantasia -->
+                                                <input type="text" class="form-control floatlabel input-lg" name="nomeFantasia" id="nomeFantasia" value="" placeholder="Nome Fantasia" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <h4>Dados do Responsável</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="nomeResponsavel" id="nomeResponsavel" value="" placeholder="Nome" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="sobrenomeResponsavel" id="sobrenomeResponsavel" value="" placeholder="Sobrenome" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                                <div class="form-group gender-buttons">
+                                                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                        <label class="btn btn-md btn-default btn-green "><input type="radio" name="sexo" value="sexoMasculinoPJ" /> Masculino</label>
+                                                        <label class="btn btn-md btn-default btn-green "><input type="radio" name="sexo" value="sexoFemininoPJ" /> Feminino</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                                <div class="form-group" id="birth-picker">
+                                                    <input type="text" class="form-control input-lg floatlabel" name="dataNascimento" id="dataNascimento" placeholder="Data de Nascimento" data-label="DD/MM/AAAA" value="" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-group group-select">
+                                                <select class="form-control btn-oi-branco" name="tipoTelefonePJ" id="tipoTelefonePJ">
+                                                    <option value="">Tipo de Telefone</option>
+                                                    <option value="1">Residencial</option>
+                                                    <option value="2">Celular</option>
+                                                    <option value="3">Comercial</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="ddd" id="dddPJ" value="" placeholder="DDD" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="telefone" id="telefonePJ" value="" placeholder="Número de telefone" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <h4>Endereço</h4>
+                                            </div>
+                                        </div>
+                                        <!-- endereço -->
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.cep" id="cep" value="" placeholder="CEP" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 form-group">
+                                                <small class="cep">
+                                                    <a class="forgetCep" href="">não sei o CEP</a>
+                                                </small>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.endereco" id="endereco" value="" placeholder="Endereço" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.numero" id="numero" value="" placeholder="Número" />
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.complemento" id="complemento" value="" placeholder="Complemento" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.bairro" id="bairro" value="" placeholder="Bairro" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="endereco.cidade" id="cidade" value="" placeholder="Cidade" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group group-select">
+                                                <select class="form-control btn-oi-branco" name="endereco.estado" id="estado">
+                                                    <option value="">Estado</option>
+                                                    <option value="ac">Acre</option>
+                                                    <option value="al">Alagoas</option>
+                                                    <option value="ap">Amapá</option>
+                                                    <option value="am">Amazonas</option>
+                                                    <option value="ba">Bahia</option>
+                                                    <option value="ce">Ceará</option>
+                                                    <option value="df">Distrito Federal</option>
+                                                    <option value="es">Espírito Santo</option>
+                                                    <option value="go">Goiás</option>
+                                                    <option value="ma">Maranhão</option>
+                                                    <option value="mt">Mato Grosso</option>
+                                                    <option value="ms">Mato Grosso do Sul</option>
+                                                    <option value="mg">Minas Gerais</option>
+                                                    <option value="pa">Pará</option>
+                                                    <option value="pb">Paraíba</option>
+                                                    <option value="pr">Paraná</option>
+                                                    <option value="pe">Pernambuco</option>
+                                                    <option value="pi">Piauí</option>
+                                                    <option value="rj">Rio de Janeiro</option>
+                                                    <option value="rn">Rio Grande do Norte</option>
+                                                    <option value="rs">Rio Grande do Sul</option>
+                                                    <option value="ro">Rondônia</option>
+                                                    <option value="rr">Roraima</option>
+                                                    <option value="sc">Santa Catarina</option>
+                                                    <option value="sp">São Paulo</option>
+                                                    <option value="se">Sergipe</option>
+                                                    <option value="to">Tocantins</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- /endereço -->
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <h4>Dados de Acesso</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <span class="form-control escolha-email">
+                                                    <label class="radio-inline"><input type="radio" name="selecionarEmailPJ" value="usarEmailPessoalPJ" checked><small>Quero informar meu email pessoal</small></label>
+                                                    <label class="radio-inline"><input type="radio" name="selecionarEmailPJ" value="criarEmailOiPJ"><small>Quero criar um email <b>Oi</b></small></label>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <div class="form-group group-email-pessoal">
+                                                    <input type="email" class="form-control floatlabel input-lg" name="emailPessoal" id="emailPessoalPJ" value="" placeholder="e-mail" checked="checked" />
+                                                </div>
+                                                <div class="form-group group-email-oi" style="display: none;">
+                                                    <input type="text" class="form-control floatlabel input-lg" name="emailOi" id="emailOiPJ" value="" placeholder="e-mail" maxlength="30" />
+                                                    <span class="atoi">@oi.com.br</span>
+                                                </div>
+                                                <input type="hidden" name="login" id="login" value="" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 inputGroupContainer">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-info-sign tooltipSenha" data-toggle="tooltip" data-placement="top" title="- Deve ser mais de 8 caracteres<br>- Deve conter pelo menos um caractere em letra maiúscula<br>- Deve conter pelo menos um caractere em letra minúscula<br>- Deve conter pelo menos um dígito<br>- Não pode conter caracteres especiais"></i></span>
+                                                        <input type="password" class="form-control floatlabel input-lg" name="senha" id="senha" value="" placeholder="Senha" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group containerPJConfirmarSenha" style="display: none;">
+                                                    <input type="password" class="form-control floatlabel input-lg" name="confirmacaoSenha" id="confirmacaoSenha" value="" placeholder="Confirmar senha" />                                                
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="pergunta" id="pergunta" value="" placeholder="Crie uma pergunta secreta" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-group">
+                                                <input type="text" class="form-control floatlabel input-lg" name="resposta" id="resposta" value="" placeholder="Crie uma resposta secreta" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row topspaced">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
+                                                <button type="submit" class="btn btn-oi-laranja btn-lg pull-right">Avançar</button>
+                                            </div>
+                                        </div>
+                                    <!--/form-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #compra-pj -->
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        </div>
+    </div>
+
+    <!--script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/js/moment.min.js"></script>
+    <script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/js/floatlabels.min.js"></script>
+    <script type="text/javascript" src="//static.oi.com.br/oi-minhaconta/js/app.js"></script-->
+
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="assets/js/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="assets/js/floatlabels.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+
+</body>
+</html>

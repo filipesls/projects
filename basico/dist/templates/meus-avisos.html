@@ -1,0 +1,33 @@
+<script id="meus-avisos" type="text/template">
+
+    <div class="row">
+        <div class="col-xs-12 box-meus-avisos">
+            <div class="row data-mensagem">
+                <div class="col-xs-2">
+                    <p class="ffarial fs12 fccinza3 fbold">Data</p>
+                </div>
+                <div class="col-xs-10">
+                    <p class="ffarial fs12 fccinza3 fbold">Mensagem</p>
+                </div>
+            </div>
+            <%= mensagensAviso %>
+        </div>
+    </div>
+
+</script>
+<script id="aviso" type="text/template">
+
+    <% _.each(avisos, function(value){ %>
+        <div class="row">
+            <div class="col-xs-2">
+                <p class="ffarial fs12 fccinza2"><%= value.data %></p>
+            </div>
+            <div class="col-xs-10">
+                <p class="ffarial fs12 fccinza2"><%= value.mensagem %></p>
+            </div>
+        </div>
+        <hr>
+    <% }); %>
+    <div class="btn-mais-mensagens"></div>
+
+</script>

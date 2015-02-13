@@ -1,0 +1,570 @@
+
+/* legado
+@import url(../styles.css);*/
+
+
+/*.breadcrumb {
+	padding: 5px 0;
+	background-color: white !important;
+}*/
+
+/* Carrinho 
+#content.carrinho table.produtos tr:nth-child(2n+2){
+	background:#f8f8f8;
+}
+#content.carrinho table.produtos tr:nth-child(n+2):hover{
+	background:#f0f0f0;
+}
+
+#content.carrinho table.produtos td{
+	padding:10px;
+}
+#content.carrinho table.produtos{
+	font:normal 14px Arial, sans-serif;
+	color:#666;
+}
+#content.carrinho table.produtos p.removerItem a{
+	font:normal 11px Arial, sans-serif;
+	text-decoration:underline;
+	color:#0099cc;
+}
+#content.carrinho table.produtos td.servicoTD img{
+	margin:0 10px 20px 0;
+}
+#content.carrinho table.produtos td.servicoTD img{
+
+}
+#content.carrinho table.produtos td.quantidadeTD{
+	border-left:1px solid #e1e1e1;
+	border-right:1px solid #e1e1e1;
+}
+#content.carrinho td.quantidadeTD p.linkAtualizar{
+	display:none;
+	font-size:11px;
+	line-height:10px;
+	text-decoration:none;
+}
+#content.carrinho table.produtos .linkItem {
+	text-decoration: none;
+	color: #666;
+}
+#content.carrinho td.quantidadeTD p.linkAtualizar a{
+	color:#0085cf;
+}
+#content.carrinho td.quantidadeTD p.qtdLimite{
+	font-size:11px;
+	line-height:0;
+	text-decoration:none;
+	color:#666;
+	display: none;
+}
+#content.carrinho table.produtos input#quantidade{
+  width:30px;
+  padding: 5px;
+  font:bold 14px arial, sans-serif;
+  text-align:center;
+  border:1px solid #9ea4ae;
+  border-radius:2px;
+  box-shadow:inset 1px 1px 2px 1px #ccc;
+  color:#999;
+  outline:none;
+}
+#content.carrinho table.produtos td.precoTD a{
+	color:#0085cf;
+}
+#content.carrinho table.produtos td.precoTD p.acordo{
+	font-size:12px !important;
+}
+#content.carrinho table.produtos tr.totalTR{
+	background:#f0f0f0;
+	font:bold 16px Arial, sans-serif;
+	color:#333;
+}
+#content.carrinho table.produtos tr.totalTR td{
+	padding:0 0 0 10px;
+}
+#content.carrinho table.produtos tr.botoesTR{
+	background:#ffffff;
+	text-align:right;
+}
+#content.carrinho table.produtos tr.botoesTR:hover{
+	background:#ffffff;
+}
+#content.carrinho table.produtos tr.botoesTR td{
+	padding:30px 0;
+}
+#content.carrinho table.produtos tr.botoesTR a.botao{
+	margin-right:0;
+}
+#content.carrinho table.produtos tr.botoesTR a.comprarMais{
+	font:bold 12px Arial, sans-serif;
+	color:#0085cf;
+}
+#content.carrinho .warn {
+	display : none;
+}*/
+
+#
+/*.tools_menu li.active ul {
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.tools_menu li.active ul li:hover a {
+	background: #545790;
+	color: #fff;
+	padding: 0;
+}
+
+.tools_menu li.active ul li:hover a {
+	color: #fff;
+}*/
+/*.tools_menu li.active ul.diversao{
+	min-width:120px;
+}
+.tools_menu li.active ul.educacao{
+	min-width:105px;
+}
+.tools_menu li.active ul.seguranca{
+	min-width:185px;
+}
+.tools_menu li.active li{
+	padding:10px 5px;
+}*/
+
+/* CHECKOUT */
+/*#header.checkout{
+	height:40px;
+	padding:10px;
+	margin:0;
+	background: #8270a4; /* Old browsers 
+	background: -moz-linear-gradient(top,  #8270a4 0%, #59497c 100%); /* FF3.6+ 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8270a4), color-stop(100%,#59497c)); /* Chrome,Safari4+ 
+	background: -webkit-linear-gradient(top,  #8270a4 0%,#59497c 100%); /* Chrome10+,Safari5.1+ 
+	background: -o-linear-gradient(top,  #8270a4 0%,#59497c 100%); /* Opera 11.10+ 
+	background: -ms-linear-gradient(top,  #8270a4 0%,#59497c 100%); /* IE10+ 
+	background: linear-gradient(top,  #8270a4 0%,#59497c 100%); /* W3C 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8270a4', endColorstr='#59497c',GradientType=0 ); /* IE6-9 
+}*/
+/*#header.checkout #container{
+	width:940px;
+	margin:0 auto;
+	padding:0;
+}
+
+#header.checkout ul{
+	height:30px;
+	list-style:none outside;
+	margin:0;
+	padding:10px 0 0 60px;
+	background:transparent url(/images/logo-header-roxo.png) no-repeat;
+}
+#header.checkout li{
+	display:inline;
+}
+#header.checkout li:before{
+	font:bold 10px Helvetica;
+	margin:0 7px;
+	color:#a7adcf;
+	content:"\276F";
+}
+#header.checkout li:first-child{
+	padding-left:0;
+}
+#header.checkout li:first-child:before{
+	margin:0;
+	content:"";
+}
+#header.checkout li:last-child{
+	color:#fff;
+}
+#header.checkout li{
+	font:bold 14px Arial, sans-serif;
+	color:#a7adcf;
+	text-decoration:none;
+}
+
+#content.checkout,
+#content.diferenca,
+#content.parabens{
+	margin:20px;
+}
+#content.checkout h2,
+#content.parabens h2{
+	padding:10px 20px;
+	background:#e7e7e7;
+	border-top:2px solid #666;
+}
+#content.checkout div.formasUsadas{
+	margin:10px;
+}
+#content.checkout div.formasUsadas h3{
+	font:bold 20px Arial, sans-serif;
+}
+
+#content.checkout ul.produtos,
+#content.checkout ul.produtos ul{
+	list-style:none outside;
+	padding:0;
+	margin:0;
+}
+#content.checkout ul.produtos h4{
+	font:bold 14px Arial, sans-serif;
+	color:#666;
+}
+#content.checkout .produtos .oProdutoDesc a{
+	margin:0 10px;
+	font-size:11px;
+	color:#505b9c;
+}
+#content .cartoes input,
+#content .debito input{
+	display:block;
+	float:left;
+	margin:10px 5px 0 0;
+}
+#content .cartoes label,
+#content .debito label{
+	float:left;
+	width:46px;
+	height:31px;
+	margin:0 20px 0 0;
+	background:transparent url('/images/sprite-cartoes-bancos.png') no-repeat;
+}
+#content .cartoes .cartao_visa{
+	background-position:0 0;
+}
+#content .cartoes .cartao_master{
+	background-position:-56px 0;
+}
+#content .cartoes .cartao_diners{
+	background-position:-112px 0;
+}
+#content .cartoes .cartao_amex{
+	background-position:-168px 0;
+}
+
+#content .debito .debito_bb{
+	background-position:0 -41px;
+}
+#content .debito .debito_real{
+	background-position:-56px -41px;
+}
+#content .debito .debito_banrisul{
+	background-position:-112px -41px;
+}
+#content .debito .debito_bradesco{
+	background-position:-168px -41px;
+}
+#content .debito .debito_caixa{
+	background-position:0 -82px;
+}
+#content .debito .debito_hsbc{
+	background-position:-58px -82px;
+}
+#content .debito .debito_itau{
+	background-position:-114px -82px;
+}*/
+
+
+/* Parabens 
+#content.parabens .protocolo{
+	font-size:14px;
+	margin:20px;
+}
+#content.parabens .protocolo span{
+	margin:0 5px;
+	padding:7px 10px;
+	border-radius:3px;
+	background:#e1e3ef;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+#content.parabens .importante{
+	display:block;
+	background:#fffcdd;
+	padding:10px;
+}
+#content.parabens .instalar_servicos{
+	width:100%;
+	padding:10px;
+	background:#f7f7f7;
+}
+#content.parabens .instalar_servicos th,
+#content.parabens .instalar_servicos td{
+	padding:10px 20px;
+	text-align:left;
+	font-weight:normal;
+}
+#content.parabens .instalar_servicos th img{
+	float:left;
+	margin:15px 10px 10px 0;
+}
+#content.parabens .instalar_servicos .hr{
+	height:2px;
+	line-height:0;
+	padding:0 20px;
+}
+#content.parabens .instalar_servicos .instalar{
+	width:100px;
+	text-align:center;
+}
+#content.parabens .usar_servicos{
+	width:100%;
+}
+#content.parabens .usar_servicos tr{
+	background:#f7f7f7;
+}
+#content.parabens .usar_servicos .hr,
+#content.parabens .usar_servicos .hr td{
+	background:#fff;
+}
+#content.parabens .usar_servicos td a{
+	font:bold 12px Arial, sans-serif;
+	color:#4f5b9f;
+}*/
+
+/* Componentes 
+.CS0001 {
+    float: left;
+    margin-right: 20px;
+    width: 160px;
+}
+.gd6 {
+    width: 160px;
+}
+.fl {
+    float: left;
+}
+.CS0001 div.wrapper {
+    float: left;
+    width: 160px;
+}
+a {
+    color: #333333;
+}
+.CS0001 div.wrapper img {
+    display: block;
+}
+
+.CHE15212 {
+    border: 6px solid #F8F8F8;
+    float: left;
+    height: 475px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 640px;
+}
+
+.gd12 {
+    width: 652px;
+}
+
+.nomgr {
+    margin-right: 0 !important;
+}
+
+.nomgt {
+    margin-top: 0 !important;
+}
+
+.CHE15212{position:relative;float:left;margin-top:20px;overflow:hidden;height:475px;border:6px solid #f8f8f8;width:940px}
+.CHE15212 ul li{float:left;display:block;width:840px;position:relative}
+.CHE15212 div.bgTitulo{height:55px;padding:10px 20px;bottom:-72px;background-color:#181a1e;width:600px;z-index:1;margin-top:-3px}
+.CHE15212 ul.lista li img.destaque{float:left}
+.CHE15212 ul li .topTitulo{width:860px;text-align:left}
+.CHE15212 ul li .topTitulo h2 {float:left;font:normal 24px/32px arial;margin-top:2px}
+.CHE15212 ul li .topTitulo h2 a{color:#b9c6df;padding:4px 0;font-weight: bold;}
+.CHE15212 ul li .topTitulo p a{font-size:14px;color:#fff}
+.CHE15212 .tvFlashNav {background: none repeat scroll 0 0 #181A1E;border-left: 1px solid #525851;bottom: 9px;float: left;height: 14px;padding: 21px 15px 20px 14px;position: absolute;right: 0;width: 116px;z-index: 3;}
+.CHE15212 .tvFlashNav-forward-backward a,
+.CHE15212 .tvFlashNav .slide{background:url(http://img.oiweb.co/i0/canais/arena/images/sprite-che02212.png) no-repeat}
+.CHE15212 .tvFlashNav-forward-backward{position: absolute;width:846px;z-index: 100;}
+.CHE15212 .tvFlashNav-forward-backward a{float:left;width:31px;height:76px;position:absolute;top:140px;text-indent:-1500em}
+.CHE15212 .tvFlashNav-forward-backward a.voltar{background-position:0 0}
+.CHE15212 .tvFlashNav-forward-backward a.avancar{right:6px;background-position:-32px 0}
+.CHE15212 .tvFlashNav{float:left;border-left:1px solid #525851;width:116px;padding:21px 14px 20px 14px;height:14px;position:absolute;bottom:9px;right:0;z-index:3}
+.CHE15212 .tvFlashNav .slide{float:left;width:13px;height:13px;font-size:0;background-position:0 -76px;margin:0 4px 0 5px}
+.CHE15212 .tvFlashNav .slide.ativo{background-position:-16px -76px}
+
+input.campoData{
+	width:105px;
+	text-align:center;
+}
+.extrato .extrato_busca .filtros{
+	padding:10px;
+	background:#F8F8F8;
+}
+.extrato.nao_encontrado .extrato_busca .nao_encontrado{
+	padding:10px;
+	margin:10px 0;
+}
+.extrato.nao_encontrado .extrato_busca .nao_encontrado h3{
+	text-align:center;
+	font:bold 20px Arial, sans-serif;
+	color:#333;
+}
+.extrato.nao_encontrado .extrato_busca .nao_encontrado{
+	font:normal 14px Arial, sans-serif;
+	text-align:center;
+	color:#333;
+}
+.extrato .extrato_busca a.voltar{
+	float:right;
+	font:bold 12px Arial, sans-serif;
+	color:#0085cf;
+}
+
+.extrato.resultado table.resultados tr:nth-child(2n+1){
+	background:#F7F7F7;
+}
+.extrato.resultado table.resultados tr:hover{
+	background:#F1F1F1;
+}
+.extrato.resultado table.resultados tr.branco{
+	background:#fff;
+}
+.extrato.resultado table.resultados th{
+	text-align:left;
+	padding:10px;
+}
+.extrato.resultado table.resultados tr.branco th{
+	font:bold 14px Arial, sans-serif;
+	color:#666;
+}
+.extrato.resultado table.resultados tr.ano th{
+	font:bold 16px Arial, sans-serif;
+	color:#333;
+}
+.extrato.resultado table.resultados td{
+	padding:10px;
+	font:normal 12px Arial, sans-serif;
+}
+.extrato.resultado table.resultados td.separador{
+	padding:0;
+}
+.extrato.resultado table.resultados td a.consultar{
+	font:bold 12px Arial, sans-serif;
+	color:#0085cf;
+}
+.extrato.resultado table.resultados .pagar{
+	color:#c33;
+	font-size:11px;
+	text-decoration:underline;
+}*/
+
+/* Fatura 
+.fatura td{
+	padding:20px 0 !important;
+	font-size:14px !important;
+}*/
+
+/* Paginacao 
+#Pagination a {
+  display: block;
+  padding: 5px 7px;
+  font: bold 10px Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4b84cb;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 8px;
+  float: left;
+  margin-right: 5px;
+}
+#Pagination .current,
+#Pagination a:hover {
+  display: block;
+  padding: 5px 7px;
+  font: bold 10px Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4b84cb;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 8px;
+  float: left;
+  margin-right: 5px;
+  border: 1px solid #4b84cb;
+  background: #4b84cb;
+  color: #fff;
+  float: left;
+  margin-right: 5px;
+}
+#Pagination .prev,
+#Pagination .next,
+#Pagination .prev:hover,
+#Pagination .next:hover { width: 50px }
+#Pagination .current.prev,
+#Pagination .current.next {
+  background: none;
+  color: #eee9e9;
+  border: 1px solid #eee9e9;
+}
+
+#searchTPLWrapper li {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px dotted #ccc;
+}
+#searchTPLWrapper h5,
+#searchTPLWrapper h4 {
+  margin: 0;
+  padding: 0;
+}
+#searchTPLWrapper h5 a {
+  font: bold 11px Arial, sans-serif;
+  color: #666;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#searchTPLWrapper h4 a {
+  font: bold 20px Arial, sans-serif;
+  color: #363636;
+  text-decoration: none;
+}
+#searchTPLWrapper p {
+  padding: 0;
+  margin: 5px 0 0 0;
+  font: normal 14px Arial, sans-serif;
+}
+#searchTPLWrapper p a {
+  color: #666;
+  text-decoration: none;
+}
+#searchTPLWrapper p.url {
+  max-width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#searchTPLWrapper p.url a {
+  font-weight: bold;
+  color: #4981be;
+}
+
+#footer {
+	padding-left: 28px;
+}
+
+#conteudo {
+	padding-left: 30px;
+}
+
+.descricaoProduto {
+	padding-top: 40px;
+}
+
+.especificacaoProduto {
+	padding-top: 15px;
+}
+
+.faixa {
+	clear: both;
+}*/
+

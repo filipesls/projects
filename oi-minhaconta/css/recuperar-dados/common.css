@@ -1,0 +1,565 @@
+@font-face {
+  font-family:"SimplonOi";
+  src:url('//static.oiweb.co/hanoi/minhaconta/css/fonts/simplonoi-headline.eot');
+  src:url('//static.oiweb.co/hanoi/minhaconta/css/fonts/simplonoi-headline.eot?#iefix') format('embedded-opentype'),url('//static.oiweb.co/hanoi/minhaconta/css/fonts/simplonoi-headline.svg') format('svg'),url('//static.oiweb.co/hanoi/minhaconta/css/fonts/simplonoi-headline.ttf') format('truetype'),url('//static.oiweb.co/hanoi/minhaconta/css/fonts/simplonoi-headline.woff') format('woff');
+  font-weight:300;
+  font-style:normal;
+}
+@font-face {
+  font-family:"SimplonBPRegular";
+  src:url('//static.oiweb.co/hanoi/minhaconta/css/fonts/simplonbp-regular.eot');
+  src:url('//static.oiweb.co/hanoi/minhaconta/css/fonts/simplonbp-regular.eot?#iefix') format('embedded-opentype'),url('//static.oiweb.co/hanoi/minhaconta/css/fonts/simplonbp-regular.svg') format('svg'),url('//static.oiweb.co/hanoi/minhaconta/css/fonts/simplonbp-regular.ttf') format('truetype'),url('//static.oiweb.co/hanoi/minhaconta/css/fonts/simplonbp-regular.woff') format('woff');
+  font-weight:300;
+  font-style:normal;
+}
+
+html,
+body {
+  overflow-x:hidden;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing:antialiased;
+}
+body {
+  background: #299aa4;
+}
+a{
+	color:#666;
+	text-decoration:underline;
+}
+a:hover{
+	color:#666;
+	text-decoration:none;
+}
+/* HEADER */
+.logo-oi{ 
+  text-align: right;
+  margin-top: 8px;
+}
+.navbar{
+  margin-bottom: 0;
+}
+.navbar h1{ 
+  font-family: "SimplonOi"; 
+  font-size: 30px; 
+  color: #fff; 
+  text-transform: uppercase; 
+}
+.header{
+  height: 64px;
+}
+/* CONTENT */
+.conteudo-esqueci-senha{
+  height: 100%;
+  min-height: 480px;
+  background: #fff;
+}
+.conteudo-email-associado{
+  height: 100%;
+  background: #fff;
+  padding-bottom: 50px;
+}
+.tipo-acesso{
+  font-family: Arial; 
+  font-size: 18px; 
+  color: #333;
+}
+label.radio-label{
+  font-family: Arial; 
+  font-size: 14px; 
+  color: #333;
+  font-weight: normal;
+}
+.label-error{
+  font-weight: normal;
+}
+.texto-nao-encontrado{
+  margin-top: 100px;
+}
+.texto-nao-encontrado p{
+  font-family: Arial; 
+  font-size: 22px; 
+  color: #009fac;
+  line-height: 115%;
+  margin-left: 15px;
+}
+.usuario-nao-encontrado{
+  font-family: Arial; 
+  font-size: 18px;
+  font-weight: bold;
+  color: #f37321;
+  line-height: 115%;
+}
+.lembrei-texto{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777777;
+  margin-top: 5px;
+  padding-left: 0;
+}
+.atendimento-telefone{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777777;
+  margin-top: 5px;
+  padding-left: 0;
+}
+.atendimento-telefone span{
+  clear: left;
+  float: left;
+  margin-right: 20px;
+}
+.atendimento-telefone li{
+  clear: left;
+}
+.atendimento-telefone li:first-child, .completar-instalacao li:first-child, .recordar-dica li:first-child{
+  margin-right: 18px;
+  margin-bottom: 10px;
+  float: left;
+}
+.completar-instalacao{
+  margin-top: 60px;
+}
+.completar-instalacao a{
+  font-family: Arial;
+  font-size: 14px;
+  color: #777777;
+  text-decoration: underline;
+}
+.recordar-dica{
+  margin-top: 60px;
+}
+.recordar-dica a{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777777;
+  text-decoration: underline;
+}
+.recordar-dica img{
+  margin-left: 5px;
+}
+.retornar-ao-site{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777777;
+  margin: 45px 0 0 0;
+}
+.seta-esq{
+  margin-right: 8px;
+}
+.cpf-titular{
+  margin-top: 20px;
+}
+.cinza{
+  color: #878787;
+}
+.esqueci-minha-senha .titulo{
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  color: #777;  
+}
+.esqueci-minha-senha p{
+  font-family: Arial;
+  font-size: 12px;
+  color: #777;
+}
+.esqueci-minha-senha{
+  margin-top: 20px; 
+}
+.esqueci-minha-senha input[type="radio"]{
+  margin: 0 20px 0 25px;
+}
+.usuario-top{
+  margin-top: 9px;
+}
+.tit-esqueci-meu-usuario{
+  font-family: Arial;
+  font-size: 18px;
+  color: #333;
+  margin-top: 70px;
+}
+.email-associado {
+  font-family: Arial;
+  font-size: 13px;
+  color: #777;
+  padding: 10px 10px 0 14px;
+  line-height: 118%;
+  text-align: left;
+}
+.email-usuario{
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  color: #777;
+  margin-top: 3px;
+  float: left;
+}
+.esqueci-meu-usuario{
+  margin-top: 20px;
+}
+.esqueci-meu-usuario .titulo{
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  color: #777;  
+}
+.esqueci-meu-usuario p{
+  font-family: Arial;
+  font-size: 12px;
+  color: #777;
+}
+.esqueci-meu-usuario input[type="radio"]{
+  margin: 0 20px 0 25px;
+}
+.redefinir-senha p.tit-nova-senha{
+  font-family: Arial;
+  font-size: 12px;
+  color: #777;
+}
+.redefinir-senha p.tit-confirmar-senha{
+  font-family: Arial;
+  font-size: 12px;
+  color: #777;
+  margin-top:15px;
+}
+.caixa-conteudo{
+  width: auto;
+  padding: 20px;
+  margin-top: 10px;
+  background: #e6e7e8;
+  position: relative;
+  padding-bottom: 40px;
+}
+.hideable-wrapper{
+  position: relative;
+}
+.hideable-wrapper {
+  overflow: hidden;
+  -ms-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.tit-link-de-troca{
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: normal;
+  color: #777;
+  padding: 5px 10px;
+  border
+}
+.link-redefinicao{
+  font-family: Arial;
+  font-size: 16px;
+}
+.erro-token{
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+#dv-link-erro-token{
+  margin-top: 20px;
+}
+#ul-contatos li{
+  float: left;
+  clear: left;
+} 
+
+/* BUTTONS */
+input.btn, input.btn:hover{
+  border-radius: 0;
+  color:#fff !important;
+  text-transform: uppercase;
+}
+button.btn, button.btn:hover{
+  border-radius: 0;
+  color:#fff !important;
+  text-transform: uppercase;
+}
+.btn-enviar-link{
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  background: #f89c1c;
+  margin: 0 0 10px 15px;
+  clear: left;
+  float: left;
+}
+.btn-enviar{
+  width: 110px;
+  height: 30px;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  background: #f89c1c;
+  margin: 20px 0 0 0;
+}
+.btn-radio{
+  margin-right: 10px;
+  float: left;
+}
+/* ALERTS */
+.alert{
+  padding: 5px 10px;
+  margin-bottom: 0px;
+  margin-top: 7px;
+  display: block;
+}
+.alert-success, .alert-danger{
+	color:#666;
+}
+.alert-danger{
+  border-color: transparent;
+}
+/* ERRORS */
+.mensagens p{
+  font-family: Arial; 
+  font-size: 14px; 
+  color: #000;
+  line-height: 115%;
+}
+.mensagens ul li{
+  font-family: Arial; 
+  font-size: 14px; 
+  color: #000;
+  line-height: 115%;
+  list-style: circle;
+}
+.mensagens .sucesso, .mensagens .erro{
+  font-family: Arial; 
+  font-size: 14px; 
+  line-height: 115%;
+  margin-bottom: 20px;
+}
+
+/* TOOLTIP */
+.oi-tooltip + .tooltip > .tooltip-inner{ font-size: 0.8em; color: #777; background-color: #fff; border: 1px solid #878787; }
+.oi-tooltip + .tooltip.top > .tooltip-arrow{ bottom:0; left:50%; margin-left:-5px; border-left:5px solid transparent; border-right:5px solid transparent; border-top:5px solid #878787; }
+.oi-tooltip + .tooltip.left > .tooltip-arrow{ top:50%; right:0; margin-top:-5px; border-top:5px solid transparent; border-bottom:5px solid transparent; border-left:5px solid #878787; }
+.oi-tooltip + .tooltip.bottom > .tooltip-arrow{ top:0; left:50%; margin-left:-5px; border-left:5px solid transparent; border-right:5px solid transparent; border-bottom:5px solid #878787; }
+.oi-tooltip + .tooltip.right > .tooltip-arrow{ top:50%; left:0; margin-top:-5px; border-top:5px solid transparent; border-bottom:5px solid transparent; border-right:5px solid #878787; }
+
+/* HELPERS */
+.margintop-15{
+  margin-top: 15px;
+}
+.margintop-70{
+  margin-top: 70px;
+}
+ul li{
+  list-style: none;
+}
+.center{
+  text-align: center;
+}
+.padding-left{
+  padding-left: 0;
+}
+.relative{
+  position: relative;
+}
+.seta-cima {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #e6e7e8;
+  position: absolute;
+  top: -10px;
+  left: 73px;
+}
+.seta-esquerda {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #eaeaea;
+  position: absolute;
+  top: 55px;
+  left: -10px;
+}
+.seta-cima-erro{
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #f2dede;
+  position: absolute;
+  top: -7px;
+  left: 10px;
+}
+/* MENSAGENS */
+.atendimento-cliente{
+  margin-top: 15px;
+}
+.atendimento-cliente p{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777777;
+  line-height: 110%;
+}
+.atendimento-cliente span{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777777;
+  line-height: 110%;
+  margin-right: 10px;
+  float: left;
+}
+.atendimento-cliente span img{
+  margin-top: -3px;
+}
+.info-atendimento{
+  margin-top: 20px;
+}
+.ico-atendimento{
+  clear: left;
+}
+.pra-empresas p{
+  padding-left: 3px;
+}
+.problema-brm-sistema {
+  font-family: Arial;
+  font-size: 13px;
+  color: #777777;
+  padding-left: 0;
+}
+.atendimento-telefone li{
+  line-height: 100%;
+}
+.atendimento-telefone li:first-child{
+  line-height: 118%;
+}
+.info-atendimento p{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777777;
+  line-height: 110%;
+}
+.info-atendimento span{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777777;
+  line-height: 110%;
+  margin-right: 10px;
+  float: left;
+}
+.tit-mensagem-sucesso{
+  font-family: Arial;
+  font-size: 15px;
+}
+.txt-mensagem-sucesso{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777;
+  padding-top: 10px;
+  padding-left: 0;
+  line-height: 120%;
+}
+.tit-mensagem-erro{
+  font-family: Arial;
+  font-size: 15px;
+}
+.txt-mensagem-erro{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777;
+  margin-bottom:15px; 
+  text-decoration:underline; 
+  float:left;
+}
+.redefinir-senha a{
+  font-family: Arial;
+  font-size: 13px;
+  color: #777;
+}
+/* Força da senha */
+#pwd-container.weak,
+#pwd-container.good, 
+#pwd-container.strong  {
+  display: block;
+  width: 125px;
+  height: 11px;
+  background: url(/images/sprite-passwordStrength.png) -40px 0 no-repeat;
+}
+#pwd-container.weak { 
+  background-position: 0 -11px;
+}
+
+#pwd-container.good { 
+  background-position: 0 -22px;
+}
+
+#pwd-container.strong { 
+  background-position: 0 0;
+}
+.forca-senha{
+  height: 35px;
+  margin-bottom: 10px;
+}
+.forca-senha p{
+  font-size: 12px; 
+  color: #777; 
+  margin: 0;
+}
+.regras-senha p{
+  font-family: Arial;
+  font-size: 12px;
+  color: #777;
+  line-height: 16px;
+}
+.popup-senha{
+  visibility: visible;
+  left: 0;
+  top: 10px;
+  opacity: 1;
+  position: absolute;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 9px 14px;
+  background: #eaeaea;
+}
+
+/**************************************************************
+  RESOLUÇÃO XS
+**************************************************************/
+@media(min-width:320px) and (max-width:767px) {
+	.logo-oi{ 
+		margin-top: 23px;
+	}
+  .popup-senha {
+    top: -368px;
+    left: 0;
+    width: 100%;
+  }
+  .forca-senha {
+    height: 28px;
+    margin-bottom: 10px;
+  }
+  .regras-senha p {
+    font-family: Arial;
+    font-size: 11px;
+    color: #777;
+    line-height: 12px;
+  }
+}
+
+/**************************************************************
+  RESOLUÇÃO SM
+**************************************************************/
+@media(min-width:768px) and (max-width:991px) {
+  .popup-senha {
+      visibility: visible;
+      right: 0 !important;
+      top: 0px;
+      width: 200px;
+  }
+}
+
+/**************************************************************
+  RESOLUÇÃO MD
+**************************************************************/
+@media(min-width:992px) and (max-width:1199px) {
+}

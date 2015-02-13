@@ -1,0 +1,463 @@
+<script id="carrinho" type="text/template">
+
+	<div class="row">
+		<div class="col-xs-12">
+			<ul class="breadcrumb">
+				<li>Internet</li>
+				<li>Mais Serviços pra Internet</li>
+				<li>Loja de Serviços</li>
+				<li>Carrinho de Compras</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row">
+	    <div class="col-xs-12 carrinho-compras">
+	        <h4 class="ffarial fs20 fcpreto fbold titulo">Carrinho de Compras</h4>
+	        <ul class="notificacoes no-padding">
+	        	<!-- <li><img src="assets/img/ico-carta.png" border="0"></li> -->
+	        	<li style="border-right:0;"><img src="assets/img/ico-carrinho.png" border="0"> <span class="ffarial fs12 fcroxo">(0)</span></li>
+			</ul>
+	    </div>
+	</div>
+
+	<div class="row">
+	    <div class="col-xs-12">
+
+	    	<!-- Passo a passo carrinho -->
+	        <div class="status-passo-a-passo bg-degrade-cinza">
+	            <ul class="status-carrinho">
+	                <li><div class="ico-passo-cinza"><p class="ffarial fs18 fcbranco fbold">01</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Identificação</p></li>
+	                <li><div class="ico-passo-roxo"><p class="ffarial fs18 fcbranco fbold">02</p></div><p class="titulo ffarial fs14 fcroxo fbold"> Pagamento</p></li>
+	                <li><div class="ico-passo-roxo"><p class="ffarial fs18 fcbranco fbold">03</p></div><p class="titulo ffarial fs14 fcroxo fbold"> Conclusão</p></li>
+	            </ul>
+	        </div>
+
+	        <!-- Lista de produtos no carrinho -->
+	        <div class="row">
+	            <div class="col-xs-12">
+
+					<!-- ##### Confirmação de Compras -->
+	            	<div class="box-carrinho">
+						<div class="box-confirmacao-compra">
+							<h4 class="ffarial fs20 fcpreto fbold subtitulo">Confirmação de Compra</h4>
+							<div class="box-sucesso">
+								<p class="ffarial fs16 fcpreto fbold no-margin">Sua compra foi concluída com sucesso!</p>
+								<p class="ffarial fs14 fcpreto no-margin ">O número de protocolo para essa transação é <span class="ffarial fs14 fcpreto fbold">5889955887</span></p>
+							</div>
+							<div class="box-detalhes-servicos">
+								<p class="ffarial fs12 fcpreto">Confira abaixo os detalhes do(s) serviço(s) adquirido(s). Para mais informações acesse <a href="" class="ffarial fs12 fcroxo">Meus Serviços</a>.</p>
+								<ul class="servico">
+									<li class="nome"><p class="ffarial fs16 fcpreto no-margin">Segurança Multidispositivo</p></li>
+									<li class="preco">
+										<ul class="box-preco">
+											<li class="ffarial fs18 fccinza3 fbold">R$</li>
+					                        <li class="ffarial fs18 fccinza3 fbold">29,90</li>
+					                        <li class="ffarial fs12 fccinza3 fbold">/ mês</li>
+				                        </ul>
+									</li>
+									<li class="status">
+										<button type="button" class="btn bg-btn-roxo ffarial fs12 fcbranco" data-toggle="button">Comece a aprender inglês agora</button>
+									</li>
+								</ul>
+								<div class="borda-top-cinza3"></div>
+								<ul class="servico">
+									<li class="nome"><p class="ffarial fs16 fcpreto no-margin">Inglês</p></li>
+									<li class="preco">
+										<ul class="box-preco">
+											<li class="ffarial fs18 fccinza3 fbold">R$</li>
+					                        <li class="ffarial fs18 fccinza3 fbold">29,90</li>
+					                        <li class="ffarial fs12 fccinza3 fbold">/ mês</li>
+				                        </ul>
+									</li>
+									<li class="status">
+										<button type="button" class="btn bg-btn-roxo ffarial fs12 fcbranco" data-toggle="button">Comece a aprender inglês agora</button>
+									</li>
+								</ul>
+							</div>
+							<div class="box-outros-servicos">
+								<a href="#" class="ffarial fs14 fcroxo"> >> Conhecer outros serviços</a>
+								<button type="button" class="btn bg-btn-roxo ffarial fs12 fcbranco btn-fechar2" data-toggle="button">Fechar</button>
+			                </div>
+		                </div>
+		            </div>
+
+					<!-- #### Carrinho Vazio -->
+			    	<div class="bg-degrade-cinza box-carrinho-vazio">
+						<p>Seu carrinho está vazio.</p>
+					</div>
+
+					<!-- ##### Identificação -->
+	            	<div class="box-carrinho">
+		                <ul class="servicos-inclusos">
+		                    <li><span class="ffarial fs12 fccinza3 fbold">Serviços</span></li>
+		                    <li><span class="ffarial fs12 fccinza3 fbold">Formas de Pagamento</span></li>
+		                    <li><span class="ffarial fs12 fccinza3 fbold">Preço</span></li>
+		                </ul>
+		                <ul class="lista-servicos">
+							<li class="servico">
+								<ul>
+		                            <li><span class="ffarial fs14 fcroxo">Inglês</span></li>
+		                            <li><a href="#" class="ffarial fs12 fcroxo btn-oi ico-excluir-compra"><img src="assets/img/ico-menos-circulo-vermelho.png" border="0" /> Excluir item</a></li>
+		                        </ul>
+							</li>
+							<li class="formas-pagamento">
+								<ul>
+									<li class="conta-telefonica"><div class="popover-oi" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Débito em Conta Telefônica"><img src="assets/img/ico-telefone2.png" border="0"><p class="ffarial fs11 fccinza3">Conta Telefônica</p></div></li>
+		                            <li class="outras-formas"><div class="popover-oi" data-container="body" data-toggle="popover" data-placement="top" data-content="Cartão de Crédito"><img src="assets/img/ico-mais.png" border="0"><p class="ffarial fs11 fccinza1">Outras formas de pagamento</p></div></li>
+		                        </ul>
+							</li>
+							<li class="preco">
+								<ul>
+									<li class="ffarial fs18 fccinza3 fbold">R$</li>
+			                        <li class="ffarial fs18 fccinza3 fbold">29,90</li>
+			                        <li class="ffarial fs12 fccinza3 fbold">/ mês</li>
+		                        </ul>
+							</li>
+		                </ul>
+		                <div class="well well-termo-de-uso">
+		                    <ul>
+		                        <li>
+		                            <span class="ffarial fs11 fcpreto fbold">Termo de Uso</span>
+		                        </li>
+		                        <li>
+		                            <input type="checkbox" id="aceite-tdu" /> <span class="ffarial fs11 fccinza2">Li e concordo com o <a href="" class="ffarial fs11 fccinza2 link-oi">Termo de Uso</a></span>
+		                        </li>
+		                    </ul>
+		                </div>
+		                <div class="borda-top-cinza4">&nbsp;</div>
+		                <ul class="lista-servicos">
+							<li class="servico">
+								<ul>
+		                            <li><span class="ffarial fs14 fcroxo">Inglês</span></li>
+		                            <li><a href="#" class="ffarial fs12 fcroxo btn-oi ico-excluir-compra"><img src="assets/img/ico-menos-circulo-vermelho.png" border="0" /> Excluir item</a></li>
+		                        </ul>
+							</li>
+							<li class="formas-pagamento">
+								<ul>
+		                            <li class="cartao-credito"><div class="popover-oi" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Débito em Cartão de Crédito"><img src="assets/img/ico-cartao-credito.png" border="0"><p class="ffarial fs11 fccinza3">Cartão de Crédito</p></div></li>
+		                            <li class="conta-corrente"><div class="popover-oi" data-container="body" data-toggle="popover" data-placement="top" data-content="Débito em Conta Corrente"><img src="assets/img/ico-debito-conta-corrente.png" border="0"><p class="ffarial fs11 fccinza3">Conta Corrente</p></div></li>
+		                        </ul>
+							</li>
+							<li class="preco">
+								<ul>
+									<li class="ffarial fs18 fccinza3 fbold">R$</li>
+			                        <li class="ffarial fs18 fccinza3 fbold">29,90</li>
+			                        <li class="ffarial fs12 fccinza3 fbold">/ mês</li>
+		                        </ul>
+							</li>
+		                </ul>
+		                <div class="well well-termo-de-uso">
+	                        <span class="ffarial fs11 fcpreto fbold">Termo de Uso</span>
+	                        <p><input type="checkbox" id="aceite-tdu" /> <span class="ffarial fs11 fccinza2">Li e concordo com o <a class="ffarial fs11 fccinza2 link-oi">Termo de Uso</a></span></p>
+	                        <div class="termo-de-uso">
+	                            <div class="contrato">
+	                                <p class="ffarial fs16 fcpreto fbold">Contrato</p>
+	                                <p class="ffarial fs12 fccinza3">
+	                                    CONTRATO DE ADESÃO A PRESTAÇÃO DE SERVIÇOS DE VALOR ADICIONADO<br>
+	                                    OI INTERNET S.A., com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Amauri, nº 299, Jardim Europa, inscrita no CNPJ/MF sob o nº 03.368.522/0001-39, neste ato representada na forma de seu ato constitutivo, doravante denominada simplesmente "OI INTERNET", e<br>
+	                                    CLIENTE, pessoa física ou jurídica, identificada conforme adesão (“Adesão”).<br>
+	                                    OI INTERNET S.A., com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Amauri, nº 299, Jardim Europa, inscrita no CNPJ/MF sob o nº 03.368.522/0001-39, neste ato representada na forma de seu ato constitutivo, doravante denominada simplesmente "OI INTERNET", e<br>
+	                                    CLIENTE, pessoa física ou jurídica, identificada conforme adesão (“Adesão”).<br>
+	                                    OI INTERNET S.A., com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Amauri, nº 299, Jardim Europa, inscrita no CNPJ/MF sob o nº 03.368.522/0001-39, neste ato representada na forma de seu ato constitutivo, doravante denominada simplesmente "OI INTERNET", e<br>
+	                                    CLIENTE, pessoa física ou jurídica, identificada conforme adesão (“Adesão”).<br>
+	                                    OI INTERNET S.A., com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Amauri, nº 299, Jardim Europa, inscrita no CNPJ/MF sob o nº 03.368.522/0001-39, neste ato representada na forma de seu ato constitutivo, doravante denominada simplesmente "OI INTERNET", e<br>
+	                                    CLIENTE, pessoa física ou jurídica, identificada conforme adesão (“Adesão”).<br>
+	                                    OI INTERNET S.A., com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Amauri, nº 299, Jardim Europa, inscrita no CNPJ/MF sob o nº 03.368.522/0001-39, neste ato representada na forma de seu ato constitutivo, doravante denominada simplesmente "OI INTERNET", e<br>
+	                                    CLIENTE, pessoa física ou jurídica, identificada conforme adesão (“Adesão”).<br>
+	                                    OI INTERNET S.A., com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Amauri, nº 299, Jardim Europa, inscrita no CNPJ/MF sob o nº 03.368.522/0001-39, neste ato representada na forma de seu ato constitutivo, doravante denominada simplesmente "OI INTERNET", e<br>
+	                                    CLIENTE, pessoa física ou jurídica, identificada conforme adesão (“Adesão”).<br>
+	                                </p>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+
+	 				<!-- ##### Identificação Ex: Débito em Conta Telefônica -->
+	 				<div class="box-carrinho">
+	 					<div class="box-todos-servicos">
+							<input type="checkbox"> <span class="ffarial fs12 fccinza3 fbold">Quero a mesma forma de pagamento para todos os serviços</span>
+	 					</div>
+	 					<div class="borda-top-cinza3"></div>
+	                    <ul class="lista-pagamento">
+							<li class="servico">
+								<ul>
+		                            <li><span class="ffarial fs14 fcroxo">Inglês</span></li>
+		                            <li><a href="#" class="ffarial fs12 fcroxo btn-oi ico-excluir-compra"><img src="assets/img/ico-menos-circulo-vermelho.png" border="0" /> Excluir item</a></li>
+		                        </ul>
+							</li>
+							<li class="preco">
+								<ul class="box-preco">
+									<li class="ffarial fs18 fccinza3 fbold">R$</li>
+			                        <li class="ffarial fs18 fccinza3 fbold">29,90</li>
+			                        <li class="ffarial fs12 fccinza3 fbold">/ mês</li>
+		                        </ul>
+							</li>
+						</ul>
+						<div class="pagamento-debito">
+							<div class="seta-direita"></div>
+							<p class="ffarial fs12 fbold fcpreto">Débito em Conta Telefônica</p>
+							<div class="box-roxo">
+								<span class="ffarial fs12 fcbranco">Débito em Conta Telefônica do número</span>
+								<span class="ffarial fs14 fbold fcbranco">(11) 5555-4433</span>
+							</div>
+							<p class="ffarial fs12 fcpreto">Por favor, confirme seu CEP</p>
+							<div class="input-group">
+							  <input type="text" class="form-control cep1" size="5" maxlength="5" placeholder="00000"> - <input type="text" class="form-control cep2" size="3" maxlength="3" placeholder="000">
+							</div>
+							<a href="#" class="btn-nao-sei-cep btn-oi">não sei o CEP</a>
+						</div>
+
+						<!-- ##### Pagamento Ex: Pagamento Efetuado com Sucesso -->
+	 					<div class="borda-top-cinza3"></div>
+	                    <ul class="lista-pagamento">
+							<li class="servico">
+								<ul>
+		                            <li><span class="ffarial fs14 fcroxo">Inglês</span></li>
+		                            <li><a href="#" class="ffarial fs12 fcroxo btn-oi ico-excluir-compra"><img src="assets/img/ico-menos-circulo-vermelho.png" border="0" /> Excluir item</a></li>
+		                        </ul>
+							</li>
+							<li class="preco">
+								<ul class="box-preco">
+									<li class="ffarial fs18 fccinza3 fbold">R$</li>
+			                        <li class="ffarial fs18 fccinza3 fbold">29,90</li>
+			                        <li class="ffarial fs12 fccinza3 fbold">/ mês</li>
+		                        </ul>
+							</li>
+						</ul>
+						<div class="pagamento-sucesso">
+							<div class="seta-direita"></div>
+							<ul class="no-margin">
+								<li><img src="assets/img/ico-sucesso.png"><p class="ffarial fs12 fcroxo no-margin">Pagamento efetuado com sucesso!</p></li>
+							</ul>
+						</div>
+
+	 					<!-- ##### Pagamento Ex: Com 3 opções de pagamento -->
+						<div class="borda-top-cinza3"></div>
+						<ul class="lista-pagamento">
+							<li class="servico">
+								<ul>
+		                            <li><span class="ffarial fs14 fcroxo">Inglês</span></li>
+		                            <li><a href="#" class="ffarial fs12 fcroxo btn-oi ico-excluir-compra"><img src="assets/img/ico-menos-circulo-vermelho.png" border="0" /> Excluir item</a></li>
+		                        </ul>
+							</li>
+							<li class="preco">
+								<ul class="box-preco">
+									<li class="ffarial fs18 fccinza3 fbold">R$</li>
+			                        <li class="ffarial fs18 fccinza3 fbold">29,90</li>
+			                        <li class="ffarial fs12 fccinza3 fbold">/ mês</li>
+		                        </ul>
+							</li>
+						</ul>
+						<div class="opcoes-pagamento">
+							<div class="seta-direita"></div>
+							<ul class="no-margin">
+								<li><img src="assets/img/ico-debito-conta-telefone.png" class="ico-debito-conta-telefone"><a href="#" class="ffarial fs12 fcroxo btn-oi no-margin">Débito Conta Telefônica</a></li>
+								<li><img src="assets/img/ico-cartao-credito.png" class="ico-cartao-credito"><a href="#" class="ffarial fs12 fcroxo btn-oi no-margin">Cartão de Crédito</a></li>
+								<li><img src="assets/img/ico-debito-conta-corrente.png" class="ico-debito-conta-corrente"><a href="#" class="ffarial fs12 fcroxo btn-oi no-margin">Débito em Conta Corrente</a></li>
+							</ul>
+						</div>
+
+						<!-- ##### Pagamento Ex: Cartao de Crédito -->
+						<div class="borda-top-cinza3"></div>
+						<ul class="lista-pagamento">
+							<li class="servico">
+								<ul>
+		                            <li><span class="ffarial fs14 fcroxo">Inglês</span></li>
+		                            <li><a href="#" class="ffarial fs12 fcroxo btn-oi ico-excluir-compra"><img src="assets/img/ico-menos-circulo-vermelho.png" border="0" /> Excluir item</a></li>
+		                        </ul>
+							</li>
+							<li class="preco">
+								<ul class="box-preco">
+									<li class="ffarial fs18 fccinza3 fbold">R$</li>
+			                        <li class="ffarial fs18 fccinza3 fbold">29,90</li>
+			                        <li class="ffarial fs12 fccinza3 fbold">/ mês</li>
+		                        </ul>
+							</li>
+						</ul>
+						<div class="pagamento-cartao">
+							<div class="seta-direita"></div>
+							<div class="cartao-credito">
+								<img src="assets/img/ico-cartao-credito.png" />
+								<p class="ffarial fs12 fbold fcpreto">Cartão de Crédito</p>
+							</div>
+							<ul class="bandeiras">
+								<li><input type="radio" class="form-control visa"> <img src="assets/img/ico-visa.png"></li>
+								<li><input type="radio" class="form-control mastercard"> <img src="assets/img/ico-mastercard.png"></li>
+								<li><input type="radio" class="form-control dinners"> <img src="assets/img/ico-dinners.png"></li>
+								<li><input type="radio" class="form-control american"> <img src="assets/img/ico-american-express.png"></li>
+							</ul>
+							<p class="ffarial fs11 fcpreto">Número do Cartão</p>
+							<ul class="numero-cartao">
+							  	<li><input type="text" class="form-control ffarial fs12 fcpreto" size="4" maxlength="4"></li>
+							  	<li><input type="text" class="form-control ffarial fs12 fcpreto" size="4" maxlength="4"></li>
+							  	<li><input type="text" class="form-control ffarial fs12 fcpreto" size="4" maxlength="4"></li>
+							  	<li><input type="text" class="form-control ffarial fs12 fcpreto" size="4" maxlength="4"></li>
+							</ul>
+							<div class="nome-impresso">
+								<p class="ffarial fs11 fcpreto">Nome impresso no cartão</p>
+								<input type="text" class="form-control ffarial fs12 fcpreto">
+							</div>
+							<ul class="data-validade">
+								<li>
+									<p class="ffarial fs11 fcpreto">Data validade</p>
+								</li>
+								<li>
+									<select class="mes ffarial fs12 fcpreto">
+										<option>mês</option>
+									</select>
+									<select class="ano ffarial fs12 fcpreto">
+										<option>ano</option>
+									</select>
+								</li>
+							</ul>
+							<ul class="codigo-seguranca">
+								<li>
+									<p class="ffarial fs11 fcpreto">Cód. Segurança</p>
+								</li>
+								<li>
+									<input type="text" class="form-control ffarial fs12 fcpreto">
+								</li>
+							</ul>
+							<p class="ffarial fs11 fcpreto">Por favor, confirme seu CEP</p>
+							<div class="input-group">
+							  <input type="text" class="form-control cep1" size="5" maxlength="5" placeholder="00000"> - <input type="text" class="form-control cep2" size="3" maxlength="3" placeholder="000">
+							</div>
+							<a href="#" class="btn-nao-sei-cep">não sei o CEP</a>
+							<ul class="botoes">
+								<li>
+									<a href="#" class="ffarial fs12 fcroxo btn-oi">Cancelar</a>
+									<button type="button" class="btn bg-btn-roxo ffarial fs12 fcbranco" data-toggle="button">Enviar</button>
+								</li>
+							</ul>
+							<div class="debito-conta-corrente debito-conta-corrente-off">
+								<img src="assets/img/ico-debito-conta-corrente-off.png" />
+								<a href="#"><p class="ffarial fs12 fcroxo">Débito em Conta Corrente</p></a>
+							</div>
+						</div>
+
+						<!-- ##### Pagamento: Débito em Conta Corrente -->
+						<div class="borda-top-cinza3"></div>
+						<ul class="lista-pagamento">
+							<li class="servico">
+								<ul>
+		                            <li><span class="ffarial fs14 fcroxo">Inglês</span></li>
+		                            <li><a href="#" class="ffarial fs12 fcroxo btn-oi ico-excluir-compra"><img src="assets/img/ico-menos-circulo-vermelho.png" border="0" /> Excluir item</a></li>
+		                        </ul>
+							</li>
+							<li class="preco">
+								<ul class="box-preco">
+									<li class="ffarial fs18 fccinza3 fbold">R$</li>
+			                        <li class="ffarial fs18 fccinza3 fbold">29,90</li>
+			                        <li class="ffarial fs12 fccinza3 fbold">/ mês</li>
+		                        </ul>
+							</li>
+						</ul>
+						<div class="pagamento-debito-conta-corrente">
+							<div class="seta-direita"></div>
+							<div class="cartao-credito">
+								<img src="assets/img/ico-cartao-credito-off.png" />
+								<a href="#"><p class="ffarial fs12 fcroxo">Cartão de Crédito</p></a>
+							</div>
+							<div class="debito-conta-corrente">
+								<img src="assets/img/ico-debito-conta-corrente.png" />
+								<p class="ffarial fs12 fbold fcpreto">Débito em conta Corrente</p>
+							</div>
+							<ul class="banco">
+								<li>
+									<p class="ffarial fs11 fcpreto">Banco</p>
+								</li>
+								<li>
+									<select class="mes ffarial fs12 fcpreto">
+										<option>selecione</option>
+										<option>Banco 1</option>
+										<option>Banco 2</option>
+										<option>Banco 3</option>
+									</select>
+								</li>
+							</ul>
+							<ul class="agencia">
+								<li>
+									<p class="ffarial fs11 fcpreto">Agência</p>
+								</li>
+								<li>
+									<ul class="numero-agencia">
+									  	<li><input type="text" class="form-control ffarial fs12 fcpreto" size="4" maxlength="4" placeholder="0000"></li>
+									  	<li>-</li>
+									  	<li><input type="text" class="form-control ffarial fs12 fcpreto" size="3" maxlength="3" placeholder="000"></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="conta">
+								<li>
+									<p class="ffarial fs11 fcpreto">Conta corrente</p>
+								</li>
+								<li>
+									<input type="text" class="form-control ffarial fs12 fcpreto">
+								</li>
+							</ul>
+							<div class="nome-titular">
+								<p class="ffarial fs11 fcpreto">Nome do titular</p>
+								<input type="text" class="form-control ffarial fs12 fcpreto">
+							</div>
+							<div class="cpf-cnpj">
+								<p class="ffarial fs11 fcpreto">CPF/CNPJ do titular</p>
+								<input type="text" class="form-control ffarial fs12 fcpreto">
+							</div>
+							<p class="ffarial fs11 fcpreto">Por favor, confirme seu CEP</p>
+							<div class="input-group">
+							  <input type="text" class="form-control cep1" size="5" maxlength="5" placeholder="00000"> - <input type="text" class="form-control cep2" size="3" maxlength="3" placeholder="000">
+							</div>
+							<a href="#" class="btn-nao-sei-cep btn-oi">não sei o CEP</a>
+							<ul class="botoes">
+								<li>
+									<a href="#" class="ffarial fs12 fcroxo btn-oi">Cancelar</a>
+									<button type="button" class="btn bg-btn-roxo ffarial fs12 fcbranco" data-toggle="button">Enviar</button>
+								</li>
+							</ul>
+						</div>
+		            </div>
+
+					<!-- #### Continuar Comprando e Botão Continuar -->
+					<div class="row">
+					    <div class="col-xs-12">
+							<div class="valor-total">
+								<a href="#" class="ffarial fs14 fcroxo btn-oi"> >> Continuar comprando</a>
+								<p class="ffarial fs20 fcpreto fbold">Total <span class="ffarial fs14 fcpreto sifra-reais">R$</span> 49,80 <span class="ffarial fs14 fcpreto">/ mês</span></p>
+							</div>
+							<div class="box-carrinho-rodape">
+								<button type="button" class="btn btn-roxo bg-btn-roxo btn-roxo-carrinho" data-toggle="button">Continuar</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- #### Continuar Comprando e Botão Finalizar Compra
+					<div class="row">
+					    <div class="col-xs-12">
+							<div class="valor-total">
+								<a href="#" class="ffarial fs14 fcroxo btn-oi"> >> Continuar comprando</a>
+								<p class="ffarial fs20 fcpreto fbold">Total <span class="ffarial fs14 fcpreto sifra-reais">R$</span> 29,90 <span class="ffarial fs14 fcpreto">/ mês</span></p>
+							</div>
+							<div class="box-carrinho-rodape">
+								<button type="button" class="btn btn-roxo bg-btn-roxo btn-roxo-carrinho" data-toggle="button">Finalizar compra</button>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="row">
+					    <div class="col-xs-12">
+					        <div class="box-conheca-tambem-carrinho">
+					            <h4 class="ffarial fs20 fcpreto">Também recomendamos para você</h4>
+					            <ul class="banners no-padding">
+					                <li><a href="#"><img src="assets/img/banner-suporte-remoto.png" border="0"></a></li>
+					                <li><a href="#"><img src="assets/img/banner-seguranca-multidispositivo2.png" border="0"></a></li>
+					            </ul>
+					        </div>
+					    </div>
+					</div>
+	    	    </div>
+	    	</div>
+		</div>
+	</div>
+
+</script>

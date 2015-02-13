@@ -1,0 +1,46 @@
+{
+  "name": "Integração Minha Oi",
+  "version": "0.3.0",
+  "ignore": [
+    "**/*.md",
+    "**/*.txt",
+    "bower_components",
+    "node_modules",
+    "src",
+    "gulpfile.js",
+    "*.json"
+  ],
+  "dependencies": {
+    "html5shiv": "latest",
+    "respond": "latest",
+    "bootstrap": "latest",
+    "jquery": "~1.10.2",
+    "backbone": "latest",
+    "backbone.marionette": "latest",
+    "cocktail": "~0.5.9"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./dist/js/bootstrap.js",
+        "./dist/css/bootstrap.css",
+        "./dist/css/bootstrap.css.map",
+        "./dist/fonts/glyphicons-halflings-regular.eot",
+        "./dist/fonts/glyphicons-halflings-regular.svg",
+        "./dist/fonts/glyphicons-halflings-regular.ttf",
+        "./dist/fonts/glyphicons-halflings-regular.woff"
+      ]
+    },
+    "respond": {
+      "main": [
+        "./dest/respond.min.js"
+      ]
+    },
+    "html5shiv": {
+      "main": [
+        "./dist/html5shiv.min.js"
+      ]
+    }
+  },
+  "private": true
+}

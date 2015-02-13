@@ -1,0 +1,9 @@
+{
+  "deploy": {
+    "build"  : "build",
+    "bueno"  : "/Volumes/lbueno/tmp/imoi",
+    "cadu"   : "/Volumes/cpedroni/www/imoi",
+    "fenna"  : "fenna",
+    "filipe" : "filipe"
+  }
+}

@@ -1,0 +1,73 @@
+<script id="solucoes-pra-voce" type="text/template">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="breadcrumb">
+                <li>Internet</li>
+                <li>Mais Serviços pra Internet</li>
+                <li>Loja de Serviços</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h4 class="ffarial fs20 fcpreto fbold titulo">Soluções Pra Você</h4>
+            <ul class="notificacoes no-padding">
+                <li><img src="assets/img/ico-carta.png" border="0"></li>
+                <li style="border-right:0;"><img src="assets/img/ico-carrinho.png" border="0"> <span class="ffarial fs12 fcroxo">(0)</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+        	<div class="box-solucoes">
+            	<%= conteudoSolucoes %>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box-acesse-gerenciar-servicos">
+                <img src="assets/img/banner-gerenciar-servicos.png" border="0">
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="item-solucoes-pra-voce" type="text/template">
+    <div id="" class="col-xs-4 box-produto">
+        <a href="<%= link %>" class="<%= color %> link-interna">
+            <p class="categoria"><%= category %></p>
+            <h3 class="ffarial fs20 fcbranco"><%= title %></h3>
+            <p class="descricao ffarial fs12 fcbranco"><%= description %></p>
+            <div class="img"><img src="<%= image %>"></div>
+            <div class="box-valores">
+                <p class="ffarial fs12 fcbranco">Por apenas</p>
+                <span class="ffarial fs18 fcbranco">R$</span>
+                <span class="ffarial fs40 fcbranco fbold"><%= ammount.split(',')[0] %></span>
+                <span class="ffarial fs14 fcbranco">,<%= ammount.split(',')[1] %>/mês</span>
+                <p class="saiba-mais ffarial fs11 fccinza2 fbold">Saiba mais</p>
+            </div>
+        </a>
+    </div>
+</script>
+
+<script id="item-destaque-solucoes-pra-voce" type="text/template">
+    <div id="" class="col-xs-8 box-produto">
+        <a href="<%= link %>" class="<%= color %> link-interna">
+            <p class="categoria"><%= category %></p>
+            <h3 class="ffarial fs20 fcbranco"><%= title %></h3>
+            <p class="descricao ffarial fs12 fcbranco"><%= description %></p>
+            <div class="img"><img src="<%= image %>"></div>
+            <div class="box-valores">
+                <p class="ffarial fs12 fcbranco">Por apenas</p>
+                <span class="ffarial fs18 fcbranco">R$</span>
+                <span class="ffarial fs40 fcbranco fbold"><%= ammount.split(',')[0] %></span>
+                <span class="ffarial fs14 fcbranco">,<%= ammount.split(',')[1] %>/mês</span>
+                <p class="saiba-mais ffarial fs11 fccinza2 fbold">Saiba mais</p>
+            </div>
+        </a>
+    </div>
+</script>
