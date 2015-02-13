@@ -1,0 +1,16 @@
+Oi-Internet
+===========
+
+ƒront-end
+---------
+Carlos Eduardo Pedroni Vieira           : <carlos.pedroni@oi.net.br>
+Fernando Bueno                          : <luiz.bueno@oi.net.br>
+Filipe Santana Lopes Da Silva           : <Filipe.Santana@oi.net.br>
+Hedcler Morais                          : <hedcler.morais@oi.net.br>
+Luiz Fernando Freitas Costa De Souza    : <luiz.costa@oi.net.br>
+
+BACK-end
+---------
+Bruno Conrado Santos                    : <bruno.conrado@oi.net.br>
+Rudge Ferreira                          : <rudge@oi.com.br>
+Thiago Ribeiro                          : <thiago.ribeirosp@oi.net.br>

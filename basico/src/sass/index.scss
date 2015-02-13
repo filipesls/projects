@@ -1,0 +1,67 @@
+/* Font Family */
+$arial: Arial;
+
+/* Font Style */
+$fontbold       : bold;
+$fontsublinhada : underline;
+
+/* Font Color */
+$branco   : #fff;
+$preto    : #000;
+$cinza1   : #999;
+$cinza2   : #58595b;
+$cinza3   : #313131;
+$roxo     : #54579a;
+$vermelho : #d74300;
+$orange   : #f06923;
+
+/* Font Size */
+$font11: 11px;
+$font12: 12px;
+$font14: 14px;
+$font16: 16px;
+$font18: 18px;
+$font20: 20px;
+$font22: 22px;
+$font24: 24px;
+$font28: 28px;
+$font40: 40px;
+$font45: 45px;
+$font60: 60px;
+
+.ffarial{ font-family: $arial; }
+
+.fbold{ font-weight: $fontbold; }
+.fsubl{ text-decoration: $fontsublinhada; }
+
+.fcbranco{ color: $branco; }
+.fcpreto{ color: $preto; }
+.fccinza1{ color: $cinza1; }
+.fccinza2{ color: $cinza2; }
+.fccinza3{ color: $cinza3; }
+.fcroxo{ color: $roxo; }
+.fcvermelho{ color: $vermelho; }
+
+.fs11{ font-size: $font11; }
+.fs12{ font-size: $font12; }
+.fs14{ font-size: $font14; }
+.fs16{ font-size: $font16; }
+.fs18{ font-size: $font18; }
+.fs20{ font-size: $font20; }
+.fs22{ font-size: $font22; }
+.fs24{ font-size: $font24; }
+.fs28{ font-size: $font28; }
+.fs40{ font-size: $font40; }
+.fs45{ font-size: $font45; }
+.fs60{ font-size: $font60; }
+
+
+a {
+    outline:none;
+    word-wrap: break-word;
+}
+
+
+::-webkit-selection { background: $orange; color: #fff; }
+   ::-moz-selection { background: $orange; color: #fff; }
+        ::selection { background: $orange; color: #fff; }

@@ -1,0 +1,670 @@
+/* file: main.css */
+
+/* overrides default bootstrap.css to disable responsiveness */
+
+.wrapper {
+    width: 686px !important;
+    margin: auto;
+    padding: 20px 0;
+}
+.conteudo{ padding-top: 18px; }
+.well{ margin-bottom: 10px; }
+
+a.link-oi{ text-decoration: underline; }
+a.link-oi:hover{ color: #54579a; text-decoration: none; }
+a.btn-oi{ text-decoration: none; }
+a.btn-oi:hover{ color: #54579a; text-decoration: underline; }
+
+.form-control{ font-size: 12px; }
+
+.btn-menu{ font-family: Arial; font-size: 12px; font-weight: bold; color:#54579a; border: 1px solid #cccccc; }
+.btn-resumo{ border-right: 0; }
+.btn-servicos{ border-left: 0; border-right: 0; }
+.btn-internet{ border-left: 0; }
+.dropdown-menu a{ font-family: Arial; font-size: 12px; font-weight: bold; color:#54579a; }
+
+ul.breadcrumb{ background: none; margin-bottom: 0; padding-left: 0; display: table; }
+ul.breadcrumb > li + li:before { content: "\003e"; padding: 0 5px; color: #231f20; }
+ul.breadcrumb li, .breadcrumb li a{ font-family: Arial; font-size: 11px; color: #231f20; }
+ul.breadcrumb li:first-child a{ color: #53569b; }
+.breadcrumb > li{ float: left; display: table; }
+
+h4.titulo{ margin: 0; float: left; display: table; }
+h4.subtitulo{ margin: 20px 20px 40px 20px; display: table; }
+.titulo-avisos{ float:left; }
+.notificacoes{ list-style: none; float: right; }
+.notificacoes > li { display: inline-block; }
+.notificacoes li:first-child{ border-right: 1px solid #ccc; color: #231f20; padding-right: 14px; }
+.notificacoes li:last-child{ padding-left: 11px; }
+
+.box-aviso{ background: #fefce8; padding:10px; }
+.box-aviso .ico-dialogo{ width: 40px; height: 44px; margin-right: 20px; float: left; display: table; }
+
+.box-banners{ margin-top: 25px; }
+.box-conheca-tambem{ margin-top: 25px; border-top: 1px dotted #939598; }
+/*.box-conheca-tambem-carrinho { margin-top: 25px; }*/
+/*.box-conheca-tambem-carrinho { margin-top: 25px; padding: 0 20px; display: table; }*/
+.banners{ list-style: none; }
+.banners > li { display: inline-block; }
+.banners li:first-child{ margin-right: 25px; clear:left; float: left; }
+
+/* Meus Serviços */
+.box-servicos{ width: 100%; margin-bottom: 20px; background-color: #ffffff; border: 1px solid #d4d6d8; display: table; }
+.box-servicos a{ text-decoration: none; }
+.box-servicos .table tr{ padding-bottom: 10px; }
+.box-servicos .status{ width: 50px; }
+.box-servicos .nome{ width: 250px; }
+.box-servicos .acao{ width: 120px;}
+.box-servicos .configuracoes{ width: 135px; }
+.box-servicos .mais-opcoes{ width: 96px; }
+.box-servicos .tr-mais-opcoes{ display: none; }
+
+.box-conteudo{ display: none; }
+.box-servicos .conteudo-instalar{ width: 100%; background: #dae1e5; margin-top: 20px; padding:15px 10px; position: relative; float: left; }
+.box-servicos .seta-termo-uso{ position: absolute; top: -10px; left: 320px; }
+.box-servicos .well-termo-de-uso{ width: 92%; padding: 9px; display: table; }
+.box-servicos .well-termo-de-uso ul{ margin: 0; padding: 0; list-style: none; }
+
+.box-servicos .multidispositivo{ margin: 0 30px 0 10px; }
+.box-servicos .multidispositivo ul{ margin: 0; padding: 0; }
+.box-servicos .multidispositivo ul li{ margin-right:15px; list-style: none; float: left; }
+.box-servicos .multidispositivo .icones{ text-align: center; }
+.box-servicos .multidispositivo .icones li{ width: 11%; border: 0; }
+
+.box-servicos .conteudo-mais-opcoes{ position: relative; float: left; }
+.box-servicos .conteudo-mais-opcoes ul{ width: 100%; background: #dae1e5; margin-top: 10px; padding:10px; list-style: none; float: left; }
+.box-servicos .conteudo-mais-opcoes li.plano{ width: 290px; margin-left: 5px; border: 0; }
+.box-servicos .conteudo-mais-opcoes li.instalacao{ width: 90px; margin-left: 40px; border: 0; }
+.box-servicos .conteudo-mais-opcoes li.manutencao{ width: 104px; margin-left: 50px; border: 0; }
+.box-servicos .conteudo-mais-opcoes li.fechar{ width: 60px; float: right; border: 0; }
+.box-servicos .conteudo-mais-opcoes p.titulo{ margin-bottom: 5px; }
+
+.box-servicos .conteudo-mais-opcoes2{ position: relative; }
+.box-servicos .conteudo-mais-opcoes2 ul{ width: 100%; background: #dae1e5; margin-top: 10px; padding:10px; list-style: none; float: left; }
+.box-servicos .conteudo-mais-opcoes2 li.plano{ width: 290px; margin-left: 5px; border: 0; }
+.box-servicos .conteudo-mais-opcoes2 li.manutencao{ width: 170px; margin-left: 40px; border: 0; }
+.box-servicos .conteudo-mais-opcoes2 li.fechar{ width: 90px; float: right; border: 0; }
+.box-servicos .conteudo-mais-opcoes2 p.titulo{ margin-bottom: 5px; }
+
+.box-servicos .termo-de-uso { width:100%; border-radius: 4px; background: #ffffff; border: 1px solid #cccccc; margin-top: 10px; padding: 10px; }
+.box-servicos .termo-de-uso .contrato{ height:250px; margin-top: 15px; padding: 10px; overflow:auto; }
+.box-servicos .fechar{ position: relative; }
+.box-servicos .fechar .seta-cima{ position: absolute; top:-20px; right: 65px; }
+.box-servicos .servicos-inclusos{ background: #e9edf0; padding: 9px 10px; border-bottom: 0; }
+.box-servicos .outros-servicos{ background: #e9edf0; padding: 9px 10px; border-top: 1px solid #babcbe; border-bottom: 0; }
+.box-servicos .plano{ width: 370px; padding-left: 50px; padding-right: 30px; }
+.box-servicos .instalacao{ width: 124px; }
+.box-servicos .manutencao{ width: 170px; }
+.box-servicos .manutencao .opcoes-manutencao{ list-style: none; float: left; }
+.box-servicos .manutencao .opcoes-manutencao li{ padding: 0; border: 0; }
+button.close { width:25px; height:25px; font-size: 20px; font-weight: normal; text-shadow: none; color: #dae1e5; margin-top: -2px; opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); }
+.btn-fechar { width:25px; height:25px; background: #a2a4a7 !important; border-radius:100%; position: absolute; top: 10px; right: 10px; }
+.box-servicos .servico{ margin-bottom: 0; }
+
+.box-servicos .servicos{ width: 100%; margin-bottom: 0; padding: 0 10px; list-style: none; display: table; }
+.box-servicos .servicos p{ margin-bottom: 0; }
+.box-servicos .servicos li{ width: 100%; padding: 15px 0; float: left; border-top: 1px dotted #939598; }
+.box-servicos .servicos li:first-child{ border:0; }
+.box-servicos .servicos .produto{ width: 664px; padding: 0; list-style: none; display: table; }
+.box-servicos .servicos .produto li{ padding: 0; float: left; border: 0; }
+.box-servicos .servicos .produto .status{ width: 50px; }
+.box-servicos .servicos .produto .nome{ width: 250px; }
+.box-servicos .servicos .produto .acao{ width: 120px;}
+.box-servicos .servicos .produto .confirmar-compra{ width: 210px; }
+.box-servicos .servicos .produto .desistir-compra{ width: 140px; }
+.box-servicos .servicos .produto .configuracoes{ width: 135px; text-align: right; }
+.box-servicos .servicos .produto .configuracoes a{ margin-right: 20px; padding-right: 18px; border-right: 1px solid #ccc; }
+.box-servicos .servicos .produto .mais-opcoes{ width: 96px; }
+.box-servicos .servicos .produto .mais-opcoes a{ cursor: pointer; }
+
+/* Meus Avisos */
+#meus-avisos{ padding: 0 20px; }
+.box-meus-avisos{ margin-bottom: 20px; border: 1px solid #d4d6d8; }
+.data-mensagem{ height: 28px; background: #e9edf0; line-height: 28px; }
+hr{ border-top: 1px dotted #ccc; margin: 0 0 10px 0; }
+
+/* Solucoes Pra Você */
+.box-solucoes .box-coloridos{ list-style: none; }
+.box-solucoes .box-produto { margin: 10px 0; padding-left: 0; padding-right: 20px;  }
+.box-solucoes .box-produto a.verde { background-color: #009ba6 !important; }
+.box-solucoes .box-produto a.roxo { background-color: #7470a3 !important; }
+.box-solucoes .box-produto a.laranja { background-color: #d2671f!important; }
+.box-solucoes .box-produto a { color: #fff; display: block; padding: 10px; height: 350px; position: relative; text-decoration: none; }
+.box-solucoes .box-produto p.categoria { background-color: #000; float: left; margin-left: -10px; padding: 0 10px 0 20px; text-transform: capitalize; }
+.box-solucoes .box-produto h3 { text-align: left; width: 100%; margin-top: 0; margin-bottom: 0; display: table; }
+.box-solucoes .box-produto p.descricao { max-height: 70px; margin-top: 5px; line-height: 16px; overflow: hidden; }
+.box-solucoes .box-produto .img { height: 140px; line-height: 140px; }
+
+/* Carrinho de Compras */
+.carrinho-compras{ margin-bottom: 10px; }
+.status-carrinho .notificacoes li:first-child{ border-right: 0; }
+.box-carrinho-vazio{ width: 100%; height: 125px; text-align: center; margin: 10px auto; padding: 10px; border-radius: 4px; border: 1px solid #ccc; display: table; }
+.box-carrinho{ width: 100%; margin-top: -3px; margin-bottom: 20px; padding: 0; background-color: #ffffff; border: 1px solid #d4d6d8; display: table; }
+.box-carrinho ul.servicos-inclusos{ height: 35px; background: #e9edf0; margin-bottom: 0; padding: 9px 15px; border-bottom: 0; list-style: none; }
+.box-carrinho ul.servicos-inclusos li:first-child{ width: 34%; padding-left: 0; }
+.box-carrinho ul.servicos-inclusos li{ width: 35%; padding-left: 5px; float: left; }
+.box-carrinho ul.servicos-inclusos li:last-child{ width: 20%; padding-left: 0; float: left; }
+
+.box-carrinho ul.lista-servicos{ width: 100%; background: #fff; padding: 15px 15px 0 21px; list-style: none; display: table; }
+.box-carrinho ul.lista-servicos li.servico{ width: 33%; float: left; }
+.box-carrinho ul.lista-servicos li.formas-pagamento{ width: 36%; float: left; position: relative; }
+.box-carrinho ul.lista-servicos li.preco{ width: 25%; float: left; }
+
+.box-carrinho ul.lista-servicos .servico{ padding-right: 10px; border-right: 1px dotted #ccc; }
+.box-carrinho ul.lista-servicos .servico ul{ width: 100%; height: 45px; background: #fff; padding: 0; list-style: none; display: table; }
+.box-carrinho ul.lista-servicos .servico ul li:first-child{ width: 100%; padding-left: 5px; float: left; }
+.box-carrinho ul.lista-servicos .servico ul li:last-child{ width: 100%; padding: 0; float: left; }
+
+.box-carrinho ul.lista-servicos .formas-pagamento{ padding: 0 10px; position: relative; }
+.box-carrinho ul.lista-servicos .formas-pagamento ul{ width: 100%; background: #fff; padding: 0; list-style: none; display: table; }
+.box-carrinho ul.lista-servicos .formas-pagamento ul li:first-child{ width: 50%; text-align: center; float: left; }
+.box-carrinho ul.lista-servicos .formas-pagamento ul li:last-child{ width: 50%; text-align: center; float: right; }
+.box-carrinho ul.lista-servicos .formas-pagamento ul li img{ margin: 0 auto; display: block; }
+.box-carrinho ul.lista-servicos .formas-pagamento ul li p{ margin: 0; }
+.box-carrinho ul.lista-servicos .formas-pagamento ul li.conta-corrente{ margin-top: -1px; }
+.box-carrinho ul.lista-servicos .formas-pagamento ul li.conta-telefonica p{ margin-top: 9px; }
+
+.box-carrinho ul.lista-servicos .preco{ padding-left: 10px; border-left: 1px dotted #ccc; }
+.box-carrinho ul.lista-servicos .preco ul{ width: 100%; height: 45px; background: #fff; padding: 20px 0 0 0; list-style: none; display: table; }
+.box-carrinho ul.lista-servicos .preco ul li{ width: 30%; margin-right: 4px; float: left; }
+.box-carrinho ul.lista-servicos .preco ul li:first-child{ width: 18%; float: left; }
+.box-carrinho ul.lista-servicos .preco ul li:last-child{ width: 30%; margin-top: 6px; float: left; }
+
+.box-carrinho .box-todos-servicos{ width:630px; background:#e9edf0; margin: 10px auto; padding: 10px; border-radius: 4px; display:table; }
+.box-carrinho .box-todos-servicos span{ margin-left: 10px; }
+.box-carrinho ul.lista-pagamento{ width: 50%; background: #fff; margin-left: 30px; padding: 15px 0 0 0; list-style: none; float: left; display: table; }
+.box-carrinho ul.lista-pagamento li{ width: 27%; float: left; }
+.box-carrinho ul.lista-pagamento li.servico ul li:last-child{ width: 100px; margin-top: 5px; float: left; clear: left; }
+
+.box-carrinho ul.lista-pagamento .servico{ width: 50%; padding: 10px 10px 0 0; border-right: 1px dotted #ccc; }
+.box-carrinho ul.lista-pagamento .servico ul{ width: 100%; background: #fff; padding: 0; list-style: none; display: table; }
+.box-carrinho ul.lista-pagamento .servico ul li:first-child{ width: 60%; padding-left: 5px; float: left; }
+.box-carrinho ul.lista-pagamento .servico ul li:last-child{ width: 40%; padding: 0; float: right; }
+
+.box-carrinho ul.lista-pagamento .preco{ width: 45%; padding: 10px 0 0 10px; }
+.box-carrinho ul.lista-pagamento .preco ul.box-preco{ width: 140px; height: 36px; background: #e9edf0; margin:0 auto; padding: 5px 10px; list-style: none; border-radius: 4px; display: table; }
+.box-carrinho ul.lista-pagamento .preco ul.box-preco li{ width: 30%; margin-right: 12px; float: left; }
+.box-carrinho ul.lista-pagamento .preco ul.box-preco li:first-child{ width: 15%; margin-right: 10px; float: left; }
+.box-carrinho ul.lista-pagamento .preco ul.box-preco li:last-child{ width: 26%; margin-top: 6px; float: left; }
+
+.box-carrinho .pagamento-cartao { width: 270px; background: #e9edf0; padding: 19px; position: relative; float: right; border-left: 1px dotted #ccc; }
+.box-carrinho .pagamento-cartao p{ margin-top:5px; margin-bottom: 3px; float: left; }
+.box-carrinho .pagamento-cartao ul.bandeiras { padding: 0; list-style: none; display: table; }
+.box-carrinho .pagamento-cartao ul.bandeiras li{ float: left; }
+.box-carrinho .pagamento-cartao ul.bandeiras li input{ width: 12px; height: 12px; float: left; }
+.box-carrinho .pagamento-cartao ul.bandeiras li img{ margin: 0 7px 0 5px; float: left; }
+.box-carrinho .pagamento-cartao .cartao-credito img{ margin-right: 14px; float: left; }
+.box-carrinho .pagamento-cartao ul.numero-cartao { width: 100%; padding: 0; list-style: none; margin-bottom: 5px; display: table; }
+.box-carrinho .pagamento-cartao ul.numero-cartao li{ margin-right: 9px; float: left; }
+.box-carrinho .pagamento-cartao ul.numero-cartao li input{ width: 48px; height: 24px; padding: 10px; float: left; }
+.box-carrinho .pagamento-cartao .nome-impresso{ margin-bottom: 5px; display: table; }
+.box-carrinho .pagamento-cartao .nome-impresso input{ width: 100%; height: 24px; padding: 10px; float: left; }
+.box-carrinho .pagamento-cartao ul.data-validade { width: 50%; margin-bottom: 20px; padding: 0; list-style: none; float: left; display: table; }
+.box-carrinho .pagamento-cartao ul.data-validade li{ float: left; clear: left; }
+.box-carrinho .pagamento-cartao ul.data-validade li select{ width: 54px; height: 24px; background: #fff; padding: 10px; float: left; }
+.box-carrinho .pagamento-cartao ul.data-validade .mes{ margin-right: 6px; }
+.box-carrinho .pagamento-cartao ul.codigo-seguranca { width: 35%; margin-bottom: 20px; padding: 0; list-style: none; float: right; display: table; }
+.box-carrinho .pagamento-cartao ul.codigo-seguranca li{ float: left; clear: left; }
+.box-carrinho .pagamento-cartao ul.codigo-seguranca li input{ width: 85px; height: 24px; padding: 10px; float: left; }
+
+.box-carrinho .pagamento-debito-conta-corrente { width: 270px; background: #e9edf0; padding: 19px 19px 0 19px; position: relative; float: right; border-left: 1px dotted #ccc; }
+.box-carrinho .pagamento-debito-conta-corrente p{ margin: 0 0 5px 2px; }
+.box-carrinho .pagamento-debito-conta-corrente .cartao-credito img{ margin-right: 14px; float: left; }
+.box-carrinho .pagamento-debito-conta-corrente ul.banco{ width: 100%; margin-bottom: 20px; padding: 0; list-style: none; float: left; display: table; }
+.box-carrinho .pagamento-debito-conta-corrente ul.banco li{ float: left; clear: left; }
+.box-carrinho .pagamento-debito-conta-corrente ul.banco li select{ width: 118px; height: 24px; background: #fff; padding: 10px; float: left; }
+.box-carrinho .pagamento-debito-conta-corrente ul.agencia{ padding: 0; list-style: none; float: left; }
+.box-carrinho .pagamento-debito-conta-corrente ul.agencia li{ float: left; clear: left; }
+.box-carrinho .pagamento-debito-conta-corrente ul.numero-agencia{ padding: 0; list-style: none; }
+.box-carrinho .pagamento-debito-conta-corrente ul.numero-agencia li{ float: left; clear: none; }
+.box-carrinho .pagamento-debito-conta-corrente ul.numero-agencia li:first-child input{ width: 60px; height: 24px; margin-right: 2px; padding: 10px; float: left; }
+.box-carrinho .pagamento-debito-conta-corrente ul.numero-agencia li:last-child input{ width: 44px; height: 24px; margin-left: 2px; padding: 10px; float: left; }
+.box-carrinho .pagamento-debito-conta-corrente ul.conta{ list-style: none; padding-left: 0; float: right; display: table; }
+.box-carrinho .pagamento-debito-conta-corrente ul.conta li{ float: left; clear: left; }
+.box-carrinho .pagamento-debito-conta-corrente ul.conta input{ width: 90px; height: 24px; padding: 10px; float: left; }
+.box-carrinho .pagamento-debito-conta-corrente .nome-titular{ width: 100%; margin-bottom: 10px; padding: 0; display: table; }
+.box-carrinho .pagamento-debito-conta-corrente .nome-titular input{ height: 24px; }
+.box-carrinho .pagamento-debito-conta-corrente .cpf-cnpj{ width: 60%; margin-bottom: 10px; padding: 0; display: table; }
+.box-carrinho .pagamento-debito-conta-corrente .cpf-cnpj input{ height: 24px; }
+
+.box-carrinho .pagamento-debito { width: 270px; background: #e9edf0; padding: 19px; position: relative; float: right; border-left: 1px dotted #ccc; }
+.box-carrinho .seta-direita { width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 10px solid #fff; position: absolute; top: 25%; left: -1px; z-index: 10; }
+.box-carrinho .input-group{ float: left; }
+.box-carrinho .box-roxo { text-align: center; background: #7470a3; margin-bottom: 20px; padding: 5px 10px; border-radius:4px; }
+.box-carrinho .cep1{ width: 80px; height: 24px; margin-right: 2px; float: left; }
+.box-carrinho .cep2{ width: 55px; height: 24px; margin-left: 2px; float: right; }
+.box-carrinho .btn-nao-sei-cep{ font-family: Arial; font-size:11px; color:#54579a; margin: 5px 0 0 5px; float:left; }
+.box-carrinho ul.cep { width: 100%; padding: 0; list-style: none; display: table; }
+.box-carrinho ul.cep li{ margin-bottom: 20px; float: left; }
+.box-carrinho ul.cep li:last-child a{ width: 80px; margin: 5px 0 0 10px; float: left; }
+.box-carrinho ul.botoes{  width: 100%; margin: 20px 0; padding: 0; list-style: none; float: left; display: table; }
+.box-carrinho ul.botoes li{ float: right; }
+.box-carrinho ul.botoes button{ width: 80px; height: 28px; margin-left: 10px; padding: 5px; }
+
+.box-carrinho .cartao-credito{ width: 100%; margin-bottom: 10px; display: table; }
+
+.box-carrinho .debito-conta-corrente{ width: 100%; margin-bottom: 20px; padding-top: 10px; border-top: 1px dotted #ccc; float: left; display: table; }
+.box-carrinho .debito-conta-corrente-off{ margin-bottom: 0; }
+.box-carrinho .debito-conta-corrente img{ margin-right: 10px; float: left; }
+.box-carrinho .debito-conta-corrente p{ margin-top: 5px; float: left; }
+
+.box-carrinho .opcoes-pagamento { width: 270px; background: #e9edf0; padding: 0 19px; position: relative; float: right; border-left: 1px dotted #ccc; }
+.box-carrinho .opcoes-pagamento ul{ list-style: none; padding: 0; }
+.box-carrinho .opcoes-pagamento ul li{ width: 100%; height: 46px; line-height: 45px; border-bottom: 1px dotted #ccc; display: table; }
+.box-carrinho .opcoes-pagamento ul li:last-child{ border: 0; }
+.box-carrinho .opcoes-pagamento .ico-debito-conta-telefone{ margin: 10px 16px 0 7px; float: left; }
+.box-carrinho .opcoes-pagamento .ico-cartao-credito{ margin: 10px 11px 0 3px; float: left; }
+.box-carrinho .opcoes-pagamento .ico-debito-conta-corrente{ margin: 6px 10px 0 0; float: left; }
+
+.box-carrinho .pagamento-sucesso { width: 270px; background: #e9edf0; padding: 17px 19px; position: relative; float: right; border-left: 1px dotted #ccc; }
+.box-carrinho .pagamento-sucesso ul{ list-style: none; padding: 0; }
+.box-carrinho .pagamento-sucesso ul li{ width: 100%; height: 46px; line-height: 45px; border-bottom: 1px dotted #ccc; display: table; }
+.box-carrinho .pagamento-sucesso ul li:last-child{ border: 0; }
+.box-carrinho .pagamento-sucesso img{ margin: 10px; float: left; }
+
+/* Posicionamento da seta */
+.box-carrinho .opcoes-pagamento .seta-direita{ top: 10%; }
+.box-carrinho .pagamento-cartao .seta-direita{ top: 5%; }
+.box-carrinho .pagamento-sucesso .seta-direita{ top: 35%; }
+.box-carrinho .pagamento-debito-conta-corrente .seta-direita{ top: 15%; }
+.box-carrinho .opcoes-pagamento .seta-direita{ top: 10%; }
+
+.box-carrinho .box-sucesso{ width: 80%; height: 60px; background: #c2f2d6; border-radius: 4px; margin: 0 auto; padding: 10px 20px; display: table; }
+.box-carrinho .box-detalhes-servicos{ width: 80%; background: #e9edf0; border-radius: 4px; margin: 25px auto; padding: 15px 20px 30px 20px; display: table; }
+.box-carrinho .box-detalhes-servicos ul{ list-style: none; }
+.box-carrinho .box-detalhes-servicos ul li{ float: left;  }
+.box-carrinho .box-detalhes-servicos ul li:last-child{ padding-left: 20px; border-left: 1px dotted #ccc; }
+.box-carrinho .box-detalhes-servicos .servico{ width: 100%; margin: 15px 0 5px 0; padding: 0; float: left; display: table; }
+.box-carrinho .box-detalhes-servicos .servico .nome{ width: 25%; }
+.box-carrinho .box-detalhes-servicos .servico .preco{ width: 30%; }
+.box-carrinho .box-detalhes-servicos .servico .status{ width: 40%; }
+.box-carrinho ul.box-preco{ width: 140px; height: 36px; background: #e9edf0; padding: 0 10px; list-style: none; border-radius: 4px; display: table; }
+.box-carrinho ul.box-preco li{ width: 30%; margin-right: 12px; float: left; }
+.box-carrinho ul.box-preco li:first-child{ width: 15%; margin-right: 10px; float: left; }
+.box-carrinho ul.box-preco li:last-child{ width: 26%; margin-top: 6px; padding: 0; float: left; border: 0; }
+.box-carrinho .box-outros-servicos{ width: 91%; margin: 30px auto 0 auto; padding: 20px 0; border-top: 1px dotted #ccc; }
+.box-carrinho .box-outros-servicos .btn-fechar2{ width: 82px; height: 28px; float: right; }
+
+.box-carrinho .well-termo-de-uso{ width: 94%; margin-left: 20px; padding: 9px; display: table; }
+.box-carrinho .well-termo-de-uso ul{ margin: 0; padding: 0; list-style: none; }
+.box-carrinho .well-termo-de-uso .contrato{ width: 100%; height: 200px; background: #fff; padding: 15px; overflow: auto; }
+
+.valor-total{ width: 96%; margin: 0 auto; padding: 0 20px; display: table; }
+.valor-total p{ float: right; }
+.valor-total .sifra-reais{ margin-left: 10px; }
+.box-carrinho-rodape{ width: 100%; background: #e9edf0; margin: 0 auto; padding: 20px; border-top: 1px solid #ccc; display: table; }
+/*.box-carrinho-rodape{ width: 96%; background: #e9edf0; margin: 0 auto; padding: 20px; border-top: 1px solid #ccc; display: table; }*/
+
+.descricao-servico{ padding: 0 20px 0 50px; }
+.box-acesse-gerenciar-servicos{ margin-top: 20px; }
+.box-valores{ line-height: 22px; position: absolute; bottom: 0; }
+.box-valores .saiba-mais{ margin-left: 30px; }
+.info{ margin-bottom: 0; }
+.box-botao-compre-agora{ margin: 45px 20px 0 0; float: right; }
+.principais-vantagens{ list-style: none; margin-top: 20px; padding-left: 0; }
+.principais-vantagens p{ display: table; }
+.principais-vantagens img{ margin: 5px 10px 0 0; float: left; }
+.img-destaque{ margin-top: 50px; }
+.bg-interna{ width: 686px; height: 370px; background: url("../img/bg-interna-solucoes.png") no-repeat; padding: 0 15px; }
+
+/* alertas */
+.alert{ padding: 6px; margin-bottom: 10px; border-radius: 0; position: relative; }
+.ico-alerta{ margin-right: 5px; float: left;  }
+.msg-alerta{ margin-top: 5px; }
+
+/* botões */
+.btn:focus, .btn:active:focus, .btn.active:focus{ outline: thin dotted; outline: 0px auto -webkit-focus-ring-color; }
+.btn-roxo, .btn-roxo:hover{ font-family: Arial; font-size: 12px; color: #ffffff; }
+.btn-fechar-warning{ background: #d18f3f; border-radius:100%; width:20px; height:20px; position: absolute; top: 6px; right: 10px; }
+.alert-warning button.close { width:20px; height:20px; font-size: 14px; font-weight: normal; text-shadow: none; color: #fff7c2; margin-top: -2px; opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); }
+.btn-footer-modal{ margin: 20px 0 0 20px; }
+.btn-fechar-roxo{ background: #7071b0; border-radius: 100%; width: 25px; height: 25px; margin: 5px 10px 0 20px; float: left; }
+.btn-fechar-roxo button.close{ width:25px; height:25px; font-size: 14px; font-weight: normal; text-shadow: none; color: #ffffff; margin-top: -2px; opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); }
+.btn-fechar-roxo2{ background: #7071b0; border-radius: 100%; width: 20px; height: 20px; margin: 0px 10px 0 0; float: left; }
+.btn-fechar-roxo2 button.close{ width:20px; height:20px; font-size: 14px; font-weight: normal; text-shadow: none; color: #ffffff; margin-top: -2px; opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); }
+.btn-salvar-modal, .btn-salvar-modal:hover{ width: 120px; font-family: Arial; font-size: 18px; color: #ffffff; float: right; }
+.btn-fechar-modal, .btn-fechar-modal:hover{ width: 125px; height: 35px; font-family: Arial; font-size: 18px; color: #ffffff; float: right; }
+.btn-fechar-modal2, .btn-fechar-modal2:hover{ width: 80px; font-family: Arial; font-size: 12px; color: #ffffff; float: right; }
+.btn-continuar-modal, .btn-continuar-modal:hover{ width: 120px; font-family: Arial; font-size: 12px; color: #ffffff; float: right; }
+.btn-roxo-carrinho, .btn-roxo-carrinho:hover{ width: 180px; font-family: Arial; font-size: 19px; color: #ffffff; float: right; }
+.btn-decidir-depois{ text-decoration: underline; float: left; }
+.btn-cancelar{ text-decoration: underline; margin-top: 5px; float: left; }
+.btn-ok{ height: 25px; margin: -3px 0 0 5px; padding: 3px 12px; }
+.btn-ok:hover{ font-size: 12px; }
+.btn-acesse-ja, .btn-acesse-ja:hover{ color: #ffffff; background: #00a596; width: 130px; height: 47px; border-radius: 0; }
+.btn-compre-agora, .btn-compre-agora:hover{ background: #00a596; width: 95px; height: 30px; padding: 3px 6px; }
+.btn-boleto-bancario-roxo{
+    width: 230px;
+    height: 70px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #9ea5d9; /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzllYTVkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQlIiBzdG9wLWNvbG9yPSIjOWVhNWQ5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODElIiBzdG9wLWNvbG9yPSIjNTA1NzhlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODQlIiBzdG9wLWNvbG9yPSIjNGU1NThjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRlNTU4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  #9ea5d9 0%, #9ea5d9 4%, #50578e 81%, #4e558c 84%, #4e558c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9ea5d9), color-stop(4%,#9ea5d9), color-stop(81%,#50578e), color-stop(84%,#4e558c), color-stop(100%,#4e558c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #9ea5d9 0%,#9ea5d9 4%,#50578e 81%,#4e558c 84%,#4e558c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #9ea5d9 0%,#9ea5d9 4%,#50578e 81%,#4e558c 84%,#4e558c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #9ea5d9 0%,#9ea5d9 4%,#50578e 81%,#4e558c 84%,#4e558c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #9ea5d9 0%,#9ea5d9 4%,#50578e 81%,#4e558c 84%,#4e558c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ea5d9', endColorstr='#4e558c',GradientType=0 ); /* IE6-8 */
+    border-radius: 4px;
+    border: 1px solid #52528c;
+    position: relative;
+    display: block;
+}
+.btn-cartao-credito-roxo{
+    width: 230px;
+    height: 70px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #9ea5d9; /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzllYTVkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQlIiBzdG9wLWNvbG9yPSIjOWVhNWQ5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODElIiBzdG9wLWNvbG9yPSIjNTA1NzhlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODQlIiBzdG9wLWNvbG9yPSIjNGU1NThjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRlNTU4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  #9ea5d9 0%, #9ea5d9 4%, #50578e 81%, #4e558c 84%, #4e558c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9ea5d9), color-stop(4%,#9ea5d9), color-stop(81%,#50578e), color-stop(84%,#4e558c), color-stop(100%,#4e558c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #9ea5d9 0%,#9ea5d9 4%,#50578e 81%,#4e558c 84%,#4e558c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #9ea5d9 0%,#9ea5d9 4%,#50578e 81%,#4e558c 84%,#4e558c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #9ea5d9 0%,#9ea5d9 4%,#50578e 81%,#4e558c 84%,#4e558c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #9ea5d9 0%,#9ea5d9 4%,#50578e 81%,#4e558c 84%,#4e558c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ea5d9', endColorstr='#4e558c',GradientType=0 ); /* IE6-8 */
+    border-radius: 4px;
+    border: 1px solid #52528c;
+    position: relative;
+    display: block;
+}
+.btn-boleto-bancario-roxo:hover, .btn-cartao-credito-roxo:hover{ color: #ffffff; }
+.btn-boleto-bancario-roxo img{ margin-right: 5px; }
+.btn-cartao-credito-roxo img{ margin-right: 8px; float: left; }
+.btn-cartao-credito-cinza{
+    width: 230px;
+    height: 70px;
+    padding: 10px;
+    background: #fcfcfc; /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZmNmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNyUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiNlM2UzZTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTNlM2UzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top,  #fcfcfc 0%, #ffffff 1%, #ffffff 7%, #e3e3e3 90%, #e3e3e3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(1%,#ffffff), color-stop(7%,#ffffff), color-stop(90%,#e3e3e3), color-stop(100%,#e3e3e3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fcfcfc 0%,#ffffff 1%,#ffffff 7%,#e3e3e3 90%,#e3e3e3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fcfcfc 0%,#ffffff 1%,#ffffff 7%,#e3e3e3 90%,#e3e3e3 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fcfcfc 0%,#ffffff 1%,#ffffff 7%,#e3e3e3 90%,#e3e3e3 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fcfcfc 0%,#ffffff 1%,#ffffff 7%,#e3e3e3 90%,#e3e3e3 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e3e3e3',GradientType=0 ); /* IE6-8 */
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    position: relative;
+    display: block;
+}
+.btn-boleto-bancario-cinza{
+    width: 230px;
+    height: 70px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fcfcfc; /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZmNmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNyUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiNlM2UzZTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTNlM2UzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top,  #fcfcfc 0%, #ffffff 1%, #ffffff 7%, #e3e3e3 90%, #e3e3e3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(1%,#ffffff), color-stop(7%,#ffffff), color-stop(90%,#e3e3e3), color-stop(100%,#e3e3e3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fcfcfc 0%,#ffffff 1%,#ffffff 7%,#e3e3e3 90%,#e3e3e3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fcfcfc 0%,#ffffff 1%,#ffffff 7%,#e3e3e3 90%,#e3e3e3 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fcfcfc 0%,#ffffff 1%,#ffffff 7%,#e3e3e3 90%,#e3e3e3 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fcfcfc 0%,#ffffff 1%,#ffffff 7%,#e3e3e3 90%,#e3e3e3 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e3e3e3',GradientType=0 ); /* IE6-8 */
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    position: relative;
+    display: block;
+}
+.btn-cartao-credito-cinza:hover, .btn-boleto-bancario-cinza:hover{ color: #545790; }
+.btn-cartao-credito-cinza img{ margin-right: 8px; float: left; }
+.btn-boleto-bancario-cinza img{ margin-right: 8px; }
+
+/* bordas */
+.borda-top-cinza{ border-top: 1px dotted #939598; }
+.borda-top-cinza2{ border-top: 1px dotted #c8c7c7; }
+.borda-top-cinza3{ width:100%; margin: 1px 0 1px 0; border-top: 1px dotted #ccc; float:left; }
+.borda-top-cinza4{ width: 95%; height: 1px; border-top: 1px dotted #ccc; margin: 0 auto; }
+.borda-bottom-cinza{ border-bottom: 1px dotted #939598; }
+.borda-bottom-cinza2{ border-bottom: 1px dotted #c8c7c7; }
+.borda-right-cinza{ border-right: 1px dotted #939598; }
+.table > thead > tr:first-child > td, .table > tbody > tr:first-child > td, .table > tfoot > tr:first-child > td{ border-top: 0; }
+
+/* espaçamentos */
+.padded20{ padding: 0 20px; }
+.padded-vertical{ padding: 10px 0; }
+.table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{ padding: 0; }
+.table > tbody > tr > td{ padding: 10px 0; }
+
+/* background */
+.bg-branco{ background: #fff; border-top: 0; }
+.bg-menu{
+	background: #ffffff; /* Old browsers */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmViZWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 21%, #ebebec 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(21%,#ffffff), color-stop(100%,#ebebec)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 21%,#ebebec 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 21%,#ebebec 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 21%,#ebebec 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 21%,#ebebec 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebec',GradientType=0 ); /* IE6-8 */
+}
+.bg-btn-roxo, .bg-btn-roxo:focus, .bg-btn-roxo.active{
+    background: #7581bb; /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc1ODFiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQlIiBzdG9wLWNvbG9yPSIjNzA3YmM1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOCUiIHN0b3AtY29sb3I9IiM2ZjdhYzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMiUiIHN0b3AtY29sb3I9IiM2ZDc4YzAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxNiUiIHN0b3AtY29sb3I9IiM3MDdiYmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyNCUiIHN0b3AtY29sb3I9IiM2ZjdhYzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1NiUiIHN0b3AtY29sb3I9IiM2ZjdhYzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3NiUiIHN0b3AtY29sb3I9IiM2NjZlYjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5MiUiIHN0b3AtY29sb3I9IiM1YTYxYTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5NiUiIHN0b3AtY29sb3I9IiM1OTYwYTciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTg1ZjljIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top,  #7581bb 0%, #707bc5 4%, #6f7ac8 8%, #6d78c0 12%, #707bbd 16%, #6f7ac2 24%, #6f7ac2 56%, #666eb3 76%, #5a61a4 92%, #5960a7 96%, #585f9c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7581bb), color-stop(4%,#707bc5), color-stop(8%,#6f7ac8), color-stop(12%,#6d78c0), color-stop(16%,#707bbd), color-stop(24%,#6f7ac2), color-stop(56%,#6f7ac2), color-stop(76%,#666eb3), color-stop(92%,#5a61a4), color-stop(96%,#5960a7), color-stop(100%,#585f9c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #7581bb 0%,#707bc5 4%,#6f7ac8 8%,#6d78c0 12%,#707bbd 16%,#6f7ac2 24%,#6f7ac2 56%,#666eb3 76%,#5a61a4 92%,#5960a7 96%,#585f9c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #7581bb 0%,#707bc5 4%,#6f7ac8 8%,#6d78c0 12%,#707bbd 16%,#6f7ac2 24%,#6f7ac2 56%,#666eb3 76%,#5a61a4 92%,#5960a7 96%,#585f9c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #7581bb 0%,#707bc5 4%,#6f7ac8 8%,#6d78c0 12%,#707bbd 16%,#6f7ac2 24%,#6f7ac2 56%,#666eb3 76%,#5a61a4 92%,#5960a7 96%,#585f9c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #7581bb 0%,#707bc5 4%,#6f7ac8 8%,#6d78c0 12%,#707bbd 16%,#6f7ac2 24%,#6f7ac2 56%,#666eb3 76%,#5a61a4 92%,#5960a7 96%,#585f9c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7581bb', endColorstr='#585f9c',GradientType=0 ); /* IE6-8 */
+    outline: none;
+
+}
+.bg-btn-roxo:hover{
+    background: #7987c4; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc5ODdjNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQlIiBzdG9wLWNvbG9yPSIjN2Y4ZWQ1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOCUiIHN0b3AtY29sb3I9IiM4MDhlZDEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI0MiUiIHN0b3AtY29sb3I9IiM5NmEzZTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM5YWE2ZTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2MiUiIHN0b3AtY29sb3I9IiM5YmE3ZGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYThiMmU2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top,  #7987c4 0%, #7f8ed5 4%, #808ed1 8%, #96a3e2 42%, #9aa6e4 50%, #9ba7dd 62%, #a8b2e6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7987c4), color-stop(4%,#7f8ed5), color-stop(8%,#808ed1), color-stop(42%,#96a3e2), color-stop(50%,#9aa6e4), color-stop(62%,#9ba7dd), color-stop(100%,#a8b2e6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #7987c4 0%,#7f8ed5 4%,#808ed1 8%,#96a3e2 42%,#9aa6e4 50%,#9ba7dd 62%,#a8b2e6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #7987c4 0%,#7f8ed5 4%,#808ed1 8%,#96a3e2 42%,#9aa6e4 50%,#9ba7dd 62%,#a8b2e6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #7987c4 0%,#7f8ed5 4%,#808ed1 8%,#96a3e2 42%,#9aa6e4 50%,#9ba7dd 62%,#a8b2e6 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #7987c4 0%,#7f8ed5 4%,#808ed1 8%,#96a3e2 42%,#9aa6e4 50%,#9ba7dd 62%,#a8b2e6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7987c4', endColorstr='#a8b2e6',GradientType=0 ); /* IE6-8 */
+}
+
+.bg-btn-roxo:hover{ color: #fff; }
+.bg-btn-roxo:focus{ color: #fff; outline: none; }
+.bg-btn-roxo.active{ color: #fff; }
+.bg-btn-roxo.active:focus{ outline: none; }
+.bg-degrade-cinza{
+    background: #ffffff; /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI4JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMWYxZjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 28%, #f1f1f1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(28%,#ffffff), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 28%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 28%,#f1f1f1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 28%,#f1f1f1 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 28%,#f1f1f1 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-8 */
+}
+
+/* modal */
+.modal-dialog{ width: 660px; border-radius: 4px; }
+.modal-dialog-menor{ width: 570px; border-radius: 4px; }
+.modal-content{ background: #e8e8e8; }
+.modal-header{ border-top: 1px dotted #c8c7c7; }
+.modal-title{ font-family: Arial; font-size: 26px; font-weight: bold; color: #000000; }
+.modal-body{ background: #ffffff; padding: 15px 30px; }
+.modal-body-menor{ height: 250px; line-height: 200px; }
+.modal-footer{ height: 85px; position: relative; }
+.modal-footer-borda{ width: 98%; margin: 0 auto; border-top: 1px dotted #c8c7c7; }
+.modal-footer-cancelamento{ height: 110px; line-height: 35px; position: relative; }
+.modal-footer-protocolo{ height: 80px; position: relative; }
+.modal-footer-motivo-cancelamento{ height: 165px; padding: 15px 30px; position: relative; }
+.modal.in .modal-dialog{ margin: 0 auto; }
+
+/* Modal Passo a Passo */
+.status-passo-a-passo{ width: 100%; height: 45px; border-radius: 6px; border: 1px solid #dcddde; }
+.status-passo-a-passo .titulo{ margin: 5px 0 0 10px; float: left; }
+.status-servico{ list-style: none; padding: 6px 0; }
+.status-servico li{ width: 45%; padding-left: 15px; float: left; }
+.status-carrinho{ list-style: none; padding: 6px 0; }
+.status-carrinho li{ width: 33%; padding-left: 15px; float: left; }
+.ico-passo-cinza{ width: 30px; height: 30px; float: left; border-radius: 25%; background: #414042; text-align: center; vertical-align: middle; padding-top: 3px; }
+.ico-passo-roxo{ width: 30px; height: 30px; float: left; border-radius: 25%; background: #7071b0; text-align: center; vertical-align: middle; padding-top: 3px; }
+
+ul.passo-a-passo{ width: 95%; margin: 30px auto 0 auto; padding-left: 0; list-style: none; display: table; }
+ul.passo-a-passo li{ padding: 0; float: left; border: 0; }
+ul.passo-a-passo li:first-child{ width: 100%; margin-bottom: 15px; border-bottom: 1px dotted #ccc; display: table; }
+ul.passo-a-passo ul.info-cliente{ padding-left: 0; list-style: none; display: table; }
+ul.passo-a-passo ul.info-cliente li{ width: 50%; float: left; }
+ul.passo-a-passo ul.info-cliente li:first-child{ border-bottom: 0; }
+ul.passo-a-passo ul.dados-cliente{ list-style: none; padding-left: 0; }
+ul.passo-a-passo ul.dados-cliente li{ width: 100%; font-family: Arial; font-size: 11px; color: #58595b; float: left; clear: left; }
+ul.passo-a-passo ul.dados-cliente li:first-child{ border-bottom: 0; }
+ul.passo-a-passo .texto-cancelamento{ margin-left: 35px; }
+ul.motivo-cancelamento{ margin-bottom: 20px; padding-left: 15px; list-style: none; display: table; }
+ul.motivo-cancelamento li{ padding: 0; float: left; border: 0; }
+ul.motivo-cancelamento select{ float: left; }
+ul.motivo-cancelamento .texto-item-obrigatorio{ margin: 35px 0 0 30px; }
+
+/* Modal Gerenciar Meus Serviços */
+.gerenciar-servicos{ width: 100%; margin-top: 20px; display: table; }
+.gerenciar-servicos ul.telefones{ width: 100%; padding-left: 0; list-style: none; float: right; display: table; }
+.gerenciar-servicos ul.telefones li{ width: 31%; margin-right: 9px; float: left; }
+.gerenciar-servicos ul.telefones li:first-child{ width: 33%; }
+.gerenciar-servicos ul.telefones li:last-child{ float: right; }
+
+.gerenciar-servicos ul.servicos{ width: 100%; padding-left: 0; list-style: none; display: table; }
+.gerenciar-servicos ul.servicos li{ width: 29%; margin-right: 9px; float: left; }
+.gerenciar-servicos ul.servicos li:first-child{ width: 35%; }
+.gerenciar-servicos ul.servicos li:last-child{ float: right; }
+.gerenciar-servicos ul.servicos li p{ width: 85%; float: left; display: table; }
+.gerenciar-servicos ul.servicos li input[type="checkbox"]{ margin: 2px 10px 0 -10px; float: left; }
+
+.gerenciar-servicos ul.servico{ width: 100%; padding: 10px 0; list-style: none; border-bottom: 1px dotted #ccc; display: table; }
+.gerenciar-servicos ul.servico li{ width: 29%; margin-right: 19px; float: left; }
+.gerenciar-servicos ul.servico li:first-child{ width: 35%; }
+.gerenciar-servicos ul.servico li:last-child{ margin-right: 0; float: right; }
+
+.dialogo{ list-style: none; padding-left: 0; }
+.dialogo li:first-child{ width: 70px; margin-right: 20px; float: left; }
+
+/* Modal Cancelar Serviço */
+.box-servico-cancelado{ width: 170px; margin: 30px 0 0 10px; padding: 10px; border: 1px dotted #c8c7c7; border-radius: 4px; display: table; }
+.box-servico-cancelado p{ margin-bottom: 0; }
+.mensagem-cancelamento-sucesso{ margin: 30px 0 0 10px; padding: 0 20px; }
+.mensagem-cancelamento-sucesso img{ margin-right: 10px; float: left; }
+.numero-protocolo{ margin: 30px 0 0 50px; padding: 0 20px; }
+.numero-protocolo p{ margin-bottom: 0; }
+.opcoes-pagamento{ width: 230px; margin-left: 10px; display: table; }
+.box-cinza{ width: 100%; background: #e8e8e8; margin: 15px 0; display: table; }
+.box-cinza input[type="radio"]{ margin-right: 10px; }
+.escolha-forma-quitacao{ margin-bottom: 20px; }
+.texto-pagamento{ line-height: 15px; }
+.envio-fatura{ width: 300px; margin-right: 25px; float: left; display: table; }
+.img-divisoria-ou{ text-align: center; margin: 19px 0; position: relative; }
+.box-saldo{ width: 300px; margin: 30px 50px 0 20px; float:left; }
+.box-saldo .ico-alerta1{ margin-top: 2px; margin-right: 10px; float: left; }
+.box-saldo .seta-bottom-cinza{ margin-top: 10px; float: right; }
+.box-saldo .texto-saldo-devedor{ width: 260px; display: table; }
+.escolha-forma-quitacao input[type="radio"]{ margin: 3px 10px 0 0; float: left; }
+.cancelamento-sem-quitar{ width: 100%; background: #e8e8e8; border-radius: 4px; margin-top: 15px; padding: 20px; display: block; }
+.cancelamento-sem-quitar input[type="radio"]{ margin: 0 10px 0 0; float: left; }
+.bandeiras-cartao{ list-style: none; margin-bottom: 0; padding-left: 0; float: left; }
+.bandeiras-cartao li{ float: left; }
+.bandeiras-cartao input{ margin-right: 3px; }
+.bandeiras-cartao img{ margin-right: 11px; }
+.numero-cartao-credito{ margin-top: 10px; float: left; }
+.numero-cartao{ width: 52px; margin: 4px 10px 0 0; float: left; }
+.nome-impresso-cartao{ margin-top: 10px; float: left; }
+.nome-impresso{ width: 238px; }
+.dados-validade{ list-style: none; margin-top: 10px; padding: 0; float: left; }
+.dados-validade li{ margin-right: 10px; float: left; }
+.dados-validade li:last-child{ margin-left: 18px; }
+.data-validade{ width: 80px; }
+.ano-validade{ width: 40px; }
+.codigo-seguranca{ width: 80px; }
+.select-motivo-cancelamento{ width: 280px; margin-right: 45px; float: left; }
+.seta-esq-roxa{ position: absolute; left:-10px; top:8px; }
+.seta-esq-roxa2{ position: absolute; left:-10px; top:25px; }
+.seta-cima{ width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #dae1e5; }
+
+/* Modal Consulta CEP */
+ul.consulta-cep{ padding-left: 0; list-style: none; float: left; }
+ul.consulta-cep li{ float: left; }
+ul.consulta-cep li:first-child{ margin-right: 20px; float: left; }
+.input-endereco{ margin: 25px 0 0 0; }
+.input-endereco input{ width: 490px; }
+.modal-body-cep{ min-height: 200px; display: table; }
+ul.consulta-cidade-estado{ padding-left: 0; list-style: none; float: left; }
+ul.consulta-cidade-estado li{ float: left; }
+ul.consulta-cidade-estado li:first-child{ margin-right: 20px; }
+ul.consulta-cidade-estado input{ width: 430px; }
+ul.consulta-cidade-estado select{ width: 145px; }
+.btn-pesquisar-modal{ margin: 10px 3px 0 0; float: right; display: block; }
+.modal-footer-consulta-cep{ background: #fff; padding: 0 15px 15px 15px; }
+.modal-footer-consulta-cep .borda-top{ border-top: 1px dotted #ccc; }
+ul.resultado-consulta{ width: 100%; background: #e9edf0; padding: 4px; list-style: none; float: left; }
+ul.resultado-consulta li{ float: left; }
+ul.resultado-consulta li:first-child{ width: 50%; margin-right: 10px; }
+ul.resultado-consulta li:last-child{ float: right; }
+
+/* icones multidispositivo */
+.btn-ico{
+    width: 66px;
+    height: 54px;
+    margin-bottom: 5px;
+    text-indent: -9999px;
+    background-color: #cdd3d6;
+    border-radius: 6px;
+    float: left;
+    display: block;
+}
+.btn-ico:hover{
+    background-color: #ffffff;
+    border: 1px solid #8386b7;
+}
+.ico-win{
+    background-image: url("../img/ico-win.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='fixed', src='../img/ico-win.png');
+}
+.ico-mac{
+    background-image: url("../img/ico-mac.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='fixed', src='../img/ico-mac.png');
+}
+.ico-tablet{
+    background-image: url("../img/ico-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='fixed', src='../img/ico-tablet.png');
+}
+.ico-desistir-compra{ margin-right: 5px; }
+
+/* Popover */
+.popover{ border-radius: 0; }
+.popover-oi{ cursor: pointer; }
+.popover-content{ font-family: Arial; font-size: 11px; color: #58595b; }
+
+/* Tooltip */
+.tooltip-oi{ width: 110%; }
+.tooltip-oi + .tooltip > .tooltip-inner{ font-size: 11px; color: #58595b; background-color: #fff; border: 1px solid #999; z-index: 9999; }
+.tooltip-oi + .tooltip.top > .tooltip-arrow{ bottom:0; left:50%; margin-left:-5px; border-left:5px solid transparent; border-right:5px solid transparent; border-top:5px solid #999; }
+.tooltip-oi + .tooltip.left > .tooltip-arrow{ top:50%; right:0; margin-top:-5px; border-top:5px solid transparent; border-bottom:5px solid transparent; border-left:5px solid #999; }
+.tooltip-oi + .tooltip.bottom > .tooltip-arrow{ top:0; left:50%; margin-left:-5px; border-left:5px solid transparent; border-right:5px solid transparent; border-bottom:5px solid #999; z-index: 9999; }
+.tooltip-oi + .tooltip.right > .tooltip-arrow{ top:50%; left:0; margin-top:-5px; border-top:5px solid transparent; border-bottom:5px solid transparent; border-right:5px solid #999; }
+
+/* Páginas de Erro */
+.box-erro503{ padding: 40px 60px; border: 0; display: table; }
+.box-erro503 .preencha-dados{ margin-top: 30px; margin-bottom: 30px; }
+ul.erro503-email-celular{ padding-left: 0; list-style: none; float: left; }
+ul.erro503-email-celular li{ float: left; }
+ul.erro503-email-celular li:first-child{ margin-right: 20px; }
+ul.erro503-email-celular p{ margin-bottom: 0; }
+ul.erro503-email-celular input.email{ width: 210px; height: 24px; }
+ul.erro503-email-celular input.celular{ width: 210px; height: 24px; }
+.btn-enviar-erro503{ width: 82px; height: 25px; line-height: 10px; clear: left; float: right; }

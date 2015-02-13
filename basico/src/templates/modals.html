@@ -1,0 +1,589 @@
+<script id="modals" type="text/template">
+
+<div class="row">
+    <div class="col-xs-12" style="display:inline">
+        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalGerenciarServicos">
+            Gerenciar Serviços
+        </button>
+        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalGerenciarSucessoServicos">
+            Salvo com Sucesso
+        </button>
+        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalGerenciarCompraSucessoServicos">
+            Compra Concluída
+        </button>
+        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalGerenciarCompraCanceladaServicos">
+            Compra Cancelada
+        </button>
+        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalConsultaCEP">
+            Consulta CEP
+        </button>
+        <br><br>
+        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalCancelamentoPasso1">
+            Cancelamento Passo 1
+        </button>
+        <br><br>
+        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalCancelamentoPasso2CDC">
+            Cancelamento Passo 2 CDC
+        </button>
+        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalCancelamentoPasso2Adimplente">
+            Cancelamento Passo 2 Adimplente
+        </button>
+        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalCancelamentoPasso2Inadimplente">
+            Cancelamento Passo 2 Inadimplente
+        </button>
+        <br><br>
+         <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalCancelamentoPasso3Inadimplente">
+            Cancelamento Passo 3 Inadimplente
+        </button>
+    </div>
+</div>
+<!-- Gerenciar Serviços -->
+<div class="modal fade" id="modalGerenciarServicos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-fechar"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                <h4 class="modal-title" id="myModalLabel">Onde gerenciar meus serviços?</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="dialogo">
+                    <li><img src="assets/img/ico-dialogo1.png" border="0"></li>
+                    <li><p class="ffarial fs14 fcpreto no-margin">Identificamos que você possui algum(s) serviço(s) que não está(ão) associado(s) a sua Banda Larga. Indique no quadro abaixo, em qual Banda Larga você deseja associar e gerenciar esse(s) serviço(s):</p></li>
+                </ul>
+
+                <div class="gerenciar-servicos">
+                    <ul class="telefones">
+                        <li>&nbsp;</li>
+                        <li><p class="ffarial fs18 fccinza2 fbold"><img src="assets/img/ico-telefone.png" border="0"> (21) 3542-6772</p></li>
+                        <li><p class="ffarial fs18 fccinza2 fbold"><img src="assets/img/ico-telefone.png" border="0"> (21) 1234-4572</p></li>
+                    </ul>
+                    <ul class="servicos">
+                        <li><p class="ffarial fs20 fcpreto fbold">Serviços</p></li>
+                        <li><input type="checkbox" /> <p class="ffarial fs12 fcroxo">Gerenciar todos os serviços nesse telefone</p></li>
+                        <li><input type="checkbox" /> <p class="ffarial fs12 fcroxo">Gerenciar todos os serviços nesse telefone</p></li>
+                    </ul>
+                    <ul class="servico">
+                        <li><p class="ffarial fs14 fccinza2">Segurança Multidispositivo</p></li>
+                        <li><div class="btn-fechar-roxo2"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button></div> <a href="#" class="ffarial fs14 fcroxo btn-oi">desfazer</a></li>
+                        <li><button type="button" class="btn btn-roxo bg-btn-roxo" data-toggle="button">Gerenciar nesse telefone</button></li>
+                    </ul>
+                    <ul class="servico">
+                        <li><p class="ffarial fs14 fccinza2">Educa +</p></li>
+                        <li><button type="button" class="btn btn-roxo bg-btn-roxo" data-toggle="button">Gerenciar nesse telefone</button></li>
+                        <li><button type="button" class="btn btn-roxo bg-btn-roxo" data-toggle="button">Gerenciar nesse telefone</button></li>
+                    </ul>
+                    <ul class="servico">
+                        <li><p class="ffarial fs14 fccinza2">Inglês</p></li>
+                        <li><button type="button" class="btn btn-roxo bg-btn-roxo" data-toggle="button">Gerenciar nesse telefone</button></li>
+                        <li><button type="button" class="btn btn-roxo bg-btn-roxo" data-toggle="button">Gerenciar nesse telefone</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer-cancelamento">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="modal-footer-borda">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-5">
+                        <div class="btn-fechar-roxo"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button></div>
+                        <a href="#" class="ffarial fs16 fcroxo btn-oi btn-decidir-depois" data-dismiss="modal">Decidir depois</a>
+                        <button type="button" class="btn btn-roxo bg-btn-roxo btn-salvar-modal">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mensagem Dados Salvo com Sucesso -->
+<div class="modal fade" id="modalGerenciarSucessoServicos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-fechar"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                <h4 class="modal-title" id="myModalLabel">Onde gerenciar meus serviços?</h4>
+            </div>
+            <div class="modal-body modal-body-menor">
+                <ul class="dialogo">
+                    <li><img src="assets/img/ico-dialogo1.png" border="0"></li>
+                    <li>
+                        <p class="ffarial fs20 fcpreto fbold no-margin">Dados salvos com sucesso!</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer-cancelamento">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="modal-footer-borda">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-5">
+                        <button type="button" class="btn btn-roxo bg-btn-roxo btn-fechar-modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mensagem Compra concluída com sucesso -->
+<div class="modal fade" id="modalGerenciarCompraSucessoServicos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-fechar"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                <h4 class="modal-title" id="myModalLabel">Compra Concluída</h4>
+            </div>
+            <div class="modal-body modal-body-menor">
+                <ul class="dialogo">
+                    <li><img src="assets/img/ico-dialogo1.png" border="0"></li>
+                    <li>
+                        <p class="ffarial fs20 fcpreto fbold no-margin" style="line-height:20px; padding-top:75px;">Compra concluída com sucesso!</p>
+                        <p class="ffarial fs16 fcroxo no-margin" style="line-height:20px; padding-top:30px;">A cobrança do serviço ocorrerá na conta telefônica (XX) XXXXXXXX.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer-cancelamento">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="modal-footer-borda">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-5">
+                        <button type="button" class="btn btn-roxo bg-btn-roxo btn-fechar-modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mensagem Compra cancelada com sucesso -->
+<div class="modal fade" id="modalGerenciarCompraCanceladaServicos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-fechar"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                <h4 class="modal-title" id="myModalLabel">Compra Cancelada</h4>
+            </div>
+            <div class="modal-body modal-body-menor">
+                <ul class="dialogo">
+                    <li><img src="assets/img/ico-dialogo1.png" border="0"></li>
+                    <li>
+                        <p class="ffarial fs20 fcpreto fbold no-margin">Compra cancelada com sucesso!</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer-cancelamento">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="modal-footer-borda">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-5">
+                        <button type="button" class="btn btn-roxo bg-btn-roxo btn-fechar-modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Consulta CEP -->
+<div class="modal fade" id="modalConsultaCEP" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-fechar"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                <h4 class="modal-title" id="myModalLabel">Consulta CEP</h4>
+            </div>
+            <div class="modal-body modal-body-cep">
+                <p class="ffarial fs14 fcpreto no-margin">Para encontrar o CEP, preencha os campos abaixo:</p>
+                <ul class="consulta-cep">
+                    <li>
+                        <p class="ffarial fs11 fcpreto">Logradouro</p>
+                        <select class="form-control cep ffarial fs12 fccinza1">
+                            <option>Selecione</option>
+                        </select>
+                    </li>
+                    <li>
+                        <div class="input-endereco">
+                            <input type="text" class="form-control ffarial fs12 fcpreto" placeholder="Digite seu endereço">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="consulta-cidade-estado">
+                    <li>
+                        <p class="ffarial fs11 fcpreto">Cidade</p>
+                        <input type="text" class="form-control ffarial fs12 fcpreto cidade" placeholder="Digite sua cidade">
+                    </li>
+                    <li>
+                        <p class="ffarial fs11 fcpreto">Estado</p>
+                        <select class="form-control cep ffarial fs12 fccinza1">
+                            <option>Selecione</option>
+                        </select>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-roxo bg-btn-roxo btn-pesquisar-modal">Pesquisar</button>
+            </div>
+            <div class="modal-footer-consulta-cep">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="borda-top">&nbsp;</div>
+                        <p class="ffarial fs12 fcpreto fbold">Resultado da consulta</p>
+                        <ul class="resultado-consulta">
+                            <li><span class="ffarial fs12 fccinza2">R SIMPLICIANO FERREIRA, 869</span></li>
+                            <li><span class="ffarial fs12 fccinza2">VILA PARQUE JABAQUARA</span></li>
+                            <li><span class="ffarial fs12 fccinza2">04349000</span></li>
+                        </ul>
+                        <ul class="resultado-consulta">
+                            <li><span class="ffarial fs12 fccinza2">R AUGUSTA, 869</span></li>
+                            <li><span class="ffarial fs12 fccinza2">VILA PARQUE JABAQUARA</span></li>
+                            <li><span class="ffarial fs12 fccinza2">04349000</span></li>
+                        </ul>
+                        <ul class="resultado-consulta">
+                            <li><span class="ffarial fs12 fccinza2">R DR MARIO MAGALHAES, 869</span></li>
+                            <li><span class="ffarial fs12 fccinza2">ITAPOÃ</span></li>
+                            <li><span class="ffarial fs12 fccinza2">04349000</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Cancelamento Passo 1 - Motivo Cancelamento -->
+<div class="modal fade" id="modalCancelamentoPasso1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-fechar"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                <h4 class="modal-title" id="myModalLabel">Cancelar Serviço</h4>
+            </div>
+            <div class="modal-body" id="passo-1">
+                <div class="status-passo-a-passo bg-degrade-cinza">
+                    <ul class="status-servico">
+                        <li><div class="ico-passo-cinza"><p class="ffarial fs18 fcbranco fbold">01</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Confirmação</p></li>
+                        <li><div class="ico-passo-roxo"><p class="ffarial fs18 fcbranco fbold">02</p></div><p class="titulo ffarial fs14 fcroxo fbold"> Protocolo</p></li>
+                    </ul>
+                </div>
+                <ul class="passo-a-passo">
+                    <li><p class="ffarial fs14 fcpreto fbold">Dados do serviço a ser cancelado</p></li>
+                    <li>
+                        <ul class="info-cliente">
+                            <li>
+                                <p class="ffarial fs18 fcroxo fbold">Oi Inglês</p>
+                                <ul class="dados-cliente">
+                                    <li>Cartão de Crédito</li>
+                                    <li>Número: 4055-xxxx-xxxx-4088</li>
+                                    <li>Titular: Jorge</li>
+                                    <li>Vencimento do cartão: 11/16</li>
+                                    <li>Situação: pago</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div style="margin:5px 10px 0 0; float:left;"><img src="assets/img/ico-dialogo2.png" border="0" /></div>
+                                <p class="ffarial fs14 fccinza2 fbold">Tem certeza que deseja cancelar seu serviço?</p>
+                                <p class="ffarial fs12 fcroxo texto-cancelamento">
+                                    O cancelamento do seu serviço será agendado para a data de faturamento.
+                                    Em caso de dúvida ligue para nossa Central de Relacionamento.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer-motivo-cancelamento">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <ul class="motivo-cancelamento">
+                            <li>
+                                <p class="ffarial fs11 fcpreto fbold">Motivo do Cancelamento *</p>
+                                <select class="form-control">
+                                    <option>Selecione o motivo do cancelamento</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </li>
+                            <li><p class="ffarial fs11 fccinza2 texto-item-obrigatorio">* item obrigatório</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="modal-footer-borda">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5 col-xs-offset-6">
+                        <a href="#" class="ffarial fs14 fcroxo btn-oi btn-cancelar" data-dismiss="modal">Cancelar</a>
+                        <button type="button" class="btn btn-roxo bg-btn-roxo btn-continuar-modal">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Cancelamento Passo 2 - Protocolo Cliente Adimplente -->
+<div class="modal fade" id="modalCancelamentoPasso2Adimplente" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-fechar"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                <h4 class="modal-title" id="myModalLabel">Cancelar Serviço</h4>
+            </div>
+            <div class="modal-body" id="passo-2">
+                <div class="status-passo-a-passo bg-degrade-cinza">
+                    <ul class="status-servico">
+                        <li><div class="ico-passo-cinza"><p class="ffarial fs18 fcbranco fbold">01</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Confirmação</p></li>
+                        <li><div class="ico-passo-roxo"><p class="ffarial fs18 fcbranco fbold">02</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Protocolo</p></li>
+                    </ul>
+                </div>
+                <div class="box-servico-cancelado">
+                    <p class="ffarial fs11 fcpreto">Serviço a ser cancelado</p>
+                    <p class="ffarial fs16 fcroxo fbold">Oi Inglês</p>
+                    <p class="ffarial fs12 fccinza3">Motivo do cancelamento</p>
+                </div>
+                <div class="mensagem-cancelamento-sucesso">
+                    <img src="assets/img/ico-ok-roxo.png" border="0" />
+                    <p class="ffarial fs18 fcroxo fbold">Solicitação de Cancelamento recebida com Sucesso!</p>
+                </div>
+                <div class="numero-protocolo">
+                    <p class="ffarial fs11 fcpreto">O número de protocolo é</p>
+                    <p class="ffarial fs24 fcpreto fbold">AB6617519321</p>
+                    <p class="ffarial fs11 fcpreto">Você continuará com acesso a esse serviço até a data xx/xx/xxxx</p>
+                </div>
+            </div>
+            <div class="modal-footer bg-branco">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="modal-footer-borda">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-8">
+                        <button type="button" class="btn btn-roxo bg-btn-roxo btn-fechar-modal2">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Cancelamento Passo 2 - Protocolo Cliente CDC -->
+<div class="modal fade" id="modalCancelamentoPasso2CDC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-fechar"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                <h4 class="modal-title" id="myModalLabel">Cancelar Serviço</h4>
+            </div>
+            <div class="modal-body" id="passo-2">
+                <div class="status-passo-a-passo bg-degrade-cinza">
+                    <ul class="status-servico">
+                        <li><div class="ico-passo-cinza"><p class="ffarial fs18 fcbranco fbold">01</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Confirmação</p></li>
+                        <li><div class="ico-passo-roxo"><p class="ffarial fs18 fcbranco fbold">02</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Protocolo</p></li>
+                    </ul>
+                </div>
+                <div class="box-servico-cancelado">
+                    <p class="ffarial fs11 fcpreto">Serviço a ser cancelado</p>
+                    <p class="ffarial fs16 fcroxo fbold">Oi Inglês</p>
+                    <p class="ffarial fs12 fccinza3">Motivo do cancelamento</p>
+                </div>
+                <div class="mensagem-cancelamento-sucesso">
+                    <img src="assets/img/ico-ok-roxo.png" border="0" />
+                    <p class="ffarial fs18 fcroxo fbold">Cancelamento realizado com Sucesso!</p>
+                </div>
+                <div class="numero-protocolo">
+                    <p class="ffarial fs11 fcpreto">O número de protocolo é</p>
+                    <p class="ffarial fs24 fcpreto fbold">AB6617519321</p>
+                    <p class="ffarial fs11 fcpreto">Seu acesso ao serviço foi bloqueado.</p>
+                </div>
+            </div>
+            <div class="modal-footer bg-branco">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="modal-footer-borda">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-8">
+                        <button type="button" class="btn btn-roxo bg-btn-roxo btn-fechar-modal2">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Cancelamento Passo 2 - Cancelamento Inadimplente -->
+<div class="modal fade" id="modalCancelamentoPasso2Inadimplente" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-fechar"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                <h4 class="modal-title" id="myModalLabel">Cancelar Serviço</h4>
+            </div>
+            <div class="modal-body" id="passo-2">
+                <div class="status-passo-a-passo bg-degrade-cinza">
+                    <ul class="status-carrinho">
+                        <li><div class="ico-passo-cinza"><p class="ffarial fs18 fcbranco fbold">01</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Confirmação</p></li>
+                        <li><div class="ico-passo-cinza"><p class="ffarial fs18 fcbranco fbold">02</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Cancelamento</p></li>
+                        <li><div class="ico-passo-roxo"><p class="ffarial fs18 fcbranco fbold">03</p></div><p class="titulo ffarial fs14 fcroxo fbold"> Protocolo</p></li>
+                    </ul>
+                </div>
+                <div class="box-saldo">
+                    <img src="assets/img/ico-alerta1.png" class="ico-alerta1" border="0" />
+                    <p class="ffarial fs12 fcvermelho texto-saldo-devedor">
+                        Você possui um saldo devedor de R$ 000,00 para o serviço a ser descontinuado. Veja as opções para pagamento do saldo devedor.
+                        <img src="assets/img/seta-bottom-cinza.png" class="seta-bottom-cinza" border="0" />
+                    </p>
+                </div>
+                <div class="box-servico-cancelado">
+                    <p class="ffarial fs11 fcpreto">Serviço a ser cancelado</p>
+                    <p class="ffarial fs16 fcroxo fbold">Oi Inglês</p>
+                    <p class="ffarial fs12 fccinza3">Motivo do cancelamento</p>
+                </div>
+                <div class="well box-cinza">
+                    <div class="escolha-forma-quitacao">
+                        <p class="ffarial fs14 fcpreto fbold">Escolha uma das formas de quitação disponível para este serviço:</p>
+                    </div>
+                    <div class="envio-fatura">
+                        <div class="boleto-bancario hidden">
+                            <p class="ffarial fs12 fcpreto fbold">Enviar para e-mail já cadastrado:</p>
+                            <p class="ffarial fs11 fcpreto">xxx@xx.com.br</p>
+                            <div class="img-divisoria-ou">
+                                <img src="assets/img/ico-checkout-ou.png" border="0" />
+                            </div>
+                            <p class="ffarial fs12 fcpreto fbold">Enviar para novo e-mail</p>
+                            <input type="email" /> <button type="button" class="btn btn-roxo bg-btn-roxo btn-ok">OK</button>
+                        </div>
+                        <div class="cartao-credito">
+                            <ul class="bandeiras-cartao">
+                                <li>
+                                    <input type="radio" />
+                                    <img src="assets/img/ico-visa.png">
+                                </li>
+                                <li>
+                                    <input type="radio" />
+                                    <img src="assets/img/ico-mastercard.png">
+                                </li>
+                                <li>
+                                    <input type="radio" />
+                                    <img src="assets/img/ico-dinners.png">
+                                </li>
+                                <li>
+                                    <input type="radio" />
+                                    <img src="assets/img/ico-american-express.png">
+                                </li>
+                            </ul>
+                            <div class="numero-cartao-credito">
+                                <p class="ffarial fs11 fcpreto no-margin">Número do cartão</p>
+                                <input type="text" class="numero-cartao" />
+                                <input type="text" class="numero-cartao" />
+                                <input type="text" class="numero-cartao" />
+                                <input type="text" class="numero-cartao" />
+                            </div>
+                            <div class="nome-impresso-cartao">
+                                <p class="ffarial fs11 fcpreto no-margin">Nome impresso no cartão</p>
+                                <input type="text" class="nome-impresso" />
+                            </div>
+                            <ul class="dados-validade">
+                                <li>
+                                    <p class="ffarial fs11 fcpreto no-margin">Data validade</p>
+                                    <input type="text" class="data-validade" />
+                                </li>
+                                <li>
+                                    <p class="ffarial fs11 fcpreto no-margin">Ano</p>
+                                    <input type="text" class="ano-validade" />
+                                </li>
+                                <li>
+                                    <p class="ffarial fs11 fcpreto no-margin">Cód. Segurança</p>
+                                    <input type="text" class="codigo-seguranca" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="opcoes-pagamento">
+                        <a href="#" class="btn-boleto-bancario-roxo ffarial fs12 fcbranco">
+                            <div class="seta-esq-roxa"><img src="assets/img/seta-esq-roxa.png" /></div>
+                            <img src="assets/img/ico-boleto-bancario-grd.png" />
+                            Boleto Bancário
+                        </a>
+                        <a href="#" class="btn-cartao-credito-cinza">
+                            <img src="assets/img/ico-cartao-credito-grd.png" />
+                            <p class="ffarial fs12 fcroxo fbold no-margin">Cartão de Crédito
+                                <p class="ffarial fs11 fcroxo texto-pagamento">Pagamento com cartão de crédito</p>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="well box-cinza">
+                    <input type="radio"> <span class="ffarial fs12 fcpreto fbold">Continuar com o cancelamento sem quitar minha dívida</span>
+                </div>
+            </div>
+            <div class="modal-footer-protocolo">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="modal-footer-borda">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5 col-xs-offset-6">
+                        <a href="#" class="ffarial fs14 fcroxo btn-oi btn-cancelar" data-dismiss="modal">Cancelar</a>
+                        <button type="button" class="btn btn-roxo bg-btn-roxo btn-continuar-modal">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Cancelamento Passo 3 - Protocolo Inadimplente -->
+<div class="modal fade" id="modalCancelamentoPasso3Inadimplente" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="btn-fechar"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                <h4 class="modal-title" id="myModalLabel">Cancelar Serviço</h4>
+            </div>
+            <div class="modal-body" id="passo-3">
+                <div class="status-passo-a-passo bg-degrade-cinza">
+                    <ul class="status-carrinho">
+                        <li><div class="ico-passo-cinza"><p class="ffarial fs18 fcbranco fbold">01</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Confirmação</p></li>
+                        <li><div class="ico-passo-cinza"><p class="ffarial fs18 fcbranco fbold">02</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Cancelamento</p></li>
+                        <li><div class="ico-passo-cinza"><p class="ffarial fs18 fcbranco fbold">03</p></div><p class="titulo ffarial fs14 fccinza2 fbold"> Protocolo</p></li>
+                    </ul>
+                </div>
+                <div class="box-servico-cancelado">
+                    <p class="ffarial fs11 fcpreto">Serviço a ser cancelado</p>
+                    <p class="ffarial fs16 fcroxo fbold">Oi Inglês</p>
+                    <p class="ffarial fs12 fccinza3">Motivo do cancelamento</p>
+                </div>
+                <div class="mensagem-cancelamento-sucesso">
+                    <img src="assets/img/ico-ok-roxo.png" border="0" />
+                    <p class="ffarial fs18 fcroxo fbold">Solicitação de Cancelamento recebida com Sucesso!</p>
+                </div>
+                <div class="numero-protocolo">
+                    <p class="ffarial fs11 fcpreto">O número de protocolo é</p>
+                    <p class="ffarial fs24 fcpreto fbold">AB6617519321</p>
+                    <p class="ffarial fs11 fcpreto">Você continuará com acesso a esse serviço até a data xx/xx/xxxx</p>
+                </div>
+            </div>
+            <div class="modal-footer-protocolo">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="modal-footer-borda">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-8">
+                        <button type="button" class="btn btn-roxo bg-btn-roxo btn-fechar-modal2">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</script>
